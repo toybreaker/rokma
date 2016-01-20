@@ -1,0 +1,101 @@
+// rok for small images...
+
+//$flexbasis: auto;
+$flexbasis: 370px;
+// all images here scaled like the small "Container Club" images:400(x300)
+// or not....
+
+.image-grid {
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  // align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+  // align-items: flex-start | flex-end | center | baseline | stretch;
+
+	.image-grid-item { 
+
+    -webkit-flex-basis: $flexbasis;
+    -ms-flex-preferred-size: $flexbasis;
+    flex-basis: $flexbasis;
+
+    -webkit-flex-grow:1;
+    -ms-flex-positive:1;
+    flex-grow:1;
+
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+
+    img { max-width: 350px; }
+	}
+}
+
+
+
+// rok universals PACK flexboxes by addin just classes...
+.pack-row { 
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+
+  .item {
+    -webkit-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+    -webkit-flex-grow:1;
+        -ms-flex-positive:1;
+            flex-grow:1;
+  }
+}
+
+.pack-col {
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  .item {
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+
+    -webkit-flex-grow:1;
+    -ms-flex-positive:1;
+    flex-grow:1;
+  }
+}

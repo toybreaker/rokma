@@ -1,0 +1,9 @@
+.workinprogress
+_site/
+_dist/
+.sass-cache/
+.jekyll-metadata
+.sass-cache/
+
+__LAB
+images/_*

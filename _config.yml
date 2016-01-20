@@ -1,0 +1,125 @@
+# Site wide configuration
+
+# what
+title: Rokma
+locale: en_US
+
+# Site wide Shouts!
+description: "Communication Design"
+shout_description: "Flexible Communication Design for small companies. Imagine. Plan. Produce. Launch. And also just consulting!"
+logo: 01.jpg
+tagline: 'empowers small enterprises'
+tagline_short: 'empowers'
+tagline_plus: 'building reputation'
+  #tagline_home: 'makes your customers understand you'
+
+# Where things are
+# for dev just use the default here, so comment out [destination: ./dist ]       .
+destination: ./_dist
+plugins:     ./_plugins
+layouts:     ./_layouts
+data_source: ./_data
+collections: null
+
+  # keep_files: [DIR, FILE, ...]
+  # timezone: TIMEZONE
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+
+  # root folder of your Jekyll site. does not include hostname:
+baseurl: "" 
+
+  # only used in page head for the canonical header and the RSS link. It's also used in the xml feed to point to site resources as the software that will manage this feed doesn't know resource's urls. See: http://stackoverflow.com/questions/27386169/change-site-url-to-localhost-during-jekyll-local-development:
+url: http://rokma.com 
+  # for dev just use this: 
+#url: http://rokma.dev
+
+# Custom vars
+version: 15.13.1
+version_details: 'mo better dir structure'
+# VERSION DETAILS: mo better dir structure (no more portfolio.rokma.com)
+# VERSION 15.11.6 DETAILS: flexfix (online! with meta refresh from rokma.com to portfolio)
+
+# Outputting
+permalink:   /:categories/:title/
+relative_permalinks: false
+paginate: 15
+paginate_path: "index/:num/"
+
+# Setup
+sass:
+  sass_dir: _sass
+  style: :compressed
+  # style: :expanded
+  # line_numbers: :butt
+  # sourcemaps: :true# not working:()
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Conversion
+markdown: kramdown
+#markdown: redcarpet
+
+# Markdown Processors
+# redcarpet:
+#  extensions: [ "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify"]
+
+# highlighter: pygments
+
+#search: true
+
+# Site owner
+owner:
+  name: Rokma
+  avatar: o-avatar.jpg
+  email: me@rokma.com
+  web: http://rokma.com
+  disqus-shortname:
+  twitter: rokmatwit
+  facebook: rokmaphotography
+  github: #username
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: rokma
+  soundcloud: 
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  google:
+    plus: rokma
+    analytics: UA-1305149-1
+    verify: google32e66f1a5601ec40
+    ad-client:
+    ad-slot: 
+  bing-verify:
+
+# Plugins
+gems:
+- jekyll-sitemap
+
+
+
+
+
+
+# # @2do
+# shout: believes 
+# shout_alt: because
+# shout_hom: customers should understand you
+# shout_adv: empowers small enterprises
+# shout_bra: makes you recognizable
+# shout_pho: is needed to communicate
+# shout_spe: 
+# USE: site.title site.shout page.categories site.shout_adv | site.shout_bra | site.shout_pho ..
+# ..will output: rokma believes advertising empowers small enterprises
+# ex: usage site.title site.shout page.categories site.shout_bra
+# ..will output: rokma believes branding makes you recognizable
+# ex: usage site.title site.shout page.categories site.shout_pho 
+# ..will output: rokma believes photography is needed to communicate
+# or: 
+# "shout_alt" can substitute "shout" and still make sense!
+

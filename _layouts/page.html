@@ -1,0 +1,15 @@
+---
+layout: default
+---
+	<div class="image-wrap">
+	{% if page.image.feature %}
+		<img src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature }}" class="entry-feature-image a" alt="{{ page.title }}" >
+	{% endif %}
+  </div>
+
+	
+	<div class="page">
+		<h1 class="page-title {{ page.title }}">{{ page.headline }}</h1>
+		{{ content }}
+	</div>
+

@@ -1,0 +1,131 @@
+
+
+.home { 
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient( $colorRGBa1 20vh, $nice-color );
+  
+  -webkit-background-blend-mode: $blend-mode;
+  background-blend-mode: $blend-mode;
+  
+
+  //// AVATAR stuff 
+  // check out this cool: http://codepen.io/bennettfeely/pen/csjzd
+  .avatar {
+    img {
+      background-size: cover;
+      background-color: $nice-color;
+      // background: 
+      // linear-gradient(
+      //   to bottom,
+      //   rgba(0, 0, 0, 0),
+      //   rgba(0, 0, 0, 0.4)
+      // ),
+      // url(....
+
+      //background-image: linear-gradient( black 50vh, $nice-color );
+      -webkit-background-blend-mode: $blend-mode;
+      background-blend-mode: $blend-mode;
+      
+
+
+      //// FILTER STUFF - "Oh [PS] yeah!
+      // opacity %
+      $filter-opacity: 90%;
+      // make avatar gray
+      -webkit-filter: grayscale(.9); // Older webkit versions 
+      -webkit-filter: grayscale($filter-opacity);
+      -moz-filter : grayscale ($filter-opacity); // Gecko-Based Browsers, Mozilla Firefox
+      -ms-filter : grayscale($filter-opacity);
+      -o-filter : grayscale($filter-opacity); // Opera
+      filter: grayscale($filter-opacity);
+      filter: gray; // IE 6-9 */
+      
+      filter : url ("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'gs\'><feColorMatrixtype=\'matrix\'values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#gs");// Firefox 3.5+, Firefox mobile
+    }
+  } 
+
+  // and the text under the circle yellow
+  .descri {
+    color: $nice-color;
+  }
+  
+  //// HOME HEAD stuff
+  // no header border for home...
+  .masthead {
+    border: 0 none;
+  }
+
+  // and big letters..
+  .masthead-title {
+    font-size: 3rem; /* Some tweener fallback that doesn't look awful */ 
+    font-size: 8vw;
+    font-weight: 600;
+    line-height:1;
+    //margin: 1rem;
+    // padding-bottom:3rem; 
+  }
+  .tagline {
+    font-weight: 200;
+    color: black;
+    text-transform: uppercase;
+  }
+  .posthumb{
+    background-color: gold;
+  }
+
+  // varios wraps for home
+  // @2do rationalize! code is a mess here
+  .wrap {
+    padding-top:10vh;
+    height:75vh;
+    padding-bottom:10vh; 
+  }
+  .hat {
+    padding-top:30vh;
+    height:100vh;
+    
+    // goofy hack...
+    @media (max-height: 25em) {
+      padding-top:5vh;
+    }
+    // @include media( "screen", "<minWidth"){
+    //   padding-top:5vh;
+    // }
+  }
+  .index {
+    height: auto;
+    background-color:$nice-color; //opaque
+    //background-color:$colorRGBa1; //transparency
+  }
+  .on { //rok helps 
+  }
+  .andon{//rok recognizable
+    //height:80vh;
+    background-color:white;
+  }
+  .wrap.last{
+    padding-top:10vh;
+    height:90vh;
+    padding-bottom:0;
+    .masthead-title,
+    .tagline {
+      text-align:center;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+
+.home .fontsizefixed .underline-on-hover:hover{
+  color: $nice-color!important;
+}
+
+//// SIDEBAR 
+//in HOME do some more...
+.home {
+  #sidebar-checkbox:checked ~ .wrap {
+    img,
+    .pagination,
+    .posts {display:none;}
+  }
+}

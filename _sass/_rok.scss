@@ -1,0 +1,361 @@
+/* Stop fussin' start sassin' */
+//// Sections are marked with: //// (4slashes)
+
+.taglineplus{
+  @include media( "screen", "<maxWidth" ){ display:none; }
+}
+.pagecat{ color: black; }
+.black .pagecat{ color: white; }
+
+.version.hidden{ display:none; }
+  
+.specials,
+.photography,
+.advertising,
+.web-design,
+.branding{
+  .taglineplus{
+    display:none;
+  }
+}
+
+.specials{
+  .tagline, 
+  .taglineshort{
+    display:none;
+  }
+}
+body:not(.specials) {
+  .taglineshort {
+    display:none;
+  }
+}
+
+
+
+
+
+//// * POST and PAGES
+// * Each post is wrapped in `.post` and is used on default and post layouts. Each
+// * page is wrapped in `.page` and is only used on the page layout.
+.posts{ 
+  display: -webkit-flex;              
+  display: -ms-flexbox;              
+  display: flex;              
+  -webkit-flex-direction: row;              
+  -ms-flex-direction: row;              
+          flex-direction: row;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.post-title {
+  padding: 0 0 1rem 0;
+  margin: 0;
+  position: relative;
+  top: 5rem;
+}
+
+//maybe no use...
+// .svg-bg{
+//   position: absolute;
+//   top:-1rem; 
+//   left:-1.75rem;
+//   // width:110%;
+//   height:115%;
+//   opacity: .15;
+// }
+
+.post {
+  -ms-flex-preferred-size: 400px;
+  -webkit-flex-basis: 400px;
+  flex-basis: 400px;
+
+  min-height: 400px;
+  max-width: 400px;
+  overflow: hidden;
+  
+  -webkit-flex-grow:1;
+  -ms-flex-positive:1;
+  flex-grow:1;
+
+  transition: 100ms ease-in-out;
+  
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: 1rem 0;
+  background-color: $nice-color;
+
+  border-radius: 50%!important;//safari sucks...
+
+  img {
+    //border-radius: 50%!important;
+    max-width: 100%;
+    will-change: scale;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+
+    transition: scale 5s ease-in-out;
+  }
+  a {
+    padding: 1rem 1rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    line-height:5rem;
+    //overflow: hidden;
+    
+  }
+  &:hover {
+    background-color: white;
+    //border-radius: 50%!important;
+    z-index: 10;
+    .post-title{ top: .85rem; z-index: 11; }
+    //.svg-bg{opacity: 1;}
+    img{
+      -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+      transform: scale(2);
+
+      -webkit-transform-origin: top center;
+      -ms-transform-origin: top center;
+      transform-origin: top center;
+
+      opacity: 1;
+
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+
+      // filter: none;/* IE 6-9 */
+    }
+  }
+}
+
+.web-design .post{
+    background-color: $body-color;
+}
+.photography .post{
+    background-color: $black;
+}
+
+//// evalute the following for .postthumb:
+// /* background sun shot fixed for home*/
+// #bg { position: fixed;  top: -50%;  left: -50%;  width: 200%; height: 200%; z-index: -100;}
+// #bg img { position: absolute;  top: 0; left: 0; right: 0;  bottom: 0;  margin: auto;  min-width: 50%; min-height: 50%; 
+
+// image-rendering: optimizeQuality; /* Gecko, moz */
+// -ms-interpolation-mode: bicubic; /* IE */ 
+
+// image-rendering: -moz-crisp-edges;         /* Firefox */
+// image-rendering:   -o-crisp-edges;         /* Opera */
+// image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+// -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+// }
+
+.posthumb {
+  //border-radius: 50%!important;
+  position: relative;
+  top: 0; 
+  left: 0; 
+}
+.black .posthumb {
+  background-color: black;
+}
+
+.posthumb img{
+  //border-radius: 50%!important;
+  background-color: black;
+  margin: auto; 
+  z-index: 0;
+  overflow: hidden;
+  opacity: .25;
+
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+  // filter: gray; /* IE 6-9 */
+
+  /* This is for Firefox 3.5+, Firefox mobile */
+  //filter : url ("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'gs\'><feColorMatrixtype=\'matrix\'values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#gs");
+
+    // -webkit-transition: opacity 300ms cubic-bezier(.69,.2,.48,1.47);
+    //  -moz-transition: opacity 300ms cubic-bezier(.69,.2,.48,1.47); 
+    //    -o-transition: opacity 300ms cubic-bezier(.69,.2,.48,1.47);
+          transition: opacity 300ms cubic-bezier(.69,.2,.48,1.47);
+
+}
+.postshout{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  color: black;
+}
+
+.page {
+  margin-bottom: 4em;
+}
+
+
+// overrides style for specific sections
+.photography, .black  {
+  color:$trnsp-color2;
+  background-color: $darkest-color!important;
+  h1, h2, h3, h4, h5, h6 {
+    color: $bang-color!important;
+  }
+  a, .pagecat {
+    color: $trnsp-color2;
+  }
+  .post-list a:visited {
+    color: silver!important; 
+  }
+  .postshout{
+    color: darken($white, 40);
+  }
+  .tagline {
+    display:none;
+  }
+  .taglineshort {
+    display: inline!important;
+  }
+  .masthead-title .title {
+    color: rgba(0, 150, 255, 0.75);
+    &:hover{
+      color: #0096ff;
+    }
+  }
+  .start {
+    position: relative;
+    z-index:-1;
+    color: rgb(77, 77, 77);
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1;
+    position: absolute;
+    top: 90vh;
+    width: 20vw;
+    left: 40vw;
+    span{
+      display: block;
+    }
+  }
+}
+
+
+
+// more UNIVERSAL STUFF
+.fullpage {
+  position:fixed; 
+  top:-50%; 
+  left:-50%; 
+  width:200%; 
+  height:200%;
+  z-index:-10;
+}
+.fullpage img {
+  position:absolute; 
+  top:0; 
+  left:0; 
+  right:0; 
+  bottom:0; 
+  margin:auto; 
+  min-width:50%;
+  min-height:50%;
+}
+
+.seemore{
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+.wrap.index {
+  .title {
+    display: none;
+  }
+  .page-title {
+    font-size:1rem;
+    text-align:center;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    opacity: 0.25;
+  }
+} 
+
+//// UTILS
+
+// bg color classes (used in about page!)
+.bg-white{
+ background-color: white;
+}
+
+//UNDO Capitalize
+.nocap{
+  text-transform: initial;
+}
+
+//used for entering from side block look
+.pull-left{
+  @include media( "screen", ">bp1Width" ){
+    margin: 1rem calc(50vw - 8rem) 1rem -3rem;
+    padding-left: 6rem!important;
+  }
+}
+.pull-right{
+  @include media( "screen", ">bp1Width" ){
+    margin: 1rem -3rem 1rem calc(50vw - 8rem);
+    padding-right: 6rem!important;
+  }
+}
+
+
+
+//// BODY BACKGROUNDS
+body.black {
+  background-color: #000!important;
+}
+body.gray1 {
+  background-color: #E5E4E2!important;
+}
+body.gray2 {
+  background-color: #EFEFED!important;
+}
+
+
+// more shit....
+
+// .page-title.photography {
+//   display: none;
+// }
+.centertext{
+  text-align: center;
+}
+
+.wrap > *:visited:before {
+  content: "";
+  display: block;
+  width: 20px; 
+  height: 20px;
+  position: absolute;
+  left:-40px;
+  top: 0;
+}
+
+
+
+// // feature images with anim need to scale 
+// // while in .about template is used as background so need no scaling.
+// body:not(.about) .entry-feature-image {
+//   max-height:90vh; 
+// }

@@ -1,0 +1,25 @@
+<!-- used in index to display pagination list of posts -->
+
+<div class="wrap {{ page.isindex }}">  
+  <div class="container content">
+
+    <h1 class="masthead-title" data-sr='enter left move 1500px'>
+      {{ site.title }}
+      <span class="tagline" data-sr='wait 1s enter left move 3000px reset'>
+        empowers your work.
+      </span>
+    </h1>
+  
+    <div class="posts">
+      {% for post in paginator.posts %}
+
+        {% include item-ball.html %}
+  
+      {% endfor %}
+
+       <!-- pagination inside grid now...  -->
+      {% include pagination.html %}
+    </div>
+
+  </div>
+</div><!-- /.wrap.index-->

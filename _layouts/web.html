@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div id="main" role="main">
+  <article class="entry">
+    {% if page.image.feature %}<img src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}">{% endif %}
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}</h1>{% endif %}
+      </header>
+      <div class="entry-content">
+        {{ content }}
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+  </article>
+
+
+  <div class="entry-wrapper seemore" data-sr=''>
+    <h4 class="post-list-title center nocap">See more websites designed and produced by Rokma.</h4>
+    <ul class="post-list">
+        {% for post in site.categories.web-design %} 
+      <li><article><a href="{{ site.baseurl }}{{ post.url }}">{{ post.headline }} <small class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time></small></a></article></li>
+    {% endfor %}
+    </ul>
+  </div>
+</div><!-- /#main -->

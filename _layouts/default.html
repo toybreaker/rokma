@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+
+  {% include head.html %}
+
+  <body class="{{ page.categories }} {{ page.backgroundColor }} {{ page.title }} layout-reverse ">
+
+    {% include sidebar.html %}
+
+    <div class="wrap {{ page.isindex }}">
+      
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">
+
+              {% if page.categories == "photography" %}
+                <span class="pagecat">{{page.categories}}</span>
+                <span class="title">{{page.headline}}</span>
+                <span class="powered">{{page.catch}} {{site.title}}</span>
+              {% else %}
+                <span class="owner">{{ site.title }}</span>
+                <span class="pagecat">{{ page.categories }}</span>
+                <span class="taglineshort"> <small>{{ site.tagline_short }}</small></span>
+                <span class="tagline"> <small>{{ site.tagline }}</small></span> 
+                <span class="taglineplus"><small>{{ site.tagline_plus }}</small></span>
+              {% endif %}
+
+            </a> 
+          </h3>
+        </div>
+      </div><!-- /masthead -->
+
+      <div class="container content">
+        {{ content }}
+      </div>
+      
+    </div><!-- /Wrap -->
+
+    <!-- Toggle Button if not home -->
+    <div class="sidebar-toggle-button">
+      <label for="sidebar-checkbox" class="sidebar-toggle"><i class="fa fa-bars"></i></label>
+    </div>
+
+    {% include scripts.html %}  
+  </body>
+</html>

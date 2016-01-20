@@ -1,0 +1,25 @@
+---
+layout: page
+title: branding
+headline: Noteworthy branding works
+categories: branding
+excerpt: "Products must be recognizable from competition, so you need branding."
+isindex: index
+search_omit: true
+---
+
+<div class="wrap {{ page.isindex }}">  
+  <div class="container content">
+
+    <div class="posts">
+      {% for post in site.categories.branding %}
+
+        {% include item-ball.html %}
+        
+      {% endfor %}
+
+    </div>
+
+  </div>
+</div><!-- /.wrap.index-->
+

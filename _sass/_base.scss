@@ -1,0 +1,485 @@
+
+//// GENERALS
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden!important;// Prevent scroll on narrow devices
+
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 400;
+  font-family: $base-font;
+  // conditional media queries to make my coding smart...
+  // Hidden to make it even smarter.
+
+    // @include media( "screen", "<minWidth" ){
+    //   font-size: 14px;
+    // };
+    // @include media( "screen", ">minWidth", "<bp1Width"){
+    //   font-size: 17px;
+    // };
+    // @include media( "screen", ">bp1Width", "<maxWidth"){
+    //   font-size: 20px;
+    // };
+    // @include media( "screen", ">maxWidth" ){
+    //   font-size: 22px;
+    // };
+}
+
+body { 
+  overflow-x: hidden!important;// Prevent scroll on narrow devices
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  strong { 
+    color: inherit; 
+  }
+  // :focus is linked to :hover for basic accessibility
+  &:hover,
+  &:focus {
+    // cooler custom underlining
+    // text-decoration: none;
+    // border-bottom:1px solid #666; 
+  }
+  @include media( "screen", "<bp1Width"){
+   font-size: 1.2rem;
+   line-height: 2; 
+  }
+}
+
+//snappy transition for all hovers
+a, a:hover, a:hover > * {
+    -webkit-transition: all 400ms cubic-bezier(.69,.2,.48,1.47);
+     -moz-transition: all 400ms cubic-bezier(.69,.2,.48,1.47); 
+       -o-transition: all 400ms cubic-bezier(.69,.2,.48,1.47);
+          transition: all 400ms cubic-bezier(.69,.2,.48,1.47);
+}
+
+// `:visited` state is usefull!
+body:not(.photography) div:not(.sidebar) a:visited,
+body:not(.black) div:not(.sidebar) a:visited{
+  color: silver;
+}
+.fontsizefixed .underline-on-hover:visited{
+  color: silver!important;
+}
+
+
+.fontsizefixed .underline-on-hover:hover{
+  color: #0096ff!important;
+}
+//// Body text
+p { margin-top: 0; margin-bottom: 1rem; }
+strong { color: $color1; }
+ul, ol, dl { margin-top: 0; margin-bottom: 1rem; }
+dt {font-weight: 400;}
+dd {margin-bottom: .5rem;}
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid $brightest-color;
+}
+abbr {
+  font-size: 85%;
+  font-weight: 400;
+  color: #555;
+  text-transform: uppercase;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted $color2;
+}
+
+
+//// Quotes 
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: #7a7a7a;
+  border-left: .25rem solid $color2;
+  p:last-child {
+    margin-bottom: 0;
+  }
+  @include media( "screen", ">bp1Width" ){
+    padding-right: 4rem;
+    padding-left: 1.25rem;
+  }
+}
+
+
+//// All images... hum!
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  border-radius: 5px;
+}
+// .image-grid-item img {
+//   border-radius: 0;
+//   padding: .5rem;
+//   //margin: .5rem;
+// }
+
+//// Tables
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid $color2;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid $color2;
+}
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: $color3;
+}
+
+
+em {
+  font-style: normal;
+  font-weight: 200;
+}
+strong em{
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2rem;
+  padding-right:.5rem;
+}
+button strong em{
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: $base-font;
+}
+
+
+
+//// Custom type
+// Extend paragraphs with `.lead` for larger introductory text.
+.lead {
+  font-size: 125%;
+  font-weight: 200;
+}
+
+
+//// Messages
+// Show alert messages to users. You may add it to single elements like a `<p>`,
+// or to a parent if there are multiple elements to show.
+.message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: #717171;
+  background-color: $color3;
+}
+
+
+
+//// Posts and pages
+// Each post is wrapped in `.post` and is used on default and post layouts. Each
+// page is wrapped in `.page` and is only used on the page layout.
+.page,
+.post {
+  margin-bottom: 4em;
+}
+
+// Blog post or page title 
+.page-title,
+.post-title,
+.post-title a {
+  color: $color1;
+  position: relative;
+}
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+//// Meta data line below post title 
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: $color4;
+}
+
+//// Related posts 
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+   h3 {
+    margin-top: 0;
+  }
+  li small {
+    font-size: 75%;
+    color: #999;
+  }
+  li a:hover {
+    color: #268bd2;
+  }
+  li a:hover small {
+    color: inherit;
+  }
+}
+
+
+//// lanyon... ?!
+.wrap {
+  position: relative;
+  width: 100%;
+  @include media( "screen", "<minWidth" ){
+    top:5rem;
+  }
+}
+
+
+//// Masthead - Small header above the content for site name and short description
+.masthead {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  border-bottom: 1px solid #ddd;
+}
+.photography .masthead,
+.black .masthead {
+  //border-bottom: 0 none;
+  border-bottom: 1px solid lighten($black, 20) ;
+}
+
+.masthead-title {
+  padding-bottom:3rem;
+  margin: 0 1rem;
+  color: $color6;
+  text-transform: uppercase;
+
+  @include media( "screen", "<minWidth" ){
+    text-align: center;
+  }
+
+  a {
+    color: $darkest-color;
+    font-weight: 200;
+    line-height: $base-line-height;
+    span, 
+    span small{
+      font-size: 9.5vh;
+      display: block;
+      line-height: 1!important;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  small {
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 0;
+    @include media( "screen", "<minWidth" ){
+      display:none;
+    }
+  }
+}
+
+
+
+
+// Container  - Center the page content. 
+.container {
+  // margin is already there up the dom tree!
+  // width: calc(100% - 6rem);
+  // margin-left:  3rem;
+  // margin-right: 3rem;
+  width: 100%;
+  padding-left:   0;
+  padding-right:  0;
+  margin-left:    0;
+  margin-right:   0;
+  @include media( "screen", "<minWidth" ){
+    width: auto;
+    margin-left:.5rem!important; 
+    margin-right:.5rem!important;
+    padding-left:0!important; 
+    padding-right:0!important;
+  }
+} 
+
+
+
+
+
+// Blog post or page title 
+.page-title,
+.post-title,
+.post-title a {
+  color: $color1;
+}
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+// Meta data line below post title 
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: $color4;
+}
+
+// Related posts 
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts li small {
+  font-size: 75%;
+  color: #999;
+}
+.related-posts li a:hover {
+  color: #268bd2;
+  text-decoration: none;
+}
+.related-posts li a:hover small {
+  color: inherit;
+}
+
+
+
+
+// // * Reverse layout
+// // *
+// // * Flip the orientation of the page by placing the `.sidebar` and sidebar toggle
+// // * on the right side.
+// .layout-reverse .sidebar {
+//   left: auto;
+//   right: -16rem;
+// }
+// .layout-reverse .sidebar-toggle {
+//   left: calc( 50% - 25px);
+//   right: auto;
+//   @include media( "screen", ">minWidth" ){
+//     left: auto;
+//     right: .8rem;
+//   }
+// }
+
+// .layout-reverse #sidebar-checkbox:checked ~ .sidebar,
+// .layout-reverse #sidebar-checkbox:checked ~ .wrap {
+//   -webkit-transform: translateX(-14rem);
+//       -ms-transform: translateX(-14rem);
+//           transform: translateX(-14rem);
+// }
+
+// .layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
+//   z-index: 1001;
+//   -webkit-transform: translateX(-12rem);
+//       -ms-transform: translateX(-12rem);
+//           transform: translateX(-12rem);
+//   @include media( "screen", "<minWidth" ) {
+//     -webkit-transform: translateX(.5rem);
+//         -ms-transform: translateX(.5rem);
+//             transform: translateX(.5rem);
+//   }
+// }
+
+
+
+// // * Overlay sidebar
+// // * Make the sidebar content overlay the viewport content instead of pushing it
+// // * aside when toggled.
+// .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
+//   -webkit-transform: translateX(0);
+//       -ms-transform: translateX(0);
+//           transform: translateX(0);
+// }
+// .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
+//   //box-shadow: 0 0 0 .25rem $brightest-color;
+// }
+// .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
+//   //box-shadow: .25rem 0 .5rem rgba(0,0,0,.1);
+// }
+
+// // Only one tweak for a reverse layout
+// .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
+//   //box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
+// }
+
+
+
+
+// center stuff past tablets
+.entry-wrapper {
+  margin: 6rem 2rem 1rem 2rem;
+  @include media( "screen", ">minWidth", "<bp1Width") {
+    margin: 6rem 1rem 1rem 1rem;
+  }
+  @include media( "screen", ">bp1Width") {
+    text-align: center;
+    max-width: 42rem;
+    margin: 6rem auto 2rem auto;
+  }
+} 
+
+
+
+
+// @2do put stuff here in place....
+// Headings 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+  line-height: 1.25;
+  letter-spacing: -.025rem;
+  text-rendering: optimizeLegibility;
+  text-transform: capitalize;
+  color: #313131;
+  margin-bottom: .5rem;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.post-list { list-style-type: none; }
+.post-date { display:none; }
+
+article.entry {
+  margin: 5rem initial;
+  text-align:right;
+}

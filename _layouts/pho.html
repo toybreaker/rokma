@@ -1,0 +1,43 @@
+---
+layout: default
+categories: photography
+---
+<div class="start">
+   <span>scroll</span>
+   <span><i class="fa fa-chevron-down"></i></span>
+</div>
+<div id="main" role="main">
+  <article class="entry"> 
+    {% if page.image.feature %}<img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature }}" class="entry-feature-image a" alt="{{ page.title }}" >{% endif %}
+    
+    {% if page.image.feature2 %}<img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature2 }}" class="entry-feature-image b" alt="{{ page.title }}" >{% endif %}
+    
+    {% if page.image.feature3 %}<img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature3 }}" class="entry-feature-image c" alt="{{ page.title }}" >{% endif %}
+
+    {% if page.image.feature4 %}<img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature4 }}" class="entry-feature-image d" alt="{{ page.title }}" >{% endif %}
+
+    {% if page.image.feature5 %}<img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature5 }}" class="entry-feature-image e" alt="{{ page.title }}" >{% endif %}
+
+    {% if page.image.feature6 %}<img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature6 }}" class="entry-feature-image f" alt="{{ page.title }}" >{% endif %}
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}</h1>{% endif %}
+      </header>
+      <div class="entry-content">
+        {{ content }}
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+  </article>
+
+  <div class="entry-wrapper seemore" data-sr=''>
+    <h4 class="post-list-title center nocap">See more {{ page.categories }} works from Rokma</h4>
+    <ul class="post-list">
+    {% for post in site.categories.photography %} 
+      <li><article><a href="{{ site.baseurl }}{{ post.url }}">{{ post.headline }}</a></article></li>
+    {% endfor %}
+    </ul>
+  </div>
+</div><!-- /#main -->
+
+
