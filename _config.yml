@@ -30,16 +30,16 @@ port:    4000
 host:    127.0.0.1
 
   # root folder of your Jekyll site. does not include hostname:
-baseurl: "" 
+baseurl: ""
 
   # only used in page head for the canonical header and the RSS link. It's also used in the xml feed to point to site resources as the software that will manage this feed doesn't know resource's urls. See: http://stackoverflow.com/questions/27386169/change-site-url-to-localhost-during-jekyll-local-development:
-url: http://rokma.com 
-  # for dev just use this: 
+url: http://rokma.com
+  # for dev just use this:
 #url: http://rokma.dev
 
 # Custom vars
-version: 15.13.1
-version_details: 'mo better dir structure'
+version: 16.0.0
+version_details: 'open source'
 # VERSION DETAILS: mo better dir structure (no more portfolio.rokma.com)
 # VERSION 15.11.6 DETAILS: flexfix (online! with meta refresh from rokma.com to portfolio)
 
@@ -85,7 +85,7 @@ owner:
   github: #username
   stackexchange: #http://stackoverflow.com/users/123456/username
   linkedin: rokma
-  soundcloud: 
+  soundcloud:
   instagram: #username
   flickr: #username
   tumblr: #username
@@ -94,7 +94,7 @@ owner:
     analytics: UA-1305149-1
     verify: google32e66f1a5601ec40
     ad-client:
-    ad-slot: 
+    ad-slot:
   bing-verify:
 
 # Plugins
@@ -107,19 +107,18 @@ gems:
 
 
 # # @2do
-# shout: believes 
+# shout: believes
 # shout_alt: because
 # shout_hom: customers should understand you
 # shout_adv: empowers small enterprises
 # shout_bra: makes you recognizable
 # shout_pho: is needed to communicate
-# shout_spe: 
+# shout_spe:
 # USE: site.title site.shout page.categories site.shout_adv | site.shout_bra | site.shout_pho ..
 # ..will output: rokma believes advertising empowers small enterprises
 # ex: usage site.title site.shout page.categories site.shout_bra
 # ..will output: rokma believes branding makes you recognizable
-# ex: usage site.title site.shout page.categories site.shout_pho 
+# ex: usage site.title site.shout page.categories site.shout_pho
 # ..will output: rokma believes photography is needed to communicate
-# or: 
+# or:
 # "shout_alt" can substitute "shout" and still make sense!
-
