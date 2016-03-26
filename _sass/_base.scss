@@ -32,7 +32,7 @@ html {
     // };
 }
 
-body { 
+body {
   overflow-x: hidden!important;// Prevent scroll on narrow devices
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -41,26 +41,26 @@ body {
 a {
   color: $link-color;
   text-decoration: none;
-  strong { 
-    color: inherit; 
+  strong {
+    color: inherit;
   }
   // :focus is linked to :hover for basic accessibility
   &:hover,
   &:focus {
     // cooler custom underlining
     // text-decoration: none;
-    // border-bottom:1px solid #666; 
+    // border-bottom:1px solid #666;
   }
   @include media( "screen", "<bp1Width"){
    font-size: 1.2rem;
-   line-height: 2; 
+   line-height: 2;
   }
 }
 
 //snappy transition for all hovers
 a, a:hover, a:hover > * {
     -webkit-transition: all 400ms cubic-bezier(.69,.2,.48,1.47);
-     -moz-transition: all 400ms cubic-bezier(.69,.2,.48,1.47); 
+     -moz-transition: all 400ms cubic-bezier(.69,.2,.48,1.47);
        -o-transition: all 400ms cubic-bezier(.69,.2,.48,1.47);
           transition: all 400ms cubic-bezier(.69,.2,.48,1.47);
 }
@@ -103,7 +103,7 @@ abbr[title] {
 }
 
 
-//// Quotes 
+//// Quotes
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
@@ -124,13 +124,10 @@ img {
   display: block;
   max-width: 100%;
   margin: 1rem auto;
-  border-radius: 5px;
+  // opera mini issue here:
+  border-radius: $border-radius;
 }
-// .image-grid-item img {
-//   border-radius: 0;
-//   padding: .5rem;
-//   //margin: .5rem;
-// }
+
 
 //// Tables
 table {
@@ -196,7 +193,7 @@ button strong em{
   margin-bottom: 4em;
 }
 
-// Blog post or page title 
+// Blog post or page title
 .page-title,
 .post-title,
 .post-title a {
@@ -208,7 +205,7 @@ button strong em{
   margin-top: 0;
 }
 
-//// Meta data line below post title 
+//// Meta data line below post title
 .post-date {
   display: block;
   margin-top: -.5rem;
@@ -216,7 +213,7 @@ button strong em{
   color: $color4;
 }
 
-//// Related posts 
+//// Related posts
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -278,7 +275,7 @@ button strong em{
     color: $darkest-color;
     font-weight: 200;
     line-height: $base-line-height;
-    span, 
+    span,
     span small{
       font-size: 9.5vh;
       display: block;
@@ -302,7 +299,7 @@ button strong em{
 
 
 
-// Container  - Center the page content. 
+// Container  - Center the page content.
 .container {
   // margin is already there up the dom tree!
   // width: calc(100% - 6rem);
@@ -315,18 +312,18 @@ button strong em{
   margin-right:   0;
   @include media( "screen", "<minWidth" ){
     width: auto;
-    margin-left:.5rem!important; 
+    margin-left:.5rem!important;
     margin-right:.5rem!important;
-    padding-left:0!important; 
+    padding-left:0!important;
     padding-right:0!important;
   }
-} 
+}
 
 
 
 
 
-// Blog post or page title 
+// Blog post or page title
 .page-title,
 .post-title,
 .post-title a {
@@ -337,7 +334,7 @@ button strong em{
   margin-top: 0;
 }
 
-// Meta data line below post title 
+// Meta data line below post title
 .post-date {
   display: block;
   margin-top: -.5rem;
@@ -345,7 +342,7 @@ button strong em{
   color: $color4;
 }
 
-// Related posts 
+// Related posts
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -445,13 +442,13 @@ button strong em{
     max-width: 42rem;
     margin: 6rem auto 2rem auto;
   }
-} 
+}
 
 
 
 
 // @2do put stuff here in place....
-// Headings 
+// Headings
 h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
   line-height: 1.25;

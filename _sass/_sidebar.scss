@@ -10,18 +10,18 @@ $sidebarwidth: 30vw;//bp1
 $sidebarwidth-max: 22vw;
 //this hack is for the menu when open go vertically middle off the sidebar edge
 // aproximated here...
-$sidebarwidthplus: 13.75rem; //calc( 16 rem - (55px : 2) ) 
+$sidebarwidthplus: 13.75rem; //calc( 16 rem - (55px : 2) )
 
 
-//// Style and "hide" the sidebar 
-.sidebar { 
+//// Style and "hide" the sidebar
+.sidebar {
   //center vertically the contained .middle
 
-  display: -webkit-flex; 
-  display: -ms-flexbox; 
-  display: flex; 
-  -webkit-flex-direction: column; 
-  -ms-flex-direction: column; 
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
           flex-direction: column;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -36,7 +36,7 @@ $sidebarwidthplus: 13.75rem; //calc( 16 rem - (55px : 2) )
   position: fixed;
   top: 0;
   bottom: 0;
-  visibility: hidden;        
+  visibility: hidden;
 
   width: $sidebarwidth;
   left: -$sidebarwidth;
@@ -50,7 +50,7 @@ $sidebarwidthplus: 13.75rem; //calc( 16 rem - (55px : 2) )
   }
   @include media( "screen", ">minWidth", "<bp1Width"){
   width: $sidebarwidth-min;
-  left: -$sidebarwidth-min; 
+  left: -$sidebarwidth-min;
   }
   @include media( "screen", ">bp1Width", "<maxWidth" ){
   width: $sidebarwidth;
@@ -60,13 +60,14 @@ $sidebarwidthplus: 13.75rem; //calc( 16 rem - (55px : 2) )
   width: $sidebarwidth-max;
  left: -$sidebarwidth-max;
   }
-  
+
   a {
     //font-size:inherit; //line-height: 2;
     font-weight: 400;
     color: $brightest-color;
   }
   .avatar img {
+    //opera mini issue here:
     border-radius:50%;
     margin:1rem auto;
     width:50%;
@@ -77,7 +78,7 @@ $sidebarwidthplus: 13.75rem; //calc( 16 rem - (55px : 2) )
       color: rgba(0,150,255,1);
     }
   }
-  .descri{ 
+  .descri{
     display:block;
     text-align: center;
     font-size: 90%;
@@ -103,12 +104,12 @@ $sidebarwidthplus: 13.75rem; //calc( 16 rem - (55px : 2) )
     .sidebar-toggle:hover  {
       background-color: red;//rgba(255,255,255,.15);
     }
-  }   
+  }
 }
 
 
 
-//// Sidebar content 
+//// Sidebar content
 .sidebar-item {
   padding: 1rem;
   p:last-child {
@@ -116,7 +117,7 @@ $sidebarwidthplus: 13.75rem; //calc( 16 rem - (55px : 2) )
   }
 }
 
-//// Sidebar nav 
+//// Sidebar nav
 // .sidebar-nav {
 //   border-bottom: 1px solid $trnsp-color1;}
 
@@ -139,7 +140,7 @@ a.sidebar-nav-item:focus {
   border-color: transparent;
 }
 
-//// Hide the sidebar checkbox that we toggle with `.sidebar-toggle` 
+//// Hide the sidebar checkbox that we toggle with `.sidebar-toggle`
 .sidebar-checkbox {
   display:none;
 }
@@ -152,7 +153,7 @@ a.sidebar-nav-item:focus {
   display: block!important;
   height:100px;
 }
-// Style the `label` that we use to target the `.sidebar-checkbox` 
+// Style the `label` that we use to target the `.sidebar-checkbox`
 .sidebar-toggle {
   // this controls the ball dimensions: fixed with px, not elastic with rem!
   width: 55px;
@@ -161,9 +162,7 @@ a.sidebar-nav-item:focus {
   // look...
   color: $brightest-color;
   background-color: rgba(0,0,0,.15);
-  //border: 5px solid white;
   cursor: pointer;
-  border-radius:50%;
   display: table;
   text-align: center;
   .fa{
@@ -178,8 +177,8 @@ a.sidebar-nav-item:focus {
 // this for menu sidebar
 .sidebar a {
   .fa { color: gray; }
-  &:hover .fa { color: white; } 
-} 
+  &:hover .fa { color: white; }
+}
 
 
 //// Reverse layout
@@ -193,7 +192,7 @@ a.sidebar-nav-item:focus {
   right: -$sidebarwidth-base;
   }
   @include media( "screen", ">minWidth", "<bp1Width"){
-  right: -$sidebarwidth-min; 
+  right: -$sidebarwidth-min;
   }
   @include media( "screen", ">bp1Width", "<maxWidth" ){
   right: -$sidebarwidth;
@@ -222,7 +221,7 @@ a.sidebar-nav-item:focus {
   @include media( "screen", ">minWidth", "<bp1Width"){
     -webkit-transform: translateX(-$sidebarwidth-min);
         -ms-transform: translateX(-$sidebarwidth-min);
-            transform: translateX(-$sidebarwidth-min); 
+            transform: translateX(-$sidebarwidth-min);
   }
   @include media( "screen", ">bp1Width", "<maxWidth" ){
     -webkit-transform: translateX(-$sidebarwidth);
@@ -293,7 +292,7 @@ a.sidebar-nav-item:focus {
 
 .wrap,
 .sidebar-toggle {
-  transition: -webkit-transform .3s ease-in-out;  
+  transition: -webkit-transform .3s ease-in-out;
   transition: transform .3s ease-in-out;
 }
 
@@ -313,7 +312,7 @@ a.sidebar-nav-item:focus {
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
-  user-select: none; 
+  user-select: none;
 }
 
 /// :checked!
@@ -339,7 +338,7 @@ a.sidebar-nav-item:focus {
   @include media( "screen", ">minWidth", "<bp1Width"){
     -webkit-transform: translateX($sidebarwidth-min);
         -ms-transform: translateX($sidebarwidth-min);
-            transform: translateX($sidebarwidth-min); 
+            transform: translateX($sidebarwidth-min);
   }
   @include media( "screen", ">bp1Width", "<maxWidth" ){
     -webkit-transform: translateX($sidebarwidth);
@@ -359,7 +358,7 @@ a.sidebar-nav-item:focus {
 
 
 //// here comes the fun
-// make page adapt when sidebar is open 
+// make page adapt when sidebar is open
 // sidebar is open, page is narrower now - change text-align for blocks
 // #sidebar-checkbox:checked ~ .sidebar-toggle .fa {
 //   pointer-events: none;
@@ -371,7 +370,7 @@ a.sidebar-nav-item:focus {
   padding-left: $sidebarwidth-base;
   }
   @include media( "screen", ">minWidth", "<bp1Width"){
-  padding-left: $sidebarwidth-min; 
+  padding-left: $sidebarwidth-min;
   }
   @include media( "screen", ">bp1Width", "<maxWidth" ){
   padding-left: $sidebarwidth;
@@ -387,7 +386,7 @@ a.sidebar-nav-item:focus {
   .taglineplus {display:none;}
   .entry-wrapper {text-align:left;}
   .bamboo {margin-left:0;margin-right:0;}
-  .bamboo.last {display:none;} 
+  .bamboo.last {display:none;}
   .seemore {text-align:right;}
 }
 

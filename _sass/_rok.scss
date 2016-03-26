@@ -8,7 +8,7 @@
 .black .pagecat{ color: white; }
 
 .version.hidden{ display:none; }
-  
+
 .specials,
 .photography,
 .advertising,
@@ -20,7 +20,7 @@
 }
 
 .specials{
-  .tagline, 
+  .tagline,
   .taglineshort{
     display:none;
   }
@@ -38,12 +38,12 @@ body:not(.specials) {
 //// * POST and PAGES
 // * Each post is wrapped in `.post` and is used on default and post layouts. Each
 // * page is wrapped in `.page` and is only used on the page layout.
-.posts{ 
-  display: -webkit-flex;              
-  display: -ms-flexbox;              
-  display: flex;              
-  -webkit-flex-direction: row;              
-  -ms-flex-direction: row;              
+.posts{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
           flex-direction: row;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -66,7 +66,7 @@ body:not(.specials) {
 //maybe no use...
 // .svg-bg{
 //   position: absolute;
-//   top:-1rem; 
+//   top:-1rem;
 //   left:-1.75rem;
 //   // width:110%;
 //   height:115%;
@@ -81,23 +81,20 @@ body:not(.specials) {
   min-height: 400px;
   max-width: 400px;
   overflow: hidden;
-  
+
   -webkit-flex-grow:1;
   -ms-flex-positive:1;
   flex-grow:1;
 
   transition: 100ms ease-in-out;
-  
+
   position: relative;
   z-index: 1;
   padding: 0;
   margin: 1rem 0;
   background-color: $nice-color;
 
-  border-radius: 50%!important;//safari sucks...
-
   img {
-    //border-radius: 50%!important;
     max-width: 100%;
     will-change: scale;
     -webkit-transform: scale(3);
@@ -114,11 +111,10 @@ body:not(.specials) {
     text-align:center;
     line-height:5rem;
     //overflow: hidden;
-    
+
   }
   &:hover {
     background-color: white;
-    //border-radius: 50%!important;
     z-index: 10;
     .post-title{ top: .85rem; z-index: 11; }
     //.svg-bg{opacity: 1;}
@@ -151,10 +147,10 @@ body:not(.specials) {
 //// evalute the following for .postthumb:
 // /* background sun shot fixed for home*/
 // #bg { position: fixed;  top: -50%;  left: -50%;  width: 200%; height: 200%; z-index: -100;}
-// #bg img { position: absolute;  top: 0; left: 0; right: 0;  bottom: 0;  margin: auto;  min-width: 50%; min-height: 50%; 
+// #bg img { position: absolute;  top: 0; left: 0; right: 0;  bottom: 0;  margin: auto;  min-width: 50%; min-height: 50%;
 
 // image-rendering: optimizeQuality; /* Gecko, moz */
-// -ms-interpolation-mode: bicubic; /* IE */ 
+// -ms-interpolation-mode: bicubic; /* IE */
 
 // image-rendering: -moz-crisp-edges;         /* Firefox */
 // image-rendering:   -o-crisp-edges;         /* Opera */
@@ -163,19 +159,17 @@ body:not(.specials) {
 // }
 
 .posthumb {
-  //border-radius: 50%!important;
   position: relative;
-  top: 0; 
-  left: 0; 
+  top: 0;
+  left: 0;
 }
 .black .posthumb {
   background-color: black;
 }
 
 .posthumb img{
-  //border-radius: 50%!important;
   background-color: black;
-  margin: auto; 
+  margin: auto;
   z-index: 0;
   overflow: hidden;
   opacity: .25;
@@ -189,7 +183,7 @@ body:not(.specials) {
   //filter : url ("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'gs\'><feColorMatrixtype=\'matrix\'values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#gs");
 
     // -webkit-transition: opacity 300ms cubic-bezier(.69,.2,.48,1.47);
-    //  -moz-transition: opacity 300ms cubic-bezier(.69,.2,.48,1.47); 
+    //  -moz-transition: opacity 300ms cubic-bezier(.69,.2,.48,1.47);
     //    -o-transition: opacity 300ms cubic-bezier(.69,.2,.48,1.47);
           transition: opacity 300ms cubic-bezier(.69,.2,.48,1.47);
 
@@ -219,7 +213,7 @@ body:not(.specials) {
     color: $trnsp-color2;
   }
   .post-list a:visited {
-    color: silver!important; 
+    color: silver!important;
   }
   .postshout{
     color: darken($white, 40);
@@ -257,20 +251,20 @@ body:not(.specials) {
 
 // more UNIVERSAL STUFF
 .fullpage {
-  position:fixed; 
-  top:-50%; 
-  left:-50%; 
-  width:200%; 
+  position:fixed;
+  top:-50%;
+  left:-50%;
+  width:200%;
   height:200%;
   z-index:-10;
 }
 .fullpage img {
-  position:absolute; 
-  top:0; 
-  left:0; 
-  right:0; 
-  bottom:0; 
-  margin:auto; 
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
   min-width:50%;
   min-height:50%;
 }
@@ -291,7 +285,7 @@ body:not(.specials) {
     margin-bottom:1rem;
     opacity: 0.25;
   }
-} 
+}
 
 //// UTILS
 
@@ -345,7 +339,7 @@ body.gray2 {
 .wrap > *:visited:before {
   content: "";
   display: block;
-  width: 20px; 
+  width: 20px;
   height: 20px;
   position: absolute;
   left:-40px;
@@ -354,8 +348,8 @@ body.gray2 {
 
 
 
-// // feature images with anim need to scale 
+// // feature images with anim need to scale
 // // while in .about template is used as background so need no scaling.
 // body:not(.about) .entry-feature-image {
-//   max-height:90vh; 
+//   max-height:90vh;
 // }

@@ -1,0 +1,24 @@
+{
+  "name": "rokma",
+  "version": "16.1.0",
+  "description": "gulp + ruby-sass + sourcemaps + browsersync = Spoton!",
+  "main": "gulpfile.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rokma",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^1.7.2",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-filter": "^2.0.2",
+    "gulp-gm": "0.0.8",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-responsive": "^1.2.1",
+    "gulp-responsive-images": "0.0.3",
+    "gulp-ruby-sass": "^0.7.1",
+    "imagemin-pngquant": "^4.2.0"
+  }
+}

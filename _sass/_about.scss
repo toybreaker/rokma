@@ -1,29 +1,29 @@
-//// ABOUT template 
+//// ABOUT template
 .about {
 
   // different color and :hover color for different locations..
   .wrap a {
     .fa {color: gray;}
-    &:hover .fa {color: black;} 
-  } 
+    &:hover .fa {color: black;}
+  }
 
-  .masthead { 
+  .masthead {
     display: none;
     background-color: white;
-  } 
+  }
 
   /* background sun shot fixed for home*/
-  .image-wrap { 
+  .image-wrap {
     -webkit-transform:translateZ(0);
     transform:translateZ(0);
 
-    position: fixed;  
+    position: fixed;
     top: -50%;
     left: -50%;
     width: 200%;
     height: 200%;
     z-index: -100;
-    img { 
+    img {
       position: absolute;
       top: 0;
       left: 0;
@@ -33,12 +33,12 @@
       min-width: 50%;
       min-height: 50%;
 
-      image-rendering: optimizeQuality; // Gecko, moz 
-      -ms-interpolation-mode: bicubic; // IE 
-      image-rendering: -moz-crisp-edges;         // Firefox 
-      image-rendering:   -o-crisp-edges;         // Opera  
-      image-rendering: -webkit-optimize-contrast;// Webkit (non-standard naming)  
-      -ms-interpolation-mode: nearest-neighbor;  // IE (non-standard property) 
+      image-rendering: optimizeQuality; // Gecko, moz
+      -ms-interpolation-mode: bicubic; // IE
+      image-rendering: -moz-crisp-edges;         // Firefox
+      image-rendering:   -o-crisp-edges;         // Opera
+      image-rendering: -webkit-optimize-contrast;// Webkit (non-standard naming)
+      -ms-interpolation-mode: nearest-neighbor;  // IE (non-standard property)
     }
   }
 
@@ -57,8 +57,8 @@
 
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;  
-    
+    display: flex;
+
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -75,7 +75,7 @@
       -webkit-flex-basis: auto;
       -ms-flex-preferred-size: auto;
       flex-basis: auto;
-      
+
       -webkit-flex-grow:1;
       -ms-flex-positive:1;
       flex-grow:1;
@@ -89,10 +89,9 @@
       padding: 3rem;
       width: 16rem!important;
       height: 16rem!important;
-      border-radius: 50%;
       line-height: 10rem!important;
     }
-  } 
+  }
 
   .bamboo {
     margin-top:5vh;
@@ -152,7 +151,7 @@
           float: left;
         }
       }
-    } 
+    }
   }
 }
 
