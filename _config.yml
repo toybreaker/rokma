@@ -20,16 +20,6 @@ plugins:     ./_plugins
 layouts:     ./_layouts
 data_source: ./_data
 collections: null
-
-  # keep_files: [DIR, FILE, ...]
-  # timezone: TIMEZONE
-
-# Serving
-detach:  false
-port:    4000
-host:    127.0.0.1
-
-  # root folder of your Jekyll site. does not include hostname:
 baseurl: ""
 
   # only used in page head for the canonical header and the RSS link. It's also used in the xml feed to point to site resources as the software that will manage this feed doesn't know resource's urls. See: http://stackoverflow.com/questions/27386169/change-site-url-to-localhost-during-jekyll-local-development:
@@ -38,9 +28,9 @@ url: http://rokma.com
 #url: http://rokma.dev
 
 # Custom vars
-version: 16.0.0
+version: 16.0.1
 version_details: 'open source'
-# VERSION DETAILS: mo better dir structure (no more portfolio.rokma.com)
+# VERSION 16.0.0 DETAILS: mo better dir structure (no more portfolio.rokma.com)
 # VERSION 15.11.6 DETAILS: flexfix (online! with meta refresh from rokma.com to portfolio)
 
 # Outputting
@@ -55,7 +45,6 @@ sass:
   style: :compressed
   # style: :expanded
   # line_numbers: :butt
-  # sourcemaps: :true# not working:()
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
@@ -63,15 +52,6 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Conversion
 markdown: kramdown
-#markdown: redcarpet
-
-# Markdown Processors
-# redcarpet:
-#  extensions: [ "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify"]
-
-# highlighter: pygments
-
-#search: true
 
 # Site owner
 owner:
@@ -82,10 +62,10 @@ owner:
   disqus-shortname:
   twitter: rokmatwit
   facebook: rokmaphotography
-  github: #username
+  github: toybreaker
   stackexchange: #http://stackoverflow.com/users/123456/username
   linkedin: rokma
-  soundcloud:
+  soundcloud: rokma
   instagram: #username
   flickr: #username
   tumblr: #username
@@ -97,9 +77,12 @@ owner:
     ad-slot:
   bing-verify:
 
-# Plugins
 gems:
-- jekyll-sitemap
+  - jekyll-feed
+  - github-pages
+  - html-proofer
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 
 
