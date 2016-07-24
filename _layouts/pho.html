@@ -31,8 +31,8 @@ categories: photography
     </div>
   </article>
 
-  <div class="entry-wrapper seemore" data-sr=''>
-    <h4 class="post-list-title center nocap">See more {{ page.categories }} works from Rokma</h4>
+  <div class="entry-wrapper seemore" data-sr='no reset'>
+    <h3 class="post-list-title center nocap">See more {{ page.categories }} works from Rokma</h3>
     <ul class="post-list">
     {% for post in site.categories.photography %}
       <li><article><a href="{{ site.baseurl }}{{ post.url }}">{{ post.headline }}</a></article></li>

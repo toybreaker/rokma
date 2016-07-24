@@ -15,9 +15,6 @@
   {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% else %}<meta name="description" content="{{ site.shout_description }} - {% if page.title == "Home" %} {{ site.title }} {{ site.tagline }}{% else %}{{ site.title }} {{ page.headline }}{% endif %}">{% endif %}
 
 
-<!-- Icons -->
-
-  <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="#7f0">
   <meta name="apple-mobile-web-app-title" content="Rokma">
@@ -36,26 +33,20 @@
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-16x16.png" sizes="16x16">
 
-  <!-- Add as webapp for Chrome Android -->
   <link rel="manifest" href="manifest.json">
 
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
 
-  <!-- Fallback to homescreen for Chrome <39 on Android -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="application-name" content="Rokma">
-
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="msapplication-TileImage" content="{{ site.baseurl }}/mstile-144x144.png">
   <meta name="msapplication-config" content="{{ site.baseurl }}/browserconfig.xml">
-
-  <!-- tile style universal (ok, for now just chrome on nexus kitkat!) -->
   <meta name="theme-color" content="#000000">
 
   {% include open-graph.html %}
 
-<!-- CSS -->
+
   <link href='http://fonts.googleapis.com/css?family=Dosis:200,400,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 

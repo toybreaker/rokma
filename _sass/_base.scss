@@ -1,5 +1,4 @@
 
-//// GENERALS
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -9,31 +8,16 @@
 }
 
 html {
-  overflow-x: hidden!important;// Prevent scroll on narrow devices
-
+  overflow-x: hidden!important;
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-weight: 400;
   font-family: $base-font;
-  // conditional media queries to make my coding smart...
-  // Hidden to make it even smarter.
 
-    // @include media( "screen", "<minWidth" ){
-    //   font-size: 14px;
-    // };
-    // @include media( "screen", ">minWidth", "<bp1Width"){
-    //   font-size: 17px;
-    // };
-    // @include media( "screen", ">bp1Width", "<maxWidth"){
-    //   font-size: 20px;
-    // };
-    // @include media( "screen", ">maxWidth" ){
-    //   font-size: 22px;
-    // };
 }
 
 body {
-  overflow-x: hidden!important;// Prevent scroll on narrow devices
+  overflow-x: hidden!important;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }

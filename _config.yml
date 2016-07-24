@@ -11,7 +11,7 @@ baseurl: ""
 url: http://rokma.com
 
 version: 16.2.0
-version_details: 'open source'
+version_details: 'open cleaned source'
 
 # Outputting
 permalink:   /:categories/:title/
@@ -40,13 +40,13 @@ owner:
   github: toybreaker
   linkedin: rokma
   soundcloud: rokma
-  google:
-    plus: rokma
-    analytics: UA-1305149-1
-    verify: google32e66f1a5601ec40
-    ad-client:
-    ad-slot:
-  bing-verify:
+
+google:
+  plus: rokma
+  analytics: UA-1305149-1
+  verify: google32e66f1a5601ec40
+  ad-client:
+  ad-slot:
 
 
 gems: [github-pages, jekyll-feed, jekyll-sitemap, jekyll-seo-tag, html-proofer]

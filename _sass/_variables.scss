@@ -38,24 +38,15 @@ $table-stripe-color-hover     : darken($table-stripe-color, 5);
 
 // TYPOGRAPHY ================================================
 $base-font: 'Dosis', sans-serif;
-$base-font-size: 16px;
+$base-font-size: 18px;
 $base-font-size-rel: 2.75vw;
 $base-line-height: 1.5;
 
 
 // MIX ========================================================
 $border-radius: 5px;
-
-
-
-  // linear-gradient($color1 100vh, transparent)
-  // url(/images/o-1680x943.jpg);
-
-//// HOME WRAP shit
-// @2do fix this mess maybe with suble gold toned images or gold tone filter if can...
-
-// convenient to have more variables for avatar
 $nice-color : gold;
+
 //// BACKGROUND BLEND MODE stuff
 // https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode
 
@@ -65,8 +56,8 @@ $nice-color : gold;
 // background-blend-mode: multiply|screen|overlay|darken|lighten|color-dodge|color-burn|hard-light|soft-light|difference|exclusion|hue|saturation|color|luminosity|(And also normal which reset it.?!)
 $blend-mode : screen;
 // colors
-$colorRGBa1: rgba(255, 255, 255, .25); //@2do make stripes same color
-//$colorRGBa1: rgba(0, 223, 118, .35); //#00DF76; green (this pretty cool!)
-// rgba(211,255,5,.5); //#D3FF05; yellow?
+$colorRGBa1: rgba(255, 255, 255, .25);
+// $colorRGBa1: rgba(0, 223, 118, .35);
+// rgba(211,255,5,.5); //#D3FF05; yellow
 // rgba(0,223,118,.5); //#00DF76; green
 // rgba(11,127,255,.5); //#0B7FFF; blue

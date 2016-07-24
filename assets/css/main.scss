@@ -2,30 +2,24 @@
 sitemap: false
 ---
 
-/* 
-* Designed by Rokma
-* See: http://rokma.com/
-*/
-
 // $ettings
 @import "variables";
 @import "conditional-media-query-mixin";
-// font shit needs to go: 
+// font shit needs to go:
 // svg instead!inline or imported w/ liquid tag
 @import "vendor/font-awesome/font-awesome";
 // html + lanyon
 @import "base";
-// used just in Home for now..
-@import "pagination"; 
+// used just in Home
+@import "pagination";
 // now with fa-icon: delete w+h and let flex center'em
-@import "sidebar"; 
+@import "sidebar";
 @import "social-icons";
 // overrides
-@import "rok"; 
+@import "rok";
 // overrides for Home
-@import "home"; 
+@import "home";
 // overrides for About
-@import "about"; 
+@import "about";
 // flex classes
-@import "image-grid"; 
-
+@import "image-grid";

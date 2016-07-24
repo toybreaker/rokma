@@ -16,8 +16,8 @@ layout: default
   </article>
 
 
-  <div class="entry-wrapper seemore" data-sr=''>
-    <h4 class="post-list-title center nocap">See more websites designed and produced by Rokma.</h4>
+  <div class="entry-wrapper seemore" data-sr='no reset'>
+    <h3 class="post-list-title center nocap">See more websites designed and produced by Rokma.</h3>
     <ul class="post-list">
         {% for post in site.categories.web-design %}
       <li><article><a href="{{ site.baseurl }}{{ post.url }}">{{ post.headline }} <small class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time></small></a></article></li>

@@ -238,11 +238,11 @@ body:not(.specials) {
     font-size: 1.5rem;
     line-height: 1;
     position: absolute;
-    top: 90vh;
     width: 20vw;
     left: 40vw;
     span{
       display: block;
+      font-size: 16px;
     }
   }
 }
@@ -290,14 +290,10 @@ body:not(.specials) {
 //// UTILS
 
 // bg color classes (used in about page!)
-.bg-white{
- background-color: white;
-}
+.bg-white{ background-color: white;}
 
 //UNDO Capitalize
-.nocap{
-  text-transform: initial;
-}
+.nocap{ text-transform: initial; }
 
 //used for entering from side block look
 .pull-left{
@@ -327,14 +323,7 @@ body.gray2 {
 }
 
 
-// more shit....
-
-// .page-title.photography {
-//   display: none;
-// }
-.centertext{
-  text-align: center;
-}
+.centertext { text-align: center; }
 
 .wrap > *:visited:before {
   content: "";
@@ -345,11 +334,3 @@ body.gray2 {
   left:-40px;
   top: 0;
 }
-
-
-
-// // feature images with anim need to scale
-// // while in .about template is used as background so need no scaling.
-// body:not(.about) .entry-feature-image {
-//   max-height:90vh;
-// }
