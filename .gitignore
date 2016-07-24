@@ -1,9 +1,10 @@
 .workinprogress
 _site/
-_dist/
+_distHG/
 .sass-cache/
 .jekyll-metadata
 .sass-cache/
+_htaccess_online/
 
 __LAB
 images/_*

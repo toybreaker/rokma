@@ -438,7 +438,7 @@ button strong em{
     margin: 6rem 1rem 1rem 1rem;
   }
   @include media( "screen", ">bp1Width") {
-    text-align: center;
+    // text-align: center;
     max-width: 42rem;
     margin: 6rem auto 2rem auto;
   }
