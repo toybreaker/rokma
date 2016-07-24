@@ -3,159 +3,18 @@
 
 <article class="entry">
   <div class="image-grid">
-  	{% if page.imagehowmany == 1 %}
 
-    	<div class="image-grid-item jastuan"><img src="/images/{{page.categories}}/{{page.title}}/01.jpg" /></div>
+    <div class="image-grid-item jastuan">
+      <img src="/images/{{page.categories}}/{{page.title}}/01.jpg" />
+    </div>
 
-  	{% endif %}
-
-    {% if page.imagehowmany == 2 %}
-
-    	{% loop_directory directory:images/counter/2 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-
-    {% endif %}
-
-    {% if page.imagehowmany == 3 %}
-
-    	{% loop_directory directory:images/counter/3 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-
-    {% endif %}
-
-    {% if page.imagehowmany == 4 %}
-
-    	{% loop_directory directory:images/counter/4 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-
-    {% endif %}
-
-    {% if page.imagehowmany == 5 %}
-
-    	{% loop_directory directory:images/counter/5 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-
-    {% endif %}
-
-    {% if page.imagehowmany == 6 %}
-
-    	{% loop_directory directory:images/counter/6 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-    
-    {% endif %}
-
-    {% if page.imagehowmany == 7 %}
-
-    	{% loop_directory directory:images/counter/7 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-    
-    {% endif %}
-
-    {% if page.imagehowmany == 8 %}
-
-    	{% loop_directory directory:images/counter/8 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-    
-    {% endif %}
-    
-    {% if page.imagehowmany == 9 %}
-
-    	{% loop_directory directory:images/counter/9 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-
-  	{% endif %}
-
-  	{% if page.imagehowmany == 10 %}
-
-    	{% loop_directory directory:images/counter/10 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-
-  	{% endif %}
-
-  	{% if page.imagehowmany == 11 %}
-
-    	{% loop_directory directory:images/counter/11 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-
-    {% endif %}
-
-    {% if page.imagehowmany == 12 %}
-
-    	{% loop_directory directory:images/counter/12 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-
-    {% endif %}
-
-    {% if page.imagehowmany == 13 %}
-
-    	{% loop_directory directory:images/counter/13 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-
-    {% endif %}
-
-    {% if page.imagehowmany == 14 %}
-
-    	{% loop_directory directory:images/counter/14 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-
-    {% endif %}
-
-    {% if page.imagehowmany == 15 %}
-
-    	{% loop_directory directory:images/counter/15 iterator:image filter:*.jpg sort:ascending %}
-
-       <div class="image-grid-item"><img src="/images/{{page.categories}}/{{page.title}}/{{ image }}.jpg" /></div>
-
-    	{% endloop_directory %}
-
-    {% endif %}
- 
   </div>
   <div class="entry-wrapper">
     <header class="entry-header">
       <h1 class="entry-title">{% if page.headline %}{{page.headline}}{% else %}{{page.title}}</h1>{% endif %}
     </header>
-    <div class="entry-content">              
-      {{content}}              
+    <div class="entry-content">
+      {{content}}
     </div><!-- /.entry-content -->
-  </div><!-- /.entry-wrapper -->          
+  </div><!-- /.entry-wrapper -->
 </article>
