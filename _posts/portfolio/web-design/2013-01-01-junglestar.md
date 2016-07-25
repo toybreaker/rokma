@@ -9,6 +9,4 @@ image:
   feature: 01.jpg
 ---
 Motivational website for &lt;Junglestar&gt; firm.
-Check the [live website][1].
-
-[1]: http://junglestar.org
+Check the [live website](http://junglestar.org).

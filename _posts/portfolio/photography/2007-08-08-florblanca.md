@@ -15,5 +15,4 @@ image:
 catch: an exibition by   
 ---
 
-Rok exhibited at &lt;Florblanca&gt; resort. The show is entitled &lt;Jungle Shores&gt;.<br>Costa Rica.
-
+Rok exhibited at &lt;Florblanca&gt; resort.<br>Costa Rica.

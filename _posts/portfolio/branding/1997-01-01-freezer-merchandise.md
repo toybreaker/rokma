@@ -10,4 +10,4 @@ backgroundColor: black
 image:
   feature: 01.jpg
 ---
-Merchandise items for &lt;Freezer Magazine&gt; firm.
+Merchandise items for &lt;Freezer Magazine&gt;.

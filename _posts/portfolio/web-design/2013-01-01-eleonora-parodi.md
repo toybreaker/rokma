@@ -9,6 +9,4 @@ image:
   feature: 01.jpg
 ---
 Presentational website for &lt;Eleonora Parodi&gt; Art Clinic.
-Check the [live website][1].
-
-[1]: http://eleonoraparodi.com
+Check the [live website](http://eleonoraparodi.com).

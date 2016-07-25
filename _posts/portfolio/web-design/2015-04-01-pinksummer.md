@@ -9,7 +9,4 @@ image:
   feature: 01.jpg
 ---
 Website for &lt;Pinksummer&gt; contemporary art gallery.
-Check the [live website][1].
-
-[1]: http://pinksummer.com
-
+Check the [live website](http://pinksummer.com).

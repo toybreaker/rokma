@@ -10,4 +10,4 @@ backgroundColor: gray1
 image:
   feature: 01.jpg  
 ---
-Editorial strategy to enhance branding for &lt;Freezer Magazine&gt; free press.
+Editorial strategy and branding for &lt;Freezer Magazine&gt; free press.

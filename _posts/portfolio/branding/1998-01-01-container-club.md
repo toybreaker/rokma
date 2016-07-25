@@ -10,4 +10,4 @@ backgroundColor: black
 image:
   feature: 01.jpg
 ---
-Logo, sign, sticker campaign for &lt;Container Club&gt;
+Laser-cut Logo, sign, stickers campaign for &lt;Container Club&gt;

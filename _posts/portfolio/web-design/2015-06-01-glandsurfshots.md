@@ -9,7 +9,4 @@ image:
   feature: 01.jpg
 ---
 E-commerce website for &lt;glandsurfshots&gt; photo archive.
-Check the [live website][1].
-
-[1]: http://glandsurfshots.com
-
+Check the [live website](http://glandsurfshots.com).

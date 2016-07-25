@@ -30,15 +30,8 @@ a {
   }
   // :focus is linked to :hover for basic accessibility
   &:hover,
-  &:focus {
-    // cooler custom underlining
-    // text-decoration: none;
-    // border-bottom:1px solid #666;
-  }
-  @include media( "screen", "<bp1Width"){
-   font-size: 1.2rem;
-   line-height: 2;
-  }
+  &:focus {}
+
 }
 
 //snappy transition for all hovers
@@ -157,9 +150,6 @@ button strong em{
 }
 
 
-//// Messages
-// Show alert messages to users. You may add it to single elements like a `<p>`,
-// or to a parent if there are multiple elements to show.
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
@@ -168,16 +158,6 @@ button strong em{
 }
 
 
-
-//// Posts and pages
-// Each post is wrapped in `.post` and is used on default and post layouts. Each
-// page is wrapped in `.page` and is only used on the page layout.
-.page,
-.post {
-  margin-bottom: 4em;
-}
-
-// Blog post or page title
 .page-title,
 .post-title,
 .post-title a {
@@ -189,7 +169,6 @@ button strong em{
   margin-top: 0;
 }
 
-//// Meta data line below post title
 .post-date {
   display: block;
   margin-top: -.5rem;
@@ -197,7 +176,6 @@ button strong em{
   color: $color4;
 }
 
-//// Related posts
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -222,7 +200,6 @@ button strong em{
 }
 
 
-//// lanyon... ?!
 .wrap {
   position: relative;
   width: 100%;
@@ -236,12 +213,10 @@ button strong em{
 .masthead {
   padding-top: 1rem;
   padding-bottom: 1rem;
-
   border-bottom: 1px solid #ddd;
 }
 .photography .masthead,
 .black .masthead {
-  //border-bottom: 0 none;
   border-bottom: 1px solid lighten($black, 20) ;
 }
 
@@ -251,7 +226,7 @@ button strong em{
   color: $color6;
   text-transform: uppercase;
 
-  @include media( "screen", "<minWidth" ){
+  @include media( "screen", "<minWidth" ) {
     text-align: center;
   }
 
@@ -259,6 +234,7 @@ button strong em{
     color: $darkest-color;
     font-weight: 200;
     line-height: $base-line-height;
+    text-decoration: none;
     span,
     span small{
       font-size: 9.5vh;
@@ -281,42 +257,28 @@ button strong em{
 }
 
 
-
-
 // Container  - Center the page content.
 .container {
-  // margin is already there up the dom tree!
-  // width: calc(100% - 6rem);
-  // margin-left:  3rem;
-  // margin-right: 3rem;
-  width: 100%;
-  padding-left:   0;
-  padding-right:  0;
-  margin-left:    0;
-  margin-right:   0;
-  @include media( "screen", "<minWidth" ){
-    width: auto;
-    margin-left:.5rem!important;
-    margin-right:.5rem!important;
-    padding-left:0!important;
-    padding-right:0!important;
+  width: auto;
+  padding-left:0!important;
+  padding-right:0!important;
+  @include media( "screen", ">minWidth" ) {
+    width: 100%;
+    padding-left:   0;
+    padding-right:  0;
+    margin-left:    0;
+    margin-right:   0;
   }
+  &.content {margin-top: 10vh;}
 }
-
-
-
 
 
 // Blog post or page title
 .page-title,
 .post-title,
-.post-title a {
-  color: $color1;
-}
+.post-title a { color: $color1; }
 .page-title,
-.post-title {
-  margin-top: 0;
-}
+.post-title { margin-top: 0; }
 
 // Meta data line below post title
 .post-date {
@@ -352,69 +314,6 @@ button strong em{
 }
 
 
-
-
-// // * Reverse layout
-// // *
-// // * Flip the orientation of the page by placing the `.sidebar` and sidebar toggle
-// // * on the right side.
-// .layout-reverse .sidebar {
-//   left: auto;
-//   right: -16rem;
-// }
-// .layout-reverse .sidebar-toggle {
-//   left: calc( 50% - 25px);
-//   right: auto;
-//   @include media( "screen", ">minWidth" ){
-//     left: auto;
-//     right: .8rem;
-//   }
-// }
-
-// .layout-reverse #sidebar-checkbox:checked ~ .sidebar,
-// .layout-reverse #sidebar-checkbox:checked ~ .wrap {
-//   -webkit-transform: translateX(-14rem);
-//       -ms-transform: translateX(-14rem);
-//           transform: translateX(-14rem);
-// }
-
-// .layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
-//   z-index: 1001;
-//   -webkit-transform: translateX(-12rem);
-//       -ms-transform: translateX(-12rem);
-//           transform: translateX(-12rem);
-//   @include media( "screen", "<minWidth" ) {
-//     -webkit-transform: translateX(.5rem);
-//         -ms-transform: translateX(.5rem);
-//             transform: translateX(.5rem);
-//   }
-// }
-
-
-
-// // * Overlay sidebar
-// // * Make the sidebar content overlay the viewport content instead of pushing it
-// // * aside when toggled.
-// .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
-//   -webkit-transform: translateX(0);
-//       -ms-transform: translateX(0);
-//           transform: translateX(0);
-// }
-// .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
-//   //box-shadow: 0 0 0 .25rem $brightest-color;
-// }
-// .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
-//   //box-shadow: .25rem 0 .5rem rgba(0,0,0,.1);
-// }
-
-// // Only one tweak for a reverse layout
-// .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
-//   //box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
-// }
-
-
-
-
 // center stuff past tablets
 .entry-wrapper {
   margin: 6rem 2rem 1rem 2rem;
@@ -422,13 +321,10 @@ button strong em{
     margin: 6rem 1rem 1rem 1rem;
   }
   @include media( "screen", ">bp1Width") {
-    // text-align: center;
     max-width: 42rem;
     margin: 6rem auto 2rem auto;
   }
 }
-
-
 
 
 // @2do put stuff here in place....

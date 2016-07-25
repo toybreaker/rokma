@@ -9,6 +9,4 @@ image:
   feature: 01.jpg
 ---
 Portfolio website for industrial photographer &lt;John Hepler&gt;.
-Check the [live website][1].
-
-[1]: http://johnheplerphotography.com
+Check the [live website](http://johnheplerphotography.com).

@@ -43,8 +43,6 @@
   }
 
   .page {
-    margin-left: 1rem;
-    margin-right: 1rem;
     margin-bottom: 0;
     @include media( "screen", ">minWidth" ){
       margin-left: 3rem;
@@ -84,12 +82,11 @@
     }
 
     .page-title {
-      margin: 10rem auto;
-      background-color: white;
+      margin: 0 auto;
+      color: white;
       padding: 3rem;
       width: 16rem!important;
       height: 16rem!important;
-      line-height: 10rem!important;
     }
   }
 
@@ -97,16 +94,16 @@
     margin-top:5vh;
     padding: 1rem 1rem;
     margin-bottom: 18vh;
-    @include media( "screen", ">minWidth" ){
+    @include media( "screen", ">minWidth" ) {
       padding: 2rem 2rem;
     }
-    @include media( "screen", ">bp1Width" ){
+    @include media( "screen", ">bp1Width" ) {
       padding: 3rem 3rem;
     }
   }
   .bamboo.clients {
     margin-bottom: 40vh!important;
-    @include media( "screen", ">minWidth" ){
+    @include media( "screen", ">minWidth" ) {
       margin-bottom: 10rem!important;
     }
   }
@@ -123,25 +120,20 @@
 
     .social-block {
       background-color: white;
-      width: 320px;
+      width:100%;
       margin: 3rem auto 0 auto;
-      padding: 1.2rem 0 .5rem .5rem;
-      @include media( "screen", ">bp1Width" ){
-        width: 420px;
-      }
       .social-icons {
         padding: 0 0 0 0;
         margin: 0;
-        width: 300px;
-        max-height: 80px;
       }
       .title {
         text-align: center;
         line-height: .5;
-        padding: 0;
+        padding-top: 1rem;
+        padding-bottom: .5rem;
         margin-top:0;
         width: auto;
-        @include media( "screen", ">bp1Width" ){
+        @include media( "screen", ">bp1Width" ) {
           line-height: 2.3;
           padding-left: .9rem;
           margin-top:initial;

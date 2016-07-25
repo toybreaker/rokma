@@ -11,10 +11,10 @@ layout: default
 
 	<div class="page">
 
-		<h1 class="page-title {{ page.title }}" data-sr='enter bottom ease-in move 2500px no reset' >{{ page.title }} {{ site.title }}</h1>
+		<h1 class="page-title {{ page.title }}" data-sr='enter bottom ease-out move 400px no reset' >{{ page.title }} {{ site.title }}</h1>
 
 		{% if page.quote_comment %}
-			<div class="bamboo quote pull-right bg-white" data-sr='scale up 50% no reset' >
+			<div class="bamboo quote pull-right bg-white" data-sr='enter bottom move 200px no reset' >
 				<blockquote> "{{ page.quote_comment }}"</blockquote>
 		{% endif %}
 
@@ -23,23 +23,18 @@ layout: default
 			</div>
 		{% endif %}
 
-		{% if page.clients_title %}
-			<div class="bamboo clients pull-left bg-white nn" data-sr='scale up 50% no reset' >
+			<div class="bamboo clients pull-left bg-white nn" data-sr=' no reset' >
 				<h3>{{ page.clients_title }}</h3>
-		{% endif %}
 
-		{% if page.clients_brands %}
 				<p>{{ page.clients_brands }}</p>
-		{% endif %}
 
 				<h3>Editorial Clients</h3>
 
-		{% if page.clients_editorial %}
 				<p>{{ page.clients_editorial }}</p>
 			</div>
-		{% endif %}
 
-			<div class="bamboo last" data-sr='bottom move 200px and scale up 50%' >
+
+			<div class="bamboo last" data-sr='enter bottom move 200px and scale up 50%' >
 				<div class="social-block">
 					<h3 class="title">Get&nbsp;in&nbsp;touch!</h3>
 					{%comment%} form here {%endcomment%}

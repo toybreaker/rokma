@@ -10,12 +10,11 @@ image:
   feature2: 02.jpg
 catch: powered by
 ---
-Image for Volcom® international ad.
+Image for Volcom® international advertising page.
 
 
-links:
-Dashenka is an extremely [active artist...][1] 
-Video from the Volcom [Dashenka art show in London][2]
+_Know more about her:_
 
-[1]: http://www.volcom.com/art/VolcomArt/detail.asp?id=56
-[2]: http://youtu.be/zZXVch22b-E
+[Dashenka at Volcom](http://www.volcom.com/art/VolcomArt/detail.asp?id=56)
+
+[Dashenka show in London](http://youtu.be/zZXVch22b-E)

@@ -9,7 +9,4 @@ image:
   feature: 01.jpg
 ---
 Portfolio Lookbook for &lt;Elisabetta Cavatorta&gt; fashion stylist.
-Check the [live website][1].
-
-[1]: http://elisabettacavatorta.com
-
+Check the [live website](http://elisabettacavatorta.com).

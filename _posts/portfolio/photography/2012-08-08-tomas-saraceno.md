@@ -14,6 +14,4 @@ image:
   feature6: 06.jpg  
 catch: powered by
 ---
-Artist exhibition photos for [Pinksummer] [Pinksummer] contemporary art gallery.
-
-[Pinksummer]: http://www.pinksummer.com
+Artist exhibition photos for [Pinksummer](http://pinksummer.com) contemporary art gallery.

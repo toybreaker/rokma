@@ -1,24 +1,34 @@
-//// Sidebar
-// * The sidebar is the drawer, the item we are toggling with our hamburger button in the corner of the page. This implementation was inspired by C.Coyier's "Offcanvas Menu with CSS Target" article, and the checkbox variation from the comments by a reader. It modifies both implementations to continue using the checkbox (no change in URL means no polluted browser history), but this uses  `position` for the menu to avoid some potential content reflow issues.
+/*// Sidebar*/
+/* * The sidebar is the drawer, the item we are toggling with our hamburger button in the corner of the page. This implementation was inspired by C.Coyier's "Offcanvas Menu with CSS Target" article, and the checkbox variation from the comments by a reader. It modifies both implementations to continue using the checkbox (no change in URL means no polluted browser history), but this uses  `position` for the menu to avoid some potential content reflow issues.*/
 
-// * Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504
+/* * Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504*/
 
 
 $sidebarwidth-base: 98vw;
 $sidebarwidth-min: 45vw;
-$sidebarwidth: 30vw;//bp1
+$sidebarwidth: 30vw;/*bp1*/
 $sidebarwidth-max: 22vw;
-//this hack is for the menu when open go vertically middle off the sidebar edge
-// aproximated here...
-$sidebarwidthplus: 13.75rem; //calc( 16 rem - (55px : 2) )
+/*this for the menu when open go vertically middle off the sidebar edge*/
+/* aproximated here...*/
+$sidebarwidthplus: 13.75rem; /*calc( 16 rem - (55px : 2) )*/
 
 
 .sidebar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 
-  overflow-y: scroll; // fixed scrollbar
+  overflow-y: scroll; /* fixed scrollbar*/
   color: rgba(255,255,255,.5);
   background-color: $color6;
   -webkit-transition: all .3s ease-in-out;
@@ -32,24 +42,24 @@ $sidebarwidthplus: 13.75rem; //calc( 16 rem - (55px : 2) )
   width: $sidebarwidth;
   left: -$sidebarwidth;
 
-  // on mobiles navigation need to be big so to touch it easily
-  // basically stay big (line-height) on mobiles and go small on big screens
-  // its very badly needed to compensate the growing of font-size with growing vw..
-  @include media( "screen", "<minWidth"){
-  width: $sidebarwidth-base;
-  left: -$sidebarwidth-base;
+  /* on mobiles navigation need to be big so to touch it easily*/
+  /* basically stay big (line-height) on mobiles and go small on big screens*/
+  /* its very badly needed to compensate the growing of font-size with growing vw..*/
+  @include media( "screen", "<minWidth") {
+    width: $sidebarwidth-base;
+    left: -$sidebarwidth-base;
   }
-  @include media( "screen", ">minWidth", "<bp1Width"){
-  width: $sidebarwidth-min;
-  left: -$sidebarwidth-min;
+  @include media( "screen", ">minWidth", "<bp1Width") {
+    width: $sidebarwidth-min;
+    left: -$sidebarwidth-min;
   }
-  @include media( "screen", ">bp1Width", "<maxWidth" ){
-  width: $sidebarwidth;
-  left: -$sidebarwidth;
+  @include media( "screen", ">bp1Width", "<maxWidth") {
+    width: $sidebarwidth;
+    left: -$sidebarwidth;
   }
-  @include media( "screen", ">maxWidth"){
-  width: $sidebarwidth-max;
- left: -$sidebarwidth-max;
+  @include media( "screen", ">maxWidth") {
+    width: $sidebarwidth-max;
+    left: -$sidebarwidth-max;
   }
 
   a {
@@ -57,8 +67,7 @@ $sidebarwidthplus: 13.75rem; //calc( 16 rem - (55px : 2) )
     color: $brightest-color;
   }
   .avatar img {
-    //opera mini issue here:
-    border-radius:50%;
+    border-radius:50%; //opera mini issue here
     margin:1rem auto;
     width:50%;
   }
@@ -71,36 +80,30 @@ $sidebarwidthplus: 13.75rem; //calc( 16 rem - (55px : 2) )
   .descri{
     display:block;
     text-align: center;
-    line-height:1.2;
-    padding-bottom:20px;
+    line-height: 1.2;
+    padding-bottom: 20px;
     padding-left: 1.5em;
     padding-right: 1.5rem;
   }
+  .fontsizefixed { font-size: 14px; }
 
-  // declared in px so is fixed and will not grow.
-  .fontsizefixed {
-    font-size: 14px;
-  }
-
+// this is the toggle X to close sidebar
   .tog {
     z-index: 1000;
     position: absolute;
-    right:1rem;
+    left: 0;
+
     .sidebar-toggle {
       background-color: rgba(255,255,255,.1);
-      .fa{
-        pointer-events: none;
-      }
+      .fa { pointer-events: none; }
     }
-    .sidebar-toggle:hover  {
-      background-color: red;//rgba(255,255,255,.15);
-    }
+    .sidebar-toggle:hover { background-color: red; }
   }
 }
 
 
 
-//// Sidebar content
+/*// Sidebar content*/
 .sidebar-item {
   padding: 1rem;
   p:last-child {
@@ -108,9 +111,9 @@ $sidebarwidthplus: 13.75rem; //calc( 16 rem - (55px : 2) )
   }
 }
 
-//// Sidebar nav
-// .sidebar-nav {
-//   border-bottom: 1px solid $trnsp-color1;}
+/*// Sidebar nav*/
+/* .sidebar-nav {*/
+/*   border-bottom: 1px solid $trnsp-color1;}*/
 
 .sidebar-nav-item {
   display: block;
@@ -131,26 +134,24 @@ a.sidebar-nav-item:focus {
   border-color: transparent;
 }
 
-//// Hide the sidebar checkbox that we toggle with `.sidebar-toggle`
+/*// Hide the sidebar checkbox that we toggle with `.sidebar-toggle`*/
 .sidebar-checkbox {
   display:none;
 }
 
-.sidebar-toggle-button {
+.sidebar-toggle-button {/*button*/
   position: fixed;
   top:1rem;
   right:1rem;
   z-index:9;
   display: block!important;
-  height:100px;
 }
-// Style the `label` that we use to target the `.sidebar-checkbox`
-.sidebar-toggle {
-  // this controls the ball dimensions: fixed with px, not elastic with rem!
-  width: 55px;
-  height: 55px;
+
+.sidebar-toggle {/*label*/
+  width: 48px;
+  height: 48px;
   display: block;
-  // look...
+
   color: $brightest-color;
   background-color: rgba(0,0,0,.15);
   cursor: pointer;
@@ -158,137 +159,133 @@ a.sidebar-nav-item:focus {
   text-align: center;
   .fa{
     display: table-cell;
-    // this controls the burger dimensions
+    /* this controls the burger dimensions*/
     font-size:28px;
     vertical-align: middle;
   }
 }
 
-// different color and :hover color for different locations..
-// this for menu sidebar
+/* different color and :hover color for different locations..*/
+/* this for menu sidebar*/
 .sidebar a {
   .fa { color: gray; }
   &:hover .fa { color: white; }
 }
 
 
-//// Reverse layout
-// *
-// * Flip the orientation of the page by placing the `.sidebar` and sidebar toggle
-// * on the right side.
+/*// Reverse layout*/
+/* **/
+/* * Flip the orientation of the page by placing the `.sidebar` and sidebar toggle*/
+/* * on the right side.*/
 .layout-reverse .sidebar {
   left: auto;
-  // right: -$sidebarwidth;
-  @include media( "screen", "<minWidth"){
-  right: -$sidebarwidth-base;
+  /* right: -$sidebarwidth;*/
+  @include media( "screen", "<minWidth") {
+    right: -$sidebarwidth-base;
   }
-  @include media( "screen", ">minWidth", "<bp1Width"){
-  right: -$sidebarwidth-min;
+  @include media( "screen", ">minWidth", "<bp1Width") {
+    right: -$sidebarwidth-min;
   }
-  @include media( "screen", ">bp1Width", "<maxWidth" ){
-  right: -$sidebarwidth;
+  @include media( "screen", ">bp1Width", "<maxWidth") {
+    right: -$sidebarwidth;
   }
-  @include media( "screen", ">maxWidth"){
-  right: -$sidebarwidth-max;
+  @include media( "screen", ">maxWidth") {
+    right: -$sidebarwidth-max;
   }
 }
 
 .layout-reverse .sidebar-toggle {
-  left: -4rem;//calc( 50% - 27px);
+  left: -4rem;/*calc( 50% - 27px);*/
   right: auto;
 }
 
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar,
 .layout-reverse #sidebar-checkbox:checked ~ .wrap {
   -webkit-transform: translateX(-$sidebarwidth);
-  -ms-transform: translateX(-$sidebarwidth);
   transform: translateX(-$sidebarwidth);
-  // its very badly needed to compensate the growing of font-size with growing vw..
-  @include media( "screen", "<minWidth"){
+  /* its very badly needed to compensate the growing of font-size with growing vw..*/
+  @include media( "screen", "<minWidth") {
   -webkit-transform: translateX(-$sidebarwidth-base);
-      -ms-transform: translateX(-$sidebarwidth-base);
           transform: translateX(-$sidebarwidth-base);
   }
-  @include media( "screen", ">minWidth", "<bp1Width"){
+  @include media( "screen", ">minWidth", "<bp1Width") {
     -webkit-transform: translateX(-$sidebarwidth-min);
-        -ms-transform: translateX(-$sidebarwidth-min);
             transform: translateX(-$sidebarwidth-min);
   }
-  @include media( "screen", ">bp1Width", "<maxWidth" ){
+  @include media( "screen", ">bp1Width", "<maxWidth" ) {
     -webkit-transform: translateX(-$sidebarwidth);
-        -ms-transform: translateX($sidebarwidth);
             transform: translateX(-$sidebarwidth);
   }
-  @include media( "screen", ">maxWidth"){
+  @include media( "screen", ">maxWidth") {
     -webkit-transform: translateX(-$sidebarwidth-max);
-        -ms-transform: translateX(-$sidebarwidth-max);
             transform: translateX(-$sidebarwidth-max);
   }
 }
 
-// .layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
-//   z-index: 1001;
-//   -webkit-transform: translateX(-$sidebarwidthplus);
-//       -ms-transform: translateX(-$sidebarwidthplus);
-//           transform: translateX(-$sidebarwidthplus);
-//   // @include media( "screen", "<minWidth" ) {
-//   //   -webkit-transform: translateX(.5rem);
-//   //       -ms-transform: translateX(.5rem);
-//   //           transform: translateX(.5rem);
-//   // }
-// }
+/* .layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {*/
+/*   z-index: 1001;*/
+/*   -webkit-transform: translateX(-$sidebarwidthplus);*/
+/*       -ms-transform: translateX(-$sidebarwidthplus);*/
+/*           transform: translateX(-$sidebarwidthplus);*/
+/*   // @include media( "screen", "<minWidth" ) {*/
+/*   //   -webkit-transform: translateX(.5rem);*/
+/*   //       -ms-transform: translateX(.5rem);*/
+/*   //           transform: translateX(.5rem);*/
+/*   // }*/
+/* }*/
 
 
 
-//// Overlay sidebar
-// * Make the sidebar content overlay the viewport content instead of pushing it
-// * aside when toggled.
-// .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
-//   -webkit-transform: translateX(0);
-//       -ms-transform: translateX(0);
-//           transform: translateX(0);
-// }
-// .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
-//   //box-shadow: 0 0 0 .25rem $brightest-color;
-// }
-// .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
-//   //box-shadow: .25rem 0 .5rem rgba(0,0,0,.1);
-// }
+/*// Overlay sidebar*/
+/* * Make the sidebar content overlay the viewport content instead of pushing it*/
+/* * aside when toggled.*/
+/* .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {*/
+/*   -webkit-transform: translateX(0);*/
+/*       -ms-transform: translateX(0);*/
+/*           transform: translateX(0);*/
+/* }*/
+/* .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {*/
+/*   //box-shadow: 0 0 0 .25rem $brightest-color;*/
+/* }*/
+/* .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {*/
+/*   //box-shadow: .25rem 0 .5rem rgba(0,0,0,.1);*/
+/* }*/
 
-// Only one tweak for a reverse layout
-// .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
-//   //box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
-// }
-
-
-
-//// Slide effect
-// * Handle the sliding effects of the sidebar and content in one spot, separate
-// * from the default styles.
-// *   As an a heads up, we don't use `transform: translate3d()` here because when
-// *   mixed with `position: fixed;` for the sidebar toggle, it creates a new
-// *   containing block. Put simply, the fixed sidebar toggle behaves like
-// *   `position: absolute;` when transformed.
-// * Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.
+/* Only one tweak for a reverse layout*/
+/* .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {*/
+/*   //box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);*/
+/* }*/
 
 
-// temp test:
-// .sidebar-toggle,
+
+/*// Slide effect*/
+/* * Handle the sliding effects of the sidebar and content in one spot, separate*/
+/* * from the default styles.*/
+/* *   As an a heads up, we don't use `transform: translate3d()` here because when*/
+/* *   mixed with `position: fixed;` for the sidebar toggle, it creates a new*/
+/* *   containing block. Put simply, the fixed sidebar toggle behaves like*/
+/* *   `position: absolute;` when transformed.*/
+/* * Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.*/
+
+
+/* temp test:*/
+/* .sidebar-toggle,*/
 .wrap,
 .sidebar {
   -webkit-backface-visibility: hidden;
-      -ms-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
 .wrap,
 .sidebar-toggle {
-  transition: -webkit-transform .3s ease-in-out;
-  transition: transform .3s ease-in-out;
+-webkit-transition: -webkit-transform .3s ease-in-out;
+transition: -webkit-transform .3s ease-in-out;
+transition: transform .3s ease-in-out;
+transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
 
-//// kill some deafults
+/*// kill some deafults*/
 .sidebar-toggle:focus,
 .sidebar-toggle:active
 .sidebar-toggle:hover,
@@ -300,13 +297,13 @@ a.sidebar-nav-item:focus {
 }
 
 .sidebar-toggle-button {
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
-/// :checked!
+/*/ :checked!*/
 .sidebar-toggle:active,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   background-color: red;
@@ -320,25 +317,22 @@ a.sidebar-nav-item:focus {
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .wrap,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  // its very badly needed to compensate the growing of font-size with growing vw..
-  @include media( "screen", "<minWidth"){
-  -webkit-transform: translateX($sidebarwidth-base);
-      -ms-transform: translateX($sidebarwidth-base);
-          transform: translateX($sidebarwidth-base);
+  /* its very badly needed to compensate the growing of font-size with growing vw..*/
+  @include media( "screen", "<minWidth") {
+    -webkit-transform: translateX($sidebarwidth-base);
+    transform: translateX($sidebarwidth-base);
+
   }
-  @include media( "screen", ">minWidth", "<bp1Width"){
+  @include media( "screen", ">minWidth", "<bp1Width") {
     -webkit-transform: translateX($sidebarwidth-min);
-        -ms-transform: translateX($sidebarwidth-min);
             transform: translateX($sidebarwidth-min);
   }
-  @include media( "screen", ">bp1Width", "<maxWidth" ){
+  @include media( "screen", ">bp1Width", "<maxWidth") {
     -webkit-transform: translateX($sidebarwidth);
-        -ms-transform: translateX($sidebarwidth);
             transform: translateX($sidebarwidth);
   }
-  @include media( "screen", ">maxWidth"){
+  @include media( "screen", ">maxWidth") {
     -webkit-transform: translateX($sidebarwidth-max);
-        -ms-transform: translateX($sidebarwidth-max);
             transform: translateX($sidebarwidth-max);
   }
 }
@@ -348,32 +342,32 @@ a.sidebar-nav-item:focus {
 
 
 
-//// here comes the fun
-// make page adapt when sidebar is open
-// sidebar is open, page is narrower now - change text-align for blocks
-// #sidebar-checkbox:checked ~ .sidebar-toggle .fa {
-//   pointer-events: none;
-// }
+/*// here comes the fun*/
+/* make page adapt when sidebar is open*/
+/* sidebar is open, page is narrower now - change text-align for blocks*/
+/* #sidebar-checkbox:checked ~ .sidebar-toggle .fa {*/
+/*   pointer-events: none;*/
+/* }*/
 
 #sidebar-checkbox:checked ~ .wrap {
   padding-left: $sidebarwidth;
-  @include media( "screen", "<minWidth"){
-  padding-left: $sidebarwidth-base;
+  @include media( "screen", "<minWidth") {
+   padding-left: $sidebarwidth-base;
   }
-  @include media( "screen", ">minWidth", "<bp1Width"){
-  padding-left: $sidebarwidth-min;
+  @include media( "screen", ">minWidth", "<bp1Width") {
+   padding-left: $sidebarwidth-min;
   }
-  @include media( "screen", ">bp1Width", "<maxWidth" ){
-  padding-left: $sidebarwidth;
+  @include media( "screen", ">bp1Width", "<maxWidth" ) {
+   padding-left: $sidebarwidth;
   }
   @include media( "screen", ">maxWidth"){
-  padding-left: $sidebarwidth-max;
+   padding-left: $sidebarwidth-max;
   }
 
-  //why still need this since there are same?
-  // @include media( "screen", ">bp1Width" ){
-  //   padding-left: $sidebarwidth;
-  // }
+  /*why still need this since there are same?*/
+  /* @include media( "screen", ">bp1Width" ){*/
+  /*   padding-left: $sidebarwidth;*/
+  /* }*/
   .taglineplus {display:none;}
   .entry-wrapper {text-align:left;}
   .bamboo {margin-left:0;margin-right:0;}
@@ -386,7 +380,7 @@ a.sidebar-nav-item:focus {
 
 
 
-//// overrides style for specific pages
+/*// overrides style for specific pages*/
 .photography,
 .black  {
   .sidebar-toggle {
@@ -397,7 +391,7 @@ a.sidebar-nav-item:focus {
   #sidebar-checkbox:checked ~ .sidebar-toggle {
     background-color: #161616;
     color: gray;
-    @include media( "screen", "<bp1Width" ){
+    @include media( "screen", "<bp1Width" ) {
       background-color: transparent;
       color: transparent;
     }

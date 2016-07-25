@@ -1,7 +1,6 @@
-// @import "vendor/compass/css3";
 /**
 * Conditional Media Query Mixin by @sheiko (http://dsheiko.com)
-* The problem this mixin solves is explained there 
+* The problem this mixin solves is explained there
 * http://css-tricks.com/conditional-media-query-mixins/
 * https://github.com/dsheiko
 * MIT license: http://www.opensource.org/licenses/mit-license.php
@@ -11,13 +10,11 @@
 //  @include media( "screen", "<minWidth") {font-size: 1.2rem;}
 //  @include media( "screen", ">minWidth", "<bp1Width") {font-size: 1.2rem;}
 //  @include media( "screen", ">bp1Width", "<maxWidth" ) {font-size: 1.2rem;}
-//  @include media( "screen", ">maxWidth") {font-size: 1.2rem;}   
+//  @include media( "screen", ">maxWidth") {font-size: 1.2rem;}
 //  @include media( "retina" ) {background: yellow;};
 
 //// Predefined Break-points
-$mediaMinWidth: 480px;
-$mediaBp1Width: 960px;
-$mediaMaxWidth: 1260px;
+//moved to ./assets/css/main.scss
 
 @function translate-media-condition($c) {
   $condMap: (
@@ -25,7 +22,7 @@ $mediaMaxWidth: 1260px;
 		"print": "only print",
 		"retina": "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 120dpi)",
      ">maxWidth": "(min-width: #{$mediaMaxWidth + 1})",
-		"<maxWidth": "(max-width: #{$mediaMaxWidth})", 		
+		"<maxWidth": "(max-width: #{$mediaMaxWidth})",
 		">bp1Width": "(min-width: #{$mediaBp1Width + 1})",
 		"<bp1Width": "(max-width: #{$mediaBp1Width})",
 		">minWidth": "(min-width: #{$mediaMinWidth + 1})",
@@ -59,5 +56,5 @@ $mediaMaxWidth: 1260px;
 
 // @media ($small) { .container { max-width: 34rem; } }
 // @media ($medium) { .container { max-width: 52rem; }
-//   .entry-wrapper { text-align: center; max-width: 42rem; margin: 0 auto; }} 
+//   .entry-wrapper { text-align: center; max-width: 42rem; margin: 0 auto; }}
 // @media ($large) {.container { max-width: 60rem } }
