@@ -10,7 +10,7 @@ tagline_plus: 'building reputation'
 baseurl: ""
 url: http://rokma.com
 
-version: 16.2.0
+version: 16.3.0
 version_details: 'open cleaned source'
 
 # Outputting
