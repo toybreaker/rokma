@@ -1,10 +1,15 @@
-.workinprogress
-_site/
-_distHG/
+Icon
+.DS_Store
 .sass-cache/
 .jekyll-metadata
 .sass-cache/
-_htaccess_online/
 
+Gemfile.lock
+
+.jekyll
+.workinprogress
+_htaccess_online/
+_site/
+_distHG/
 __LAB
 images/_*

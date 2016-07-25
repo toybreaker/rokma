@@ -25,8 +25,7 @@ sass:
   style: :compressed
   # style: :expanded
 
-include: [".htaccess"]
-exclude: ["gulpfile.js", "package.json", "Gemfile", "Gemfile.lock", "LICENSE", "Icon"]
+
 
 markdown: kramdown
 
@@ -50,3 +49,7 @@ google:
 
 
 gems: [github-pages, jekyll-feed, jekyll-sitemap, jekyll-seo-tag, html-proofer]
+
+exclude: [vendor]
+
+exclude: [".htaccess", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock", "LICENSE", "Icon"]
