@@ -50,6 +50,6 @@ google:
 
 gems: [github-pages, jekyll-feed, jekyll-sitemap, jekyll-seo-tag, html-proofer]
 
-exclude: [vendor]
+exclude: [ "gulpfile.js", "package.json", "Gemfile.lock", "LICENSE", "Icon"]
 
-exclude: [".htaccess", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock", "LICENSE", "Icon"]
+exclude: [vendor]
