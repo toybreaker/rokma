@@ -8,6 +8,7 @@
 }
 
 html {
+  background-color: $color6;
   overflow-x: hidden!important;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -17,6 +18,7 @@ html {
 }
 
 body {
+  background-color: $body-color;
   overflow-x: hidden!important;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -82,16 +84,13 @@ abbr[title] {
 
 //// Quotes
 blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
+  padding: 0;
+  padding-left: 1rem;
+  margin: 0;
   color: #7a7a7a;
   border-left: .25rem solid $color2;
   p:last-child {
     margin-bottom: 0;
-  }
-  @include media( "screen", ">bp1Width" ){
-    padding-right: 4rem;
-    padding-left: 1.25rem;
   }
 }
 

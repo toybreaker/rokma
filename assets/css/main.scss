@@ -11,7 +11,7 @@ $color6: #505050;
 $color6: #202020;
 $brightest-color: #fff;
 $darkest-color: #161616;
-$bang-color: #fff;
+$bang-color: $brightest-color;
 
 $trnsp-color1: rgba(255,255,255,.1);
 $trnsp-color2: rgba(255,255,255,.6);
@@ -86,6 +86,7 @@ $mediaMaxWidth: 1260px;
 @import "social-icons";
 // overrides
 @import "rok";
+@import "svg";
 @import "home";
 @import "about";
 @import "image-grid";// flex classes

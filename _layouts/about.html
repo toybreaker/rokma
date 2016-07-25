@@ -3,43 +3,57 @@ layout: default
 ---
 
 	<div class="image-wrap">
-	{% if page.image.feature %}
-		<img src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature }}" class="entry-feature-image a" alt="{{ page.title }}" >
-	{% endif %}
+		<img src="/images//about/o-1680x943.jpg" class="entry-feature-image a" alt="about">
   </div>
 
 
 	<div class="page">
 
-		<h1 class="page-title {{ page.title }}" data-sr='enter bottom ease-out move 400px no reset' >{{ page.title }} {{ site.title }}</h1>
+		<h1
+		class="page-title {{ page.title }}"
+		data-sr='enter top ease-out move 400px no reset'
+		>{{ page.title }} {{ site.title }}</h1>
 
-		{% if page.quote_comment %}
-			<div class="bamboo quote pull-right bg-white" data-sr='enter bottom move 200px no reset' >
-				<blockquote> "{{ page.quote_comment }}"</blockquote>
-		{% endif %}
+		<div class="bamboo quote pull-left bg-white">
 
-		{% if page.quote_cite %}
-				<cite>{{ page.quote_cite }}</cite>
+			{% include svg/wax_stamp.svg %}
+
+			{{ content }}
+
+		</div>
+
+		<div class="bamboo clients pull-right bg-white nn">
+
+			{% include svg/wax_stamp.svg %}
+
+			<h3>Clients</h3>
+
+			<p>
+				{% for work in site.data.clients %}
+					{{work.name}},
+				{% endfor %}
+			</p>
+
+			<h3>Editorial Clients</h3>
+
+			<p>
+				{% for work in site.data.editorial_clients %}
+				  {{work.name}},
+				{% endfor %}
+			</p>
+
+		</div>
+
+
+		<div
+		class="bamboo last"
+		data-sr='enter top move 200px no reset'
+		>
+			<div class="social-block">
+				<h3 class="title">Get&nbsp;in&nbsp;touch!</h3>
+				{%comment%} form here {%endcomment%}
+				{% include contact.html %}
 			</div>
-		{% endif %}
-
-			<div class="bamboo clients pull-left bg-white nn" data-sr=' no reset' >
-				<h3>{{ page.clients_title }}</h3>
-
-				<p>{{ page.clients_brands }}</p>
-
-				<h3>Editorial Clients</h3>
-
-				<p>{{ page.clients_editorial }}</p>
-			</div>
-
-
-			<div class="bamboo last" data-sr='enter bottom move 200px and scale up 50%' >
-				<div class="social-block">
-					<h3 class="title">Get&nbsp;in&nbsp;touch!</h3>
-					{%comment%} form here {%endcomment%}
-					{% include contact.html %}
-				</div>
-			</div>
+		</div>
 
 	</div>

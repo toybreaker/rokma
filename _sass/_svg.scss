@@ -1,0 +1,19 @@
+.svg_stamp {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  top: -25px;
+  left: 25px;
+  .svg_stamp_look {
+     fill: white;
+     stroke: rgba(0, 150, 255, 0.75);
+     stroke-linecap: round;
+  }
+  .quote & {
+    .svg_stamp_look { stroke-width: 2; }
+  }
+  .clients & {
+    .svg_stamp_look { stroke-width: 2; }
+  }
+}

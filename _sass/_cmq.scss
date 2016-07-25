@@ -7,7 +7,7 @@
 */
 // Usage examples
 //  .section { background: silver;
-//  @include media( "screen", "<minWidth") {font-size: 1.2rem;}
+//  @include media( "screen", ">minWidth") {font-size: 1.2rem;}
 //  @include media( "screen", ">minWidth", "<bp1Width") {font-size: 1.2rem;}
 //  @include media( "screen", ">bp1Width", "<maxWidth" ) {font-size: 1.2rem;}
 //  @include media( "screen", ">maxWidth") {font-size: 1.2rem;}

@@ -1,13 +1,9 @@
 {
   "name": "rokma",
   "version": "16.4.0",
-  "description": "jekyll gh-pages portfolio",
+  "description": "jekyll gh-pages portfolio + utils",
   "main": "gulpfile.js",
   "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "rokma",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -18,12 +14,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "image processor automator"
+    "portfolio"
   ],
   "repository": {
     "type": "git",
     "url": "git@github.com:toybreaker/rokma.git"
   },
-  "author": "toybreaker",
-  "license": "ISC"
+  "author": "toybreaker"
 }

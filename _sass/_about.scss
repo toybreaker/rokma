@@ -1,19 +1,33 @@
 //// ABOUT template
 .about {
+  background-color: transparent;
+  blockquote {
+    margin-top:2rem;
+    margin-bottom:1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+  }
+  p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+  }
 
   // different color and :hover color for different locations..
   .wrap a {
-    .fa {color: gray;}
-    &:hover .fa {color: black;}
+    .fa {color: $link-color; cursor: pointer;}
+    &:hover .fa {color: white;}
   }
 
   .masthead {
     display: none;
-    background-color: white;
+    background-color: $body-color;
   }
 
   /* background sun shot fixed for home*/
   .image-wrap {
+    background-color: $body-color;
     -webkit-transform:translateZ(0);
     transform:translateZ(0);
 
@@ -24,6 +38,7 @@
     height: 200%;
     z-index: -100;
     img {
+      background-color: $body-color;
       position: absolute;
       top: 0;
       left: 0;
@@ -44,126 +59,117 @@
 
   .page {
     margin-bottom: 0;
-    @include media( "screen", ">minWidth" ){
-      margin-left: 3rem;
-      margin-right: 3rem;
-    }
-    @include media( "screen", ">bp1Width" ){
-      margin-left: 10vh;
-      margin-right: 10vh;
+    @include media( "screen", ">bp1Width" ) {
+      margin-left: 10vw;
+      margin-right: 10vw;
     }
 
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 
-    > * {
-      -webkit-flex-basis: auto;
-      -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-
-      -webkit-flex-grow:1;
-      -ms-flex-positive:1;
-      flex-grow:1;
-
-      text-align: justify;
-    }
 
     .page-title {
       margin: 0 auto;
       color: white;
       padding: 3rem;
       width: 16rem!important;
-      height: 16rem!important;
+      min-height: 90vh;
+      line-height: 80vh;
     }
   }
+}
 
-  .bamboo {
-    margin-top:5vh;
-    padding: 1rem 1rem;
-    margin-bottom: 18vh;
-    @include media( "screen", ">minWidth" ) {
-      padding: 2rem 2rem;
-    }
-    @include media( "screen", ">bp1Width" ) {
-      padding: 3rem 3rem;
-    }
+.bamboo {
+  position: relative;
+  margin-top:5vh;
+  padding: 1rem;
+  padding-top: 5rem;
+  margin-bottom: 18vh;
+  @include media( "screen", ">minWidth" ) {
+    padding: 2rem;
+    padding-top: 4rem;
   }
-  .bamboo.clients {
-    margin-bottom: 40vh!important;
-    @include media( "screen", ">minWidth" ) {
-      margin-bottom: 10rem!important;
-    }
+  @include media( "screen", ">bp1Width" ) {
+    padding: 3rem;
+    padding-top: 5rem;
   }
-  .bamboo.last {
-    position:fixed;
-    bottom: 0;
-    left: 0;
-    padding: 0;
+}
+
+.bamboo.clients {
+  margin-bottom: 40vh!important;
+  @include media( "screen", ">minWidth" ) {
+    margin-bottom: 10rem!important;
+  }
+}
+.bamboo.last {
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+
+  .social-block {
+    width:100%;
     margin: 0;
-    margin-top:15rem;
-    width: 100vw!important;
-    height: auto;
-    line-height: 1rem!important;
-
-    .social-block {
-      background-color: white;
-      width:100%;
-      margin: 3rem auto 0 auto;
-      .social-icons {
-        padding: 0 0 0 0;
-        margin: 0;
-      }
-      .title {
-        text-align: center;
-        line-height: .5;
-        padding-top: 1rem;
-        padding-bottom: .5rem;
-        margin-top:0;
-        width: auto;
-        @include media( "screen", ">bp1Width" ) {
-          line-height: 2.3;
-          padding-left: .9rem;
-          margin-top:initial;
-          margin-bottom:0;
-          padding-bottom:0;
-          text-align: left;
-          float: left;
-        }
-      }
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    @include media( "screen", ">minWidth") {
+      height: auto;
+      display: block;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .social-icons {
+      padding: 0;
+      margin: 0;
+    }
+    .title {
+      color: white;
+      text-align: center;
+      line-height: 5;
+      margin-top:0;
+      width: auto;
     }
   }
 }
 
 
 
+
 // checkbox:checked case hide the shot
 .about {
   #sidebar-checkbox:checked ~ .wrap {
-    img {display:none;}
+    body & {background-color: white;}
+    img { display:none; }
     .page {
-      margin-top:0;
       .page-title {
-        margin-bottom:1rem;
+        min-height: 0;
+        height: 0;
       }
       .bamboo {
-        margin-top:1rem;
-        margin-bottom:1rem;
-        @include media( "screen", "<bp1Width" ){
-          margin-left:0; margin-right:0;
-          padding:0;
+        @include media( "screen", "<bp1Width" ) {
+          margin-left:0;
+          margin-right:0;
         }
       }
     }
