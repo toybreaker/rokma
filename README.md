@@ -1,6 +1,8 @@
-#### [Rokma](http://rokma.com)  [![Build Status](https://travis-ci.org/toybreaker/rokma.svg?branch=master)](https://travis-ci.org/toybreaker/rokma)
+ [![Build Status](https://travis-ci.org/toybreaker/rokma.svg?branch=master)](https://travis-ci.org/toybreaker/rokma)
 
-Ultra light mobile-first portfolio display static website. Fully responsive. Adhering to [KISS](https://en.wikipedia.org/wiki/KISS_principle),   [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (uhm... well, partly. Really not yet!)
+### [Rokma](http://rokma.com)
+
+Ultra light mobile-first static website. Responsive UI. Jekyll gh-pages portfolio, tested!  Adhering to [KISS](https://en.wikipedia.org/wiki/KISS_principle),   [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (uhm... well, partly. Really not yet!)
 
 v 16.4.0
 
@@ -13,9 +15,13 @@ Urgent:
 
 Sometime soon:
 
+- responsive img wi/ srcset
+
 - quick contact form
 
 Maybe:
+
+- youtube video embeds
 
 - service workers
 
