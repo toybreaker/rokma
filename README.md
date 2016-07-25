@@ -1,28 +1,23 @@
-#### [Rokma](http://rokma.com) ⟐ Polimath ⟐
+#### [Rokma](http://rokma.com)  [![Build Status](https://travis-ci.org/toybreaker/rokma.svg?branch=master)](https://travis-ci.org/toybreaker/rokma)
 
-Super light mobile-first portfolio display static website. Fully responsive. Focus on speed and simplicity, with care for minimizing network request and delivering a polished meaningful user experience.
+Ultra light mobile-first portfolio display static website. Fully responsive. Adhering to [KISS](https://en.wikipedia.org/wiki/KISS_principle),   [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (uhm... well, partly. Really not yet!)
 
-Adhering to [K.I.S.S](https://en.wikipedia.org/wiki/KISS_principle) • [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (uhm... well, partly. Really not yet!)
-
-v 16.3.0
+v 16.4.0
 
 
 ## 2DOs
 
 Urgent:
 
-- travis error
-
-- show other small img not just first
+- show other small img not just first one
 
 Sometime soon:
 
-- service workers
+- quick contact form
 
 Maybe:
 
-- quick contact form
-
+- service workers
 
 ## Slider considerations:
 

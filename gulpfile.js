@@ -16,19 +16,6 @@ var pngquant     = require('imagemin-pngquant');
 var reload       = browserSync.reload;
 
 
-//TESTING JADE:
-// var jade = require('gulp-jade');
-//
-// gulp.task('templates', function() {
-//   var YOUR_LOCALS = {};
-//
-//   gulp.src('./src/*.jade')
-//     .pipe(jade({
-//       locals: YOUR_LOCALS
-//     }))
-//     .pipe(gulp.dest('./dist/'))
-// });
-
 // Reponsive sizing
 gulp.task('images', function () {
   return gulp.src('./src/images/*.jpg')
