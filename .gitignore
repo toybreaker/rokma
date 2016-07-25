@@ -9,6 +9,7 @@ Gemfile.lock
 .jekyll
 .workinprogress
 _htaccess_online/
+_htaccess_online
 _site/
 _distHG/
 __LAB
