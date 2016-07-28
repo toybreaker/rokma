@@ -3,8 +3,30 @@ layout: default
 ---
 
 <div id="main" role="main">
+
   <article class="entry">
-    {% if page.image.feature %}<img src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}">{% endif %}
+
+    <div class="entry-visuals">
+
+      {%comment%}
+      fullwidth desktop screen
+      {%endcomment%}
+      {% if page.image.feature %}<img src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature }}" class="entry-feature-image a" alt="{{ page.title }}">{% endif %}
+      {%comment%}
+      tablet screen
+      {%endcomment%}
+      {% if page.image.feature2 %}<img  src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature2 }}" class="entry-feature-image b" alt="{{ page.title }}" >{% endif %}
+      {%comment%}
+      phone screen
+      {%endcomment%}
+      {% if page.image.feature3 %}<img  src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature3 }}" class="entry-feature-image c" alt="{{ page.title }}" >{% endif %}
+      {%comment%}
+      crappy droid
+      {%endcomment%}
+      {% if page.image.feature4 %}<img  src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature4 }}" class="entry-feature-image d" alt="{{ page.title }}" >{% endif %}
+
+    </div>
+
     <div class="entry-wrapper">
       <header class="entry-header">
         <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}</h1>{% endif %}
@@ -13,8 +35,8 @@ layout: default
         {{ content }}
       </div>
     </div>
-  </article>
 
+  </article>
 
   <div class="entry-wrapper seemore">
     <h3 class="post-list-title center nocap">See more websites designed and produced by Rokma.</h3>
@@ -24,4 +46,5 @@ layout: default
     {% endfor %}
     </ul>
   </div>
-</div><!-- /#main -->
+
+</div>

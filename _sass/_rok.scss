@@ -15,7 +15,7 @@
 .web-design,
 .branding {
   .taglineplus {
-    display:none;
+    display:none!important;
   }
 }
 
@@ -25,6 +25,11 @@
 }
 body:not(.specials) {
   .taglineshort { display:none; }
+}
+
+.web-design {
+  .tagline,
+  .taglineplus {display: none;}
 }
 
 p a {
@@ -257,7 +262,7 @@ p a {
   }
   .start {
     position: relative;
-    z-index:-1;
+    // z-index:-1;
     color: rgb(77, 77, 77);
     text-align: center;
     font-size: 1.5rem;
@@ -293,4 +298,100 @@ body.gray2 {
   position: absolute;
   left:-40px;
   top: 0;
+}
+
+
+//images
+.web-design .entry-visuals {
+  position: relative;
+  margin-bottom: 5vh;
+  @include media( "screen", ">minWidth") {
+    margin-bottom: 34vh;
+  }
+  @include media( "screen", ">bp1Width") {
+    margin-bottom: 33vh;
+  }
+  @include media( "screen", ">maxWidth") {
+    margin-bottom: 5vh;
+  }
+
+}
+.web-design .entry-feature-image {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &.a {
+    top: 0;
+    left: -17%;
+    max-width: 180%;
+
+    @include media( "screen", ">minWidth") {
+      max-width: 150%;
+      left: -10%;
+    }
+    @include media( "screen", ">bp1Width") {
+      max-width: 130%;
+      left: 0;
+    }
+    @include media( "screen", ">maxWidth") {
+      max-width: 100%;
+    }
+  }
+
+  &.b {//ipad
+    max-width: 40vw;
+    @include media( "screen", ">minWidth") {
+      max-width: 46vw;
+      position: absolute;
+      left: auto;
+      right: 10vw;
+      top: auto;
+      bottom: -28vh;
+    }
+    @include media( "screen", ">maxWidth") {
+      left: 60vw;
+      right: auto;
+      bottom: 5vh;
+    }
+
+  }
+
+  &.c {//nexus6
+    max-width: 30vw;
+    @include media( "screen", ">minWidth") {
+      position: absolute;
+      left: 20vw;
+      top: auto;
+      bottom: -30vh;
+    }
+    @include media( "screen", ">bp1Width") {
+      left: 44vw;
+      top: auto;
+      bottom: -25vh;
+    }
+    @include media( "screen", ">maxWidth") {
+      left: 78vw;
+      top: auto;
+      bottom: 0;
+    }
+  }
+  &.d {//crappydroid
+    max-width: 24vw;
+    @include media( "screen", ">minWidth") {
+      position: absolute;
+      left: 3vw;
+      top: auto;
+      bottom: -15vh;
+    }
+    @include media( "screen", ">bp1Width") {
+      left: 29vw;
+      top: auto;
+    }
+    @include media( "screen", ">maxWidth") {
+      left: 51vw;
+      bottom: 0;
+
+    }
+  }
 }

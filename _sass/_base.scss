@@ -316,7 +316,7 @@ button strong em{
 // center stuff past tablets
 .entry-wrapper {
   margin: 6rem 2rem 1rem 2rem;
-  @include media( "screen", ">minWidth", "<bp1Width") {
+  @include media( "screen", ">minWidth") {
     margin: 6rem 1rem 1rem 1rem;
   }
   @include media( "screen", ">bp1Width") {
