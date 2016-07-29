@@ -1,47 +1,37 @@
-<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
-
-<!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  
+
   <div class="middle">
 
-    <!-- Toggle Button for when sidebar is open -->
     <div class="tog sidebar-toggle-button">
       <label for="sidebar-checkbox" class="sidebar-toggle"><i class="fa fa-remove"></i></label>
     </div>
 
-    <a 
-    class="to-home catindex" 
-    href="{% if page.title == "Home" or page.title == "about" %}/{% else %}{{ site.baseurl }}/{{page.categories}}/{% endif %}" 
+    <a class="to-home catindex" href="{% if page.title == "Home" or page.title == "about" %}/{% else %}{{ site.baseurl }}/{{page.categories}}/{% endif %}"
     alt="back to {{page.categories}} index">
       <span class="avatar">
         <img src="{{ site.baseurl }}/images/{{ site.owner.avatar }}" alt="{{ site.description }}">
       </span>
     </a>
 
-    <a 
-    class="to-home" 
-    href="{% if page.url == site.baseurl %}{{ site.baseurl }}{% else %}{{ site.baseurl }}/{% endif %}" 
+    <a class="to-home" href="{% if page.url == site.baseurl %}{{ site.baseurl }}{% else %}{{ site.baseurl }}/{% endif %}"
     alt="back home">
       <span class="descri">{{ site.title }}</span>
       <span class="descri">{{ site.description }}</span>
     </a>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item" href="{{ site.baseurl }}/photography/">photography</a>
-      <a class="sidebar-nav-item" href="{{ site.baseurl }}/web-design/">web-design</a>
-      <a class="sidebar-nav-item" href="{{ site.baseurl }}/branding/">branding</a>
-      <a class="sidebar-nav-item" href="{{ site.baseurl }}/specials/">specials</a>
-      <a class="sidebar-nav-item" href="{{ site.baseurl }}/advertising/">advertising</a>
-      <a class="sidebar-nav-item" href="{{ site.baseurl }}/about/">about</a>
+
+      {% for link in site.data.navigation %}
+        <a class="sidebar-nav-item" href="{{ site.baseurl }}/{{ link.section }}/">{{ link.section }}</a>
+      {% endfor %}
+
     </nav>
 
-    <div class="sidebar-item">     
+    <div class="sidebar-item">
       {% include contact.html %}
-      {% include footer.html %}
+      {% include sidebar__footer.html %}
     </div>
 
   </div>

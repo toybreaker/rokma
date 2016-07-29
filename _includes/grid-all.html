@@ -13,6 +13,7 @@ used in index to display pagination list of posts
     </h1>
 
     <div class="posts">
+      
       {% for post in paginator.posts %}
 
         {% include item-ball.html %}
@@ -20,6 +21,7 @@ used in index to display pagination list of posts
       {% endfor %}
 
       {% include pagination.html %}
+
     </div>
 
   </div>

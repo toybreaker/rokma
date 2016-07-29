@@ -4,14 +4,14 @@ title: aqua-province
 headline: Aqua Province
 categories: photography
 year: 2006
+catch: personal work by
 image:
-  feature: 01.jpg
-  feature2: 02.jpg
-  feature3: 03.jpg
-  feature4: 04.jpg
-  feature5: 05.jpg
-  feature6: 06.jpg
-catch: personal work by  
+- 01.jpg
+- 02.jpg
+- 03.jpg
+- 04.jpg
+- 05.jpg
+- 06.jpg
 ---
 
 Part two of Aqua Serie. Unpublished.

@@ -1,0 +1,10 @@
+# navigation links
+sidebar:
+  - title: "Photography"
+    url: /photography/
+  - title: "Web-Design"
+    url: /web-design/
+  - title: "Blog"
+    url: /articles/
+  - title: "Mastering Paper"
+    url: /mastering-paper/

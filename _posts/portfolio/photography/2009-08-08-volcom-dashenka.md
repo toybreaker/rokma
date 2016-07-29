@@ -5,10 +5,10 @@ headline: Volcom Dashenka
 categories: photography
 year: 2009
 where: bali, indonesia
-image:
-  feature: 01.jpg
-  feature2: 02.jpg
 catch: powered by
+image:
+- 01.jpg
+- 02.jpg
 ---
 Image for Volcom® international advertising page.
 

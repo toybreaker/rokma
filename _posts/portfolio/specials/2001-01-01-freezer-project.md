@@ -8,7 +8,12 @@ where: milano, italy
 imagehowmany: 6
 backgroundColor: gray2
 image:
-  feature: 01.jpg
+- 01.jpg
+- 02.jpg
+- 03.jpg
+- 04.jpg
+- 05.jpg
+- 06.jpg
 ---
 
 1995>2000. 5 years. 27 free issues. Freezer Magazine came as a striking lightning over a stagnant industry. It created its own distribution. The player voice showing what's up in the streets and parties. Soon the low fidelity newsstand media were left with few readers.

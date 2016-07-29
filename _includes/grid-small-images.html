@@ -1,0 +1,26 @@
+{%comment%}
+displays many small images in a grid
+{%endcomment%}
+
+<article class="entry">
+
+  <div class="image-grid">
+
+    {% for thumb in page.image %}
+      <div class="image-grid-item">
+        <img src="/images/{{page.categories}}/{{page.title}}/{{thumb}}" />
+      </div>
+    {% endfor %}
+
+  </div>
+
+  <div class="entry-wrapper">
+    <header class="entry-header">
+      <h1 class="entry-title">{% if page.headline %}{{page.headline}}{% else %}{{page.title}}</h1>{% endif %}
+    </header>
+    <div class="entry-content">
+      {{content}}
+    </div>
+  </div>
+
+</article>

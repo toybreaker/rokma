@@ -9,17 +9,10 @@ categories: photography
 
 <div id="main" role="main">
   <article class="entry">
-    {% if page.image.feature %}<img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature }}" class="entry-feature-image a" alt="{{ page.title }}" >{% endif %}
 
-    {% if page.image.feature2 %}<img data-sr='enter top ease-out move 400px' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature2 }}" class="entry-feature-image b" alt="{{ page.title }}" >{% endif %}
-
-    {% if page.image.feature3 %}<img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature3 }}" class="entry-feature-image c" alt="{{ page.title }}" >{% endif %}
-
-    {% if page.image.feature4 %}<img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature4 }}" class="entry-feature-image d" alt="{{ page.title }}" >{% endif %}
-
-    {% if page.image.feature5 %}<img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature5 }}" class="entry-feature-image e" alt="{{ page.title }}" >{% endif %}
-
-    {% if page.image.feature6 %}<img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature6 }}" class="entry-feature-image f" alt="{{ page.title }}" >{% endif %}
+    {% for thumb in page.image %}
+      <img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{thumb}}" class="entry-feature-image" alt="{{ page.title }}"/>
+    {% endfor %}
 
     <div class="entry-wrapper">
       <header class="entry-header">

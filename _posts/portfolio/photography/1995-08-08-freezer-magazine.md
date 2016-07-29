@@ -6,15 +6,15 @@ categories: photography
 bg: black
 year: 1995 > 2000
 where: italy
-image:
-  feature: 01.jpg
-  feature2: 02.jpg
-  feature3: 03.jpg
-  feature4: 04.jpg
-  feature5: 05.jpg
-  feature6: 06.jpg
 backgroundColor: black
-catch: powered by  
+catch: powered by
+image:
+- 01.jpg
+- 02.jpg
+- 03.jpg
+- 04.jpg
+- 05.jpg
+- 06.jpg
 ---
 
 Creating FREEZER magazine I built a creative lab with young motivated enthusiasts and really destroyed boundaries and cliches of contemporary media.
