@@ -71,7 +71,6 @@ p a {
   margin: 0;
   position: relative;
   top: 5rem;
-
 }
 
 .postshout {
@@ -111,6 +110,7 @@ p a {
   margin: 0;
   background-color: $nice-color;
 
+
   .photography & { background-color: $black; }
   .web-design & { background-color: $body-color; }
   .specials & { background-color: $body-color; }
@@ -132,13 +132,27 @@ p a {
 
   &:hover {
     background-color: white;
+    .photography & {
+      background-color: $black;
+    }
     z-index: 10;
 
+
     .post-title {
+
+      -webkit-transition-delay: initial;
+      transition-delay: initial;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+
       top: 0;
       z-index: 11;
       width: 100%;
-      font-size: 2.5rem;
+      font-size: 2rem;
       background-color: white;
       .photography & {
         background-color: black;
@@ -155,11 +169,36 @@ p a {
       opacity: 1;
       -webkit-filter: grayscale(0%);
       filter: grayscale(0%);
+
+      -webkit-transition-delay: initial;
+      transition-delay: initial;
+      -webkit-transition-property: -webkit-transform;
+      transition-property: -webkit-transform;
+      transition-property: transform;
+      transition-property: transform, -webkit-transform;
+      -webkit-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+
       -webkit-transform: scale(1.5) translateY(32px);
       transform: scale(1.5) translateY(32px);
+
       &.square {
-        -webkit-transform: scale(1) translateY(32px);
-        transform: scale(1) translateY(32px);
+
+        -webkit-transition-delay: initial;
+        transition-delay: initial;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        -webkit-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+
+        -webkit-transform: scale(1) translateY(-20px);
+        transform: scale(1) translateY(-20px);
       }
 
     }
@@ -179,7 +218,6 @@ p a {
    background-color: black;
    margin: auto;
    z-index: 0;
-  //  overflow: hidden;
    opacity: .25;
 
    -webkit-filter: grayscale(100%);
@@ -235,13 +273,13 @@ p a {
 
 // used for entering from side block look
 .pull-left{
-  @include media( "screen", ">bp1Width" ){
+  @include media( "screen", ">bp1Width" ) {
     margin: 1rem calc(50vw - 8rem) 1rem -3rem;
     padding-left: 6rem!important;
   }
 }
 .pull-right{
-  @include media( "screen", ">bp1Width" ){
+  @include media( "screen", ">bp1Width" ) {
     margin: 1rem -3rem 1rem calc(50vw - 8rem);
     padding-right: 6rem!important;
   }
@@ -251,7 +289,7 @@ p a {
 .photography,
 .black {
   color:$trnsp-color2;
-  background-color: black; //$darkest-color!important;
+  background-color: black;
 
   h1, h2, h3, h4, h5, h6 { color: $bang-color!important;}
 
@@ -277,7 +315,7 @@ p a {
     position: absolute;
     width: 20vw;
     left: 40vw;
-    span{
+    span {
       display: block;
       font-size: 16px;
     }

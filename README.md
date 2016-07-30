@@ -11,6 +11,8 @@ v 16.4.0
 
 Urgent:
 
+- 50% css? really!? camon... uncss the bloat!
+
 - responsive img w/ srcset & [gulp grinder](https://github.com/toybreaker/grinder)
 
 Sometime soon:
