@@ -26,34 +26,6 @@ Ah.. vanilla style, no JQuery bloat.
 </script>
 
 
-{%comment%}
-{% if page.title == 'buddha' %}
-<script type="text/javascript">
-  EXAMPLE: https://github.com/julianlloyd/scrollReveal.js/wiki/Configuration
-  defaults: {
-                enter:    'bottom',
-                move:     '8px',
-                over:     '0.6s',
-                wait:     '0s',
-                easing:   'ease',
-                scale:    { direction: 'up', power: '5%' },
-                opacity:  0,
-                mobile:   false,
-                reset:    false,
-                viewport: window.document.documentElement, // <HTML> element by default.
-                 *       'always' — delay every time an animation resets
-                 *       'once'   — delay only the first time an animation reveals
-                 *       'onload' - delay only for animations triggered by self.init()
-                delay:    'once',
-                 *        vFactor changes when an element is considered in the viewport;
-                 *        the default requires 60% of an element be visible.
-                vFactor:  0.60,
-                complete: function( el ) {} // Note: reset animations do not complete.
-   }
-</script>
-{% endif %}
-{%endcomment%}
-
 {% if page.title == 'Home' %}
   {%comment%} setup scrollreveal for home {%endcomment%}
   <script type="text/javascript">
