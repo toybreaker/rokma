@@ -11,7 +11,7 @@ v 16.4.0
 
 Urgent:
 
-- responsive img wi/ srcset
+- responsive img w/ srcset & [gulp grinder](https://github.com/toybreaker/grinder)
 
 Sometime soon:
 
