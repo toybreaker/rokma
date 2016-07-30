@@ -30,6 +30,10 @@ Maybe:
 - [ ] [vegas](https://github.com/jaysalvat/vegas) (64kb) | need at least zepto (9kb) or jquery(84kb)
 - [X] native scroll + [scrollReveal.js](https://github.com/jlmakes/scrollReveal.js/tree/master) (9kb)
 
+## Develop:
+
+Use master branch to dev so [Travis-ci](https://github.com/toybreaker/rokma/blob/gh-pages/.travis.yml),  which is currently set to check master only, can test it. When test pass, merge master > gh-pages.
+
 
 ## Warning:
 
