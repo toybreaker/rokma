@@ -11,13 +11,9 @@ v 16.4.0
 
 Urgent:
 
-- cname + registar setup
-
-- show other small img not just first one
+- responsive img wi/ srcset
 
 Sometime soon:
-
-- responsive img wi/ srcset
 
 - quick contact form
 
