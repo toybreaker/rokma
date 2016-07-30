@@ -3,9 +3,8 @@ layout: default
 ---
 
 	<div class="image-wrap">
-		<img src="/images//about/o-1680x943.jpg" class="entry-feature-image a" alt="about">
+		<img src="/images//about/o-1680x943.jpg" class="entry-feature-image" alt="about">
   </div>
-
 
 	<div class="page">
 
@@ -14,38 +13,34 @@ layout: default
 		data-sr='enter top ease-out move 400px no reset'
 		>{{ page.title }} {{ site.title }}</h1>
 
-		<div class="bamboo quote pull-left bg-white">
-
-			{% include svg/wax_stamp.svg %}
+		<div class="quote">
 
 			{{ content }}
 
 		</div>
 
-		<div class="bamboo clients pull-right bg-white nn">
+		<div class="clients">
 
-			{% include svg/wax_stamp.svg %}
+			<h3 class="title">Clients</h3>
 
-			<h3>Clients</h3>
+			{% for work in site.data.clients %}
+				{{work.name}},
+			{% endfor %}
 
-			<p>
-				{% for work in site.data.clients %}
-					{{work.name}},
-				{% endfor %}
-			</p>
+		</div>
 
-			<h3>Editorial Clients</h3>
+		<div class="clients">
 
-			<p>
-				{% for work in site.data.editorial_clients %}
-				  {{work.name}},
-				{% endfor %}
-			</p>
+			<h3 class="title">Editorial Clients</h3>
+
+			{% for work in site.data.editorial_clients %}
+			  {{work.name}},
+			{% endfor %}
 
 		</div>
 
 
-		<div class="bamboo last">
+		<div class="last">
 			<div class="social-block">
 				<h3 class="title">Get&nbsp;in&nbsp;touch!</h3>
 				{%comment%} form here {%endcomment%}

@@ -36,13 +36,6 @@ a {
 
 }
 
-//snappy transition for all hovers
-a, a:hover, a:hover > * {
-    -webkit-transition: all 400ms cubic-bezier(.69,.2,.48,1.47);
-     -moz-transition: all 400ms cubic-bezier(.69,.2,.48,1.47);
-       -o-transition: all 400ms cubic-bezier(.69,.2,.48,1.47);
-          transition: all 400ms cubic-bezier(.69,.2,.48,1.47);
-}
 
 // `:visited` state is usefull!
 body:not(.photography) div:not(.sidebar) a:visited,
@@ -59,7 +52,7 @@ body:not(.black) div:not(.sidebar) a:visited{
 }
 //// Body text
 p { margin-top: 0; margin-bottom: 1rem; }
-strong { color: $color1; }
+
 ul, ol, dl { margin-top: 0; margin-bottom: 1rem; }
 dt {font-weight: 400;}
 dd {margin-bottom: .5rem;}
@@ -202,7 +195,7 @@ button strong em{
 .wrap {
   position: relative;
   width: 100%;
-  @include media( "screen", "<minWidth" ){
+  @include media( "screen", "<minWidth" ) {
     top:5rem;
   }
 }

@@ -3,32 +3,30 @@
 
   {% include head.html %}
 
-  <body class="{{ page.categories }} {{ page.backgroundColor }} {{ page.title }} layout-reverse {{ page.bodyclass }} ">
+  <body class="{{ page.categories }} {{ page.backgroundColor }} {{ page.title | downcase }} layout-reverse {% if bodyclass %}{{ page.bodyclass }}{% endif %} ">
 
     {% include sidebar.html %}
 
     <div class="wrap {{ page.isindex }}">
 
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="/" title="Home">
+      <div class="container masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">
 
-              {% if page.categories == "photography" %}
-                <span class="pagecat">{{page.categories}}</span>
-                <span class="title">{{page.headline}}</span>
-                <span class="powered">{{page.catch}} {{site.title}}</span>
-              {% else %}
-                <span class="owner">{{ site.title }}</span>
-                <span class="pagecat">{{ page.categories }}</span>
-                <span class="taglineshort"> <small>{{ site.tagline_short }}</small></span>
-                <span class="tagline"> <small>{{ site.tagline }}</small></span>
-                <span class="taglineplus"><small>{{ site.tagline_plus }}</small></span>
-              {% endif %}
+            {% if page.categories == "photography" %}
+              <span class="pagecat">{{page.categories}}</span>
+              <span class="title">{{page.headline}}</span>
+              <span class="powered">{{page.catch}} {{site.title}}</span>
+            {% else %}
+              <span class="owner">{{ site.title }}</span>
+              <span class="pagecat">{{ page.categories }}</span>
+              <span class="taglineshort"> <small>{{ site.tagline_short }}</small></span>
+              <span class="tagline"> <small>{{ site.tagline }}</small></span>
+              <span class="taglineplus"><small>{{ site.tagline_plus }}</small></span>
+            {% endif %}
 
-            </a>
-          </h3>
-        </div>
+          </a>
+        </h3>
       </div>
 
       <div class="container content">

@@ -43,18 +43,3 @@
   }
   @media #{$query}  { @content; }
 }
-
-
-// old stuff for current work in progress transition form lanyon original shit...
-// reference for porting
-
-// MEDIA QUERIES ==============================================
-// oldQuery :                              ems           px     newQuery newPx  newEms
-// $small   : "only screen and (min-width: 48em)";    // 768  - minWidth 480px  30
-// $medium  : "only screen and (min-width: 62em)";    // 992  - bp1width 960px  60
-// $large   : "only screen and (min-width: 86.375em)";// 1382 - maxWidth 1260px 78,75
-
-// @media ($small) { .container { max-width: 34rem; } }
-// @media ($medium) { .container { max-width: 52rem; }
-//   .entry-wrapper { text-align: center; max-width: 42rem; margin: 0 auto; }}
-// @media ($large) {.container { max-width: 60rem } }

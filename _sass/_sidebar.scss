@@ -31,8 +31,6 @@ $sidebarwidthplus: 13.75rem; /*calc( 16 rem - (55px : 2) )*/
   overflow-y: scroll; /* fixed scrollbar*/
   color: rgba(255,255,255,.5);
   background-color: $color6;
-  -webkit-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out;
 
   position: fixed;
   top: 0;

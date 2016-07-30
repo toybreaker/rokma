@@ -6,8 +6,15 @@
       <span class="postshout">{{ post.headline }}</span>
     </h1>
 
-    <span class="posthumb"><img src="{{ site.baseurl }}/images/{{ post.categories }}/{{ post.title }}/{{ post.image.[0] }}" class="entry-feature-image" alt="{{ post.title }}" ></span>
+    <span class="posthumb">
 
+    {%comment%}
+    if index_image else first image
+    {%endcomment%}
+
+    <img src="{{ site.baseurl }}/images/{{ post.categories }}/{{ post.title }}/{% if post.index_image %}{{ post.index_image }}{% else %}{{ post.image.[0] }}{% endif %}" class="entry-feature-image {% if post.index_image %}square{% endif %}" alt="{{ post.title }}">
+
+    </span>
   </a>
 
 </div>

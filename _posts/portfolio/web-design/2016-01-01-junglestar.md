@@ -5,7 +5,7 @@ headline: Junglestar
 categories: web-design
 year: 2016
 where: eurasia
-image:
+index_image: 00.jpg #all devices together for index
 image:
 - 01.jpg #fullwidth 1680x800 w/desktop image
 - 02.png #ipad

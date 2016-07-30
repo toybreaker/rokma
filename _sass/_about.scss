@@ -2,15 +2,22 @@
 .about {
   background-color: transparent;
   blockquote {
-    margin-top:2rem;
-    margin-bottom:1rem;
+    color: black;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
     max-width: 500px;
+    background-color: rgba(255,255,255,.75);
+    //border: 2px solid $link-color;
+    border: 0 none;
+    padding: 1rem 0;
   }
   p {
     margin-left: auto;
     margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: calc(100% - 4rem);
     max-width: 500px;
   }
 
@@ -22,7 +29,6 @@
 
   .masthead {
     display: none;
-    background-color: $body-color;
   }
 
   //background sun shot fixed for home
@@ -76,46 +82,37 @@
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
 
+  }
 
-    .page-title {
-      margin: 0 auto;
-      color: white;
-      padding: 3rem;
-      width: 16rem!important;
-      min-height: 90vh;
-      line-height: 80vh;
-    }
+  .page-title {//h1
+    color: white;
+    width: 100%;
+    min-height: 90vh;
+    line-height: 80vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .title {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    width: auto;
   }
 }
 
-.bamboo {
-  position: relative;
-  margin-top:5vh;
-  padding: 1rem;
-  padding-top: 5rem;
-  margin-bottom: 18vh;
-  @include media( "screen", ">minWidth" ) {
-    padding: 2rem;
-    padding-top: 4rem;
-  }
-  @include media( "screen", ">bp1Width" ) {
-    padding: 3rem;
-    padding-top: 5rem;
-  }
-}
-
-.bamboo.clients {
+.clients {
   margin-bottom: 40vh!important;
   @include media( "screen", ">minWidth" ) {
     margin-bottom: 10rem!important;
   }
 }
-.bamboo.last {
+
+.last {
+  border: 0 none;
   bottom: 0;
   left: 0;
   padding: 0;
@@ -158,22 +155,25 @@
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+
     @include media( "screen", ">minWidth") {
       height: auto;
       display: block;
       padding-top: 1rem;
       padding-bottom: 1rem;
     }
+
     .social-icons {
       padding: 0;
       margin: 0;
     }
+
     .title {
-      color: white;
       text-align: center;
       line-height: 5;
       margin-top:0;
       width: auto;
+      color: white;
     }
   }
 }
@@ -184,7 +184,7 @@
 // checkbox:checked case hide the shot
 .about {
   #sidebar-checkbox:checked ~ .wrap {
-    body & {background-color: white;}
+    body & { background-color: white;}
     img { display:none; }
     .page {
       .page-title {

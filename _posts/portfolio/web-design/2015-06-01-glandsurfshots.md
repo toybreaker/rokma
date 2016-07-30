@@ -5,7 +5,7 @@ headline: G-land Surf Shots
 categories: web-design
 year: 2015
 where: Indonesia
-image:
+index_image: 00.jpg #all devices together for index
 image:
 - 01.jpg #fullwidth 1680x800 w/desktop image
 - 02.png #ipad
