@@ -1,25 +1,15 @@
 //// ABOUT template
 .about {
-  background-color: transparent;
-  blockquote {
-    color: black;
-    margin-left: auto;
-    margin-right: auto;
+  * > {
+    margin: 0;
+    padding: 0;
     width: 100%;
     max-width: 500px;
-    background-color: rgba(255,255,255,.75);
-    //border: 2px solid $link-color;
-    border: 0 none;
-    padding: 1rem 0;
-  }
-  p {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    width: calc(100% - 4rem);
-    max-width: 500px;
   }
+  background-color: transparent;
+  .masthead { display: none; }
 
   // different color and :hover color for different locations..
   .wrap a {
@@ -27,22 +17,20 @@
     &:hover .fa {color: white;}
   }
 
-  .masthead {
-    display: none;
-  }
-
   //background sun shot fixed for home
   .image-wrap {
-    background-color: $body-color;
-    -webkit-transform:translateZ(0);
-    transform:translateZ(0);
-
     position: fixed;
     top: -50%;
     left: -50%;
     width: 200%;
     height: 200%;
     z-index: -100;
+
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0);
+
+    background-color: $body-color;
+
     img {
       background-color: $body-color;
       position: absolute;
@@ -64,8 +52,6 @@
   }
 
   .page {
-    margin-bottom: 0;
-
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -82,41 +68,73 @@
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-
+    margin: 0;
+    padding: 0;
   }
+  .page-block {
+    position: relative;
+    width: 70%;
+    max-width: 500px;
+    align-self: center;
+    padding: 2rem;
+    text-align: justify;
+    background-color: white;
+    margin-bottom: 2rem;
+    &.quote {
+      margin-bottom: 10rem;
+    }
+  }
+  .left_triangle:before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 50px);
+    left: -2.5rem;
+  	width: 0;
+  	height: 0;
+  	border-top: 50px solid transparent;
+  	border-right: 50px solid white;
+  	border-bottom: 50px solid transparent;
+  }
+  .right_triangle:before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 50px);
+    right: -2.5rem;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 50px solid white;
+    border-bottom: 50px solid transparent;
+  }
+
 
   .page-title {//h1
     color: white;
     width: 100%;
     min-height: 90vh;
     line-height: 80vh;
-    padding: 0;
-    margin: 0;
     text-align: center;
   }
 
   .title {
     text-align: left;
     margin-top: 0;
+  }
+  .cite {
+    color: white;
+    position: absolute;
+    bottom: -2rem;
+    font-weight: bold;
     margin-bottom: 0;
-    padding: 0;
-    width: auto;
   }
 }
 
-.clients {
-  margin-bottom: 40vh!important;
-  @include media( "screen", ">minWidth" ) {
-    margin-bottom: 10rem!important;
-  }
-}
+
 
 .last {
   border: 0 none;
   bottom: 0;
   left: 0;
-  padding: 0;
-  margin: 0;
   width: 100vw;
   padding-top: 20rem;
   background-size: cover;
@@ -136,7 +154,6 @@
 
   .social-block {
     width:100%;
-    margin: 0;
     padding-bottom: 5vh;
     display: -webkit-box;
     display: -webkit-flex;
@@ -163,11 +180,6 @@
       padding-bottom: 1rem;
     }
 
-    .social-icons {
-      padding: 0;
-      margin: 0;
-    }
-
     .title {
       text-align: center;
       line-height: 5;
@@ -179,23 +191,18 @@
 }
 
 
-
-
 // checkbox:checked case hide the shot
 .about {
   #sidebar-checkbox:checked ~ .wrap {
     body & { background-color: white;}
     img { display:none; }
+    .last { display:none; }
+    .cite { color:black; }
+    .page-block {text-align: left;}
     .page {
       .page-title {
         min-height: 0;
         height: 0;
-      }
-      .bamboo {
-        @include media( "screen", "<bp1Width" ) {
-          margin-left:0;
-          margin-right:0;
-        }
       }
     }
   }
