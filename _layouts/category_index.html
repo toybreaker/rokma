@@ -5,6 +5,7 @@ layout: default
 	<h1 class="page-title {{ page.title }}">{{ page.headline }}</h1>
 	<div class="wrap {{ page.isindex }}">
 	  <div class="container content">
+
 	    <div class="posts">
 	      {% for post in site.categories[page.categories] %}
 
@@ -13,5 +14,12 @@ layout: default
 	      {% endfor %}
 	    </div>
 	  </div>
+
+		<h3 class="category_excerpt">
+			<blockquote>
+				{{ page.excerpt }}
+			</blockquote>
+		</h3>
+
 	</div>
 </div>
