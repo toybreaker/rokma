@@ -5,7 +5,6 @@ headline: Cifra Adv
 categories: advertising
 year: 2001 > 2004
 where: italy
-imagehowmany: 15
 backgroundColor: black
 image:
 - 01.jpg
@@ -22,6 +21,6 @@ image:
 - 12.jpg
 - 13.jpg
 - 14.jpg
-- 15.jpg 
+- 15.jpg
 ---
 Advertising campaign for &lt;Cifra Clothing&gt; firm.

@@ -15,23 +15,32 @@
 	<meta name="twitter:creator" content="@{{ author.twitter }}">
 {% endif %}
 
-{% if page.image.feature %}
+{% if page.index_image %}
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image:src" content="{{ site.url }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature }}">
+	<meta name="twitter:image:src" content="{{ site.url }}/images/{{ page.categories }}/{{ page.title }}/{{ page.index_image}}">
 {% else %}
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:image:src" content="{{ site.url }}/images/{{ site.logo }}">
+	{% if page.image.[0] %}
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:image:src" content="{{ site.url }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.[0]}}">
+	{% else %}
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:image:src" content="{{ site.url }}/images/{{ site.logo }}">
 	{% endif %}
+{% endif %}
 
 <!-- Open Graph -->
 	<meta property="og:locale" content="{{ site.locale }}">
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 
-{% if page.image.feature %}
-	<meta property="og:image" content="{{ site.url }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.feature }}">
+{% if page.index_image %}
+	<meta property="og:image" content="{{ site.url }}/images/{{ page.categories }}/{{ page.title }}/{{ page.index_image }}">
 {% else %}
+	{% if page.image.[0] %}
+		<meta property="og:image" content="{{ site.url }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.[0] }}">
+	{% else %}
 	<meta property="og:image" content="{{ site.url }}/images/{{ site.logo }}">
+	{% endif %}
 {% endif %}
 
 {% if page.excerpt %}

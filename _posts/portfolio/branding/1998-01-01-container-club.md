@@ -5,7 +5,6 @@ headline: Container Club
 categories: branding
 year: 1999
 where: milano, italy
-imagehowmany: 6
 backgroundColor: black
 image:
 - 01.jpg

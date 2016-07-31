@@ -5,7 +5,6 @@ headline: Freezer Merchandise
 categories: branding
 year: 1995 > 2000
 where: milano, italy
-imagehowmany: 9
 backgroundColor: black
 image:
 - 01.jpg
