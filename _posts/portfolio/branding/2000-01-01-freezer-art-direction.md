@@ -5,7 +5,6 @@ headline: Freezer art direction
 categories: branding
 year: 1995 > 2000
 where: italy
-imagehowmany: 15
 backgroundColor: gray1
 image:
 - 01.jpg
@@ -22,6 +21,6 @@ image:
 - 12.jpg
 - 13.jpg
 - 14.jpg
-- 15.jpg 
+- 15.jpg
 ---
 Editorial strategy and branding for &lt;Freezer Magazine&gt; free press.

@@ -4,7 +4,6 @@ title: cifra-clothing
 headline: Cifra Branding
 categories: branding
 year: 2001 > 2004
-imagehowmany: 15
 where: italy
 image:
 - 01.jpg

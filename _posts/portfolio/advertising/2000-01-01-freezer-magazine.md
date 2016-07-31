@@ -5,7 +5,6 @@ headline: Freezer Adv
 categories: advertising
 year: 2015
 where: bali, indonesia
-imagehowmany: 11
 backgroundColor: gray1
 image:
 - 01.jpg
