@@ -448,3 +448,8 @@ body.gray2 {
   display: none;
   .index & { display: block;}
 }
+
+.category_excerpt {
+  max-width: 400px;
+  margin: 10rem auto;
+}

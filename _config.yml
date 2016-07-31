@@ -1,6 +1,6 @@
 title: Rokma
 locale: en_US
-description: "Communication Design and Media Engineering"
+description: "Communication Design and production."
 shout_description: "Flexible Communication Design for small companies. Imagine. Plan. Produce. Launch. And also just consulting!"
 logo: 01.jpg
 tagline: 'empowers small enterprises'
@@ -25,8 +25,6 @@ sass:
   style: :compressed
   # style: :expanded
 
-
-
 markdown: kramdown
 
 owner:
@@ -44,9 +42,6 @@ owner:
 google:
   analytics: UA-1305149-1
   verify: google32e66f1a5601ec40
-  ad-client:
-  ad-slot:
-
 
 gems: [github-pages, jekyll-feed, jekyll-sitemap, jekyll-seo-tag, html-proofer]
 

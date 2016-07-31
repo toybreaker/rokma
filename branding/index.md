@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: category_index
 title: branding
 headline: Noteworthy branding works
 categories: branding
