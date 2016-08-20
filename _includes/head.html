@@ -33,7 +33,7 @@
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-16x16.png" sizes="16x16">
 
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
 
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
 
@@ -46,8 +46,8 @@
 
   {% include open-graph.html %}
 
+  {% include script_webfont.html %}
 
-  <link href='http://fonts.googleapis.com/css?family=Dosis:200,400,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
   <!-- <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url }}{{ site.baseurl }}//atom.xml"> -->

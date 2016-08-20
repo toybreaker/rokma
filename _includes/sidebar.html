@@ -8,7 +8,7 @@
       <label for="sidebar-checkbox" class="sidebar-toggle"><i class="fa fa-remove"></i></label>
     </div>
 
-    <a class="to-home catindex" href="{% if page.title == "Home" or page.title == "about" %}/{% else %}{{ site.baseurl }}/{{page.categories}}/{% endif %}"
+    <a class="to-home catindex" href="{% if page.title == "Home" or page.title == "About" %}/{% else %}{{ site.baseurl }}/{{page.categories}}/{% endif %}"
     alt="back to {{page.categories}} index">
       <span class="avatar">
         <img src="{{ site.baseurl }}/images/{{ site.owner.avatar }}" alt="{{ site.description }}">
