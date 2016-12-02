@@ -43,9 +43,10 @@
   .masthead-title {
     font-weight: 600;
     line-height: 1;
-    font-size: 3rem; //fallback that doesn't look awful
+    font-size: 2rem; //fallback that doesn't look awful
     font-size: 12vw;
     @include media( "screen", ">minWidth") {
+      font-size: 2.5rem; //fallback that doesn't look awful
       font-size: 7vw;
       padding-left: 8vw;
       padding-right: 8vw;

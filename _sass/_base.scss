@@ -201,7 +201,7 @@ button strong em{
 }
 
 
-//// Masthead - Small header above the content for site name and short description
+//// Masthead - Small header above content for site name and short desc.
 .masthead {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -309,9 +309,6 @@ button strong em{
 // center stuff past tablets
 .entry-wrapper {
   margin: 6rem 1rem 1rem 1rem;
-  @include media( "screen", ">minWidth") {
-    margin: 6rem 1rem 1rem 1rem;
-  }
   @include media( "screen", ">bp1Width") {
     max-width: 42rem;
     margin: 6rem auto 2rem auto;

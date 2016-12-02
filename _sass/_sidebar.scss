@@ -362,10 +362,6 @@ transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
    padding-left: $sidebarwidth-max;
   }
 
-  /*why still need this since there are same?*/
-  /* @include media( "screen", ">bp1Width" ){*/
-  /*   padding-left: $sidebarwidth;*/
-  /* }*/
   .taglineplus {display:none;}
   .entry-wrapper {text-align:left;}
   .bamboo {margin-left:0;margin-right:0;}
