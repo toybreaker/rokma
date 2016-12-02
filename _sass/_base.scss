@@ -308,7 +308,7 @@ button strong em{
 
 // center stuff past tablets
 .entry-wrapper {
-  margin: 6rem 2rem 1rem 2rem;
+  margin: 6rem 1rem 1rem 1rem;
   @include media( "screen", ">minWidth") {
     margin: 6rem 1rem 1rem 1rem;
   }
@@ -331,15 +331,24 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  @include media( "screen", ">minWidth") {
+    font-size: 2rem;
+  }
 }
 h2 {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  @include media( "screen", ">minWidth") {
+    font-size: 1.5rem;
+  }
 }
 h3 {
   margin-top: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  @include media( "screen", ">minWidth") {
+    font-size: 1.25rem;
+  }
 }
 h4, h5, h6 {
   margin-top: 1rem;
