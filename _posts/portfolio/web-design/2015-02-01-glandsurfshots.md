@@ -13,4 +13,3 @@ image:
 - 04.png #android
 ---
 E-commerce website for &lt;glandsurfshots&gt; photo archive.
-Check the [live website](http://glandsurfshots.com).
