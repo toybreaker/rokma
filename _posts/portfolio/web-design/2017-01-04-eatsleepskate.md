@@ -12,5 +12,5 @@ image:
 - 03.png #nexus6
 - 04.png #android
 ---
-Website for &lt;Eat Sleep Skate Bali&gt; accomodation. Uses photo from their Instagram feed keeping it always updated.
+Website for &lt;Eat Sleep Skate Bali&gt; accommodation. Uses photo from their Instagram feed keeping it always updated.
 Check the [live webapp](http://essbali.com).

@@ -8,5 +8,4 @@ where: Genova, Italy
 image:
 - 01.jpg
 ---
-Website for &lt;Pinksummer&gt; contemporary art gallery.
-Check the [live website](http://pinksummer.com).
+Website for &lt;Pinksummer&gt; contemporary art gallery. Online presence from 2015 to 2016.
