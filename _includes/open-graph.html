@@ -1,10 +1,10 @@
 <!-- Twitter Cards -->
-	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta name="twitter:title" content="{% if page.headline %}{{ page.headline }}{% else %}{{ site.title }}{% endif %}">
 
 {% if page.excerpt %}
 	<meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
 {% else %}
-	<meta name="twitter:description" content="{{ page.title }}">
+	<meta name="twitter:description" content="{{ page.headline }}">
 {% endif %}
 
 {% if site.owner.twitter %}
@@ -31,7 +31,7 @@
 <!-- Open Graph -->
 	<meta property="og:locale" content="{{ site.locale }}">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta property="og:title" content="{% if page.headline %}{{ page.headline }}{% else %}{{ site.title }}{% endif %}">
 
 {% if page.index_image %}
 	<meta property="og:image" content="{{ site.url }}/images/{{ page.categories }}/{{ page.title }}/{{ page.index_image }}">
