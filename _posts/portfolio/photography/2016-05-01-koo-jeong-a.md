@@ -3,7 +3,7 @@ layout: pho
 title: koo-jeong-a
 headline: Koo Jeong A
 categories: photography
-year: 20016
+year: 2016
 where: italy
 catch: powered by
 image:
