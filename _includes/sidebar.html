@@ -9,14 +9,14 @@
     </div>
 
     <a class="to-home catindex" href="{% if page.title == "Home" or page.title == "About" %}/{% else %}{{ site.baseurl }}/{{page.categories}}/{% endif %}"
-    alt="back to {{page.categories}} index">
+    title="back to {{page.categories}} index">
       <span class="avatar">
-        <img src="{{ site.baseurl }}/images/{{ site.owner.avatar }}" title="{{ site.description }}">
+        <img src="{{ site.baseurl }}/images/{{ site.owner.avatar }}" alt="{{ site.description }}">
       </span>
     </a>
 
     <a class="to-home" href="{% if page.url == site.baseurl %}{{ site.baseurl }}{% else %}{{ site.baseurl }}/{% endif %}"
-    alt="back to home page">
+    title="back to home page">
       <span class="descri">{{ site.title }}</span>
       <span class="descri">{{ site.description }}</span>
     </a>
@@ -24,7 +24,7 @@
     <nav class="sidebar-nav">
 
       {% for link in site.data.navigation %}
-        <a class="sidebar-nav-item" alt="see rokma's {{ link.section }} works" href="{{ site.baseurl }}/{{ link.section }}/">{{ link.section }}</a>
+        <a class="sidebar-nav-item" title="see rokma's {{ link.section }} works" href="{{ site.baseurl }}/{{ link.section }}/">{{ link.section }}</a>
       {% endfor %}
 
     </nav>

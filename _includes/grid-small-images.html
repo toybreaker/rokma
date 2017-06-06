@@ -8,7 +8,7 @@ displays many small images in a grid
 
     {% for thumb in page.image %}
       <div class="image-grid-item">
-        <img src="/images/{{page.categories}}/{{page.title}}/{{thumb}}" />
+        <img src="/images/{{page.categories}}/{{page.title}}/{{thumb}}" alt="{{page.categories}} - {{page.title}}"/>
       </div>
     {% endfor %}
 
