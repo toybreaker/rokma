@@ -5,7 +5,7 @@
   <div class="middle">
 
     <div class="tog sidebar-toggle-button">
-      <label for="sidebar-checkbox" class="sidebar-toggle"><i class="fa fa-remove"></i></label>
+      <label for="sidebar-checkbox" class="sidebar-toggle"><span class="fa fa-remove"></span></label>
     </div>
 
     <a class="to-home catindex" href="{% if page.title == "Home" or page.title == "About" %}/{% else %}{{ site.baseurl }}/{{page.categories}}/{% endif %}"
@@ -16,7 +16,7 @@
     </a>
 
     <a class="to-home" href="{% if page.url == site.baseurl %}{{ site.baseurl }}{% else %}{{ site.baseurl }}/{% endif %}"
-    alt="back home">
+    alt="back to home page">
       <span class="descri">{{ site.title }}</span>
       <span class="descri">{{ site.description }}</span>
     </a>
@@ -24,7 +24,7 @@
     <nav class="sidebar-nav">
 
       {% for link in site.data.navigation %}
-        <a class="sidebar-nav-item" href="{{ site.baseurl }}/{{ link.section }}/">{{ link.section }}</a>
+        <a class="sidebar-nav-item" alt="see rokma's {{ link.section }} works" href="{{ site.baseurl }}/{{ link.section }}/">{{ link.section }}</a>
       {% endfor %}
 
     </nav>
