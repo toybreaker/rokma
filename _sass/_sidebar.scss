@@ -82,6 +82,10 @@ $sidebarwidthplus: 13.75rem; /*calc( 16 rem - (55px : 2) )*/
     padding-bottom: 20px;
     padding-left: 1.5em;
     padding-right: 1.5rem;
+    &.title {
+      padding-top: 20px;
+      padding-bottom: 0;
+    }
   }
   .fontsizefixed { font-size: 14px; }
 
