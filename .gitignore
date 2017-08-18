@@ -8,8 +8,8 @@ Gemfile.lock
 
 .jekyll
 .workinprogress
-_htaccess_online/
-_htaccess_online
 _site/
 __LAB
 images/_*
+
+/node_modules
