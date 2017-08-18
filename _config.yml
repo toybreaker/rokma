@@ -1,17 +1,17 @@
 title: Rokma
 locale: en_US
 description: "Communication Design and production."
-shout_description: "Flexible Communication Design for small companies. Imagine. Plan. Produce. Launch. And also just consulting!"
+shout_description: "Flexible Communication Design for small companies. Imagine > Plan > Produce > Launch. And also just consulting!"
 logo: 01.jpg
 tagline: 'empowers small enterprises'
 tagline_short: 'empowers'
 tagline_plus: 'building reputation'
 
 baseurl: ""
-url: http://rokma.com
+url: https://www.rokma.com
 
-version: 16.5.0
-version_details: 'open tested source'
+version: 16.6.0
+version_details: 'netlify now fly'
 
 # Outputting
 permalink:   /:categories/:title/
@@ -31,7 +31,7 @@ owner:
   name: Rokma
   avatar: o-avatar.jpg
   email: rokmabox@gmail.com
-  web: http://rokma.com
+  web: https://www.rokma.com
   twitter: rokmatwit
   facebook: rokmaphotography
   github: toybreaker
@@ -43,7 +43,7 @@ google:
   analytics: UA-1305149-1
   verify: google32e66f1a5601ec40
 
-gems: [github-pages, jekyll-feed, jekyll-sitemap, jekyll-seo-tag, html-proofer]
+plugins: [github-pages, jekyll-feed, jekyll-sitemap, jekyll-seo-tag, html-proofer]
 
 exclude: [ "gulpfile.js", "package.json", "Gemfile.lock", "LICENSE", "Icon"]
 
