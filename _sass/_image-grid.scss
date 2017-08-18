@@ -10,6 +10,14 @@
     margin: 0;
     max-width: 450px;
   }
+  .image-grid-item img[src*="svg"]{
+    width: 450px;
+  }
+}
+
+.specials img.entry-feature-image[src*="svg"]{
+  width: 200px;
+  background-color: transparent;
 }
 
 
