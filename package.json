@@ -1,14 +1,14 @@
 {
   "name": "rokma",
-  "version": "16.4.0",
-  "description": "jekyll gh-pages portfolio + utils",
+  "version": "16.6.0",
+  "description": "jekyll portfolio + utils",
   "main": "gulpfile.js",
   "private": true,
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-imagemin": "^3.0.1",
-    "gulp-responsive": "^2.4.0"
+    "gulp-responsive": "2.7.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
