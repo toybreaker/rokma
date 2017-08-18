@@ -13,3 +13,4 @@ __LAB
 images/_*
 
 /node_modules
+package.json
