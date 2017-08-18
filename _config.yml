@@ -39,12 +39,14 @@ owner:
   soundcloud: rokma
   googleplus: rokma
 
+producer: https://www.junglestar.org
+
 google:
   analytics: UA-1305149-1
   verify: google32e66f1a5601ec40
 
 plugins: [github-pages, jekyll-feed, jekyll-sitemap, jekyll-seo-tag, html-proofer]
 
-exclude: [ "gulpfile.js", "package.json", "Gemfile.lock", "LICENSE", "Icon"]
+exclude: ["gulpfile.js", "package.json", "Gemfile.lock", "LICENSE", "Icon"]
 
 exclude: [vendor]

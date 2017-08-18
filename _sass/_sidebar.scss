@@ -89,7 +89,7 @@ $sidebarwidthplus: 13.75rem; /*calc( 16 rem - (55px : 2) )*/
   .tog {
     z-index: 1000;
     position: absolute;
-    left: 0;
+    right: 1rem;
 
     .sidebar-toggle {
       background-color: rgba(255,255,255,.1);

@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/toybreaker/rokma.svg?branch=source)](https://travis-ci.org/toybreaker/rokma)
 
-### [Rokma](http://rokma.com)
+### [Rokma](https://rokma.com)
 
 Ultra light mobile-first static website. Responsive UI. Jekyll portfolio, tested!  Adhering to [KISS](https://en.wikipedia.org/wiki/KISS_principle),   [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
@@ -34,7 +34,7 @@ Maybe:
 
 ## Develop:
 
-[Travis-ci](https://github.com/toybreaker/rokma/blob/gh-pages/.travis.yml) will test source branch only.
+[Travis-ci](https://github.com/toybreaker/rokma/blob/gh-pages/.travis.yml) will test source branch.
 
 
 ## Warning:
