@@ -1,10 +1,10 @@
- [![Build Status](https://travis-ci.org/toybreaker/rokma.svg?branch=master)](https://travis-ci.org/toybreaker/rokma)
+[![Build Status](https://travis-ci.org/toybreaker/rokma.svg?branch=source)](https://travis-ci.org/toybreaker/rokma)
 
 ### [Rokma](http://rokma.com)
 
-Ultra light mobile-first static website. Responsive UI. Jekyll gh-pages portfolio, tested!  Adhering to [KISS](https://en.wikipedia.org/wiki/KISS_principle),   [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (uhm... well, partly. Really not yet!)
+Ultra light mobile-first static website. Responsive UI. Jekyll portfolio, tested!  Adhering to [KISS](https://en.wikipedia.org/wiki/KISS_principle),   [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
-v 16.5.0
+v 16.6.0
 
 
 ## 2DOs
@@ -34,7 +34,7 @@ Maybe:
 
 ## Develop:
 
-Use master branch to dev so [Travis-ci](https://github.com/toybreaker/rokma/blob/gh-pages/.travis.yml),  which is currently set to check master only, can test it. When test pass, merge master > gh-pages.
+[Travis-ci](https://github.com/toybreaker/rokma/blob/gh-pages/.travis.yml) will test source branch only.
 
 
 ## Warning:
