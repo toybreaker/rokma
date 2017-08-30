@@ -117,3 +117,14 @@
     .posts {display:none;}
   }
 }
+
+
+.posthumb.image_icons .entry-feature-image {
+  background: transparent;
+}
+
+.post:hover .image_icons .entry-feature-image {
+  -webkit-transform: scale(.75) translateY(-62px);
+  transform: scale(.75) translateY(-62px);
+
+}
