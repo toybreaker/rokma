@@ -8,7 +8,7 @@ tagline_short: 'empowers'
 tagline_plus: 'building reputation'
 
 baseurl: ""
-url: https://www.rokma.com
+url: https://rokma.com
 
 version: 16.6.0
 version_details: 'netlify now fly'
@@ -31,7 +31,7 @@ owner:
   name: Rokma
   avatar: o-avatar.jpg
   email: rokmabox@gmail.com
-  web: https://www.rokma.com
+  web: https://rokma.com
   twitter: rokmatwit
   facebook: rokmaphotography
   github: toybreaker
