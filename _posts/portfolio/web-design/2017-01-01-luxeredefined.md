@@ -12,4 +12,4 @@ image:
 - 03.png #nexus6
 - 04.png #android
 ---
-Website about &lt;Luxe Redefined&gt;. 
+Cms blog website. 
