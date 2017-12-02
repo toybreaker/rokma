@@ -95,6 +95,8 @@ img {
   margin: 1rem auto;
   // opera mini issue here:
   border-radius: $border-radius;
+  // chrome improved images
+  image-rendering: -webkit-optimize-contrast;
 }
 
 
