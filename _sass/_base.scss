@@ -30,6 +30,9 @@ a {
   strong {
     color: inherit;
   }
+  &.active {
+    color: black;
+  }
   // :focus is linked to :hover for basic accessibility
   &:hover,
   &:focus {}
