@@ -1,5 +1,5 @@
 title: Rokma
-locale: en_US
+locale: en
 description: "Communication Design and production."
 shout_description: "Flexible Communication Design for small companies. Imagine > Plan > Produce > Launch. And also just consulting!"
 logo: 01.jpg
@@ -10,8 +10,8 @@ tagline_plus: 'building reputation'
 baseurl: ""
 url: https://rokma.com
 
-version: 16.6.0
-version_details: 'netlify now fly'
+version: 16.6.1
+version_details: 'fly with netlify'
 
 # Outputting
 permalink:   /:categories/:title/

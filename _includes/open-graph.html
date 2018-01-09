@@ -29,7 +29,10 @@
 {% endif %}
 
 <!-- Open Graph -->
+{% if site.locale %}
 	<meta property="og:locale" content="{{ site.locale }}">
+{% endif %}
+
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="{% if page.headline %}{{ page.headline }}{% else %}{{ site.title }}{% endif %}">
 
