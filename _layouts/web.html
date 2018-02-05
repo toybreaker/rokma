@@ -29,9 +29,29 @@ layout: default
       <header class="entry-header">
         <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}</h1>{% endif %}
       </header>
+
       <div class="entry-content">
         {{ content }}
       </div>
+
+      <div class="entry-quotes">
+        <h2>
+        {% if page.quote %}
+          <blockquote cite="http://">
+            {{ page.quote }}
+          </blockquote>
+        {% endif %}
+        </h2>
+
+        <h2>
+        {% if page.quote_02 %}
+          <blockquote cite="http://">
+            {{ page.quote_02 }}
+          </blockquote>
+        {% endif %}
+        </h2>
+      </div>
+
     </div>
 
   </article>

@@ -43,11 +43,15 @@
   .masthead-title {
     font-weight: 600;
     line-height: 1;
-    font-size: 2rem; //fallback that doesn't look awful
-    font-size: 12vw;
+    //font-size: 2rem; //fallback that doesn't look awful
+    //font-size: 12vw;
+
+    @include responsive-font( 12vw, 50px, 120px, 46px);
+
     @include media( "screen", ">minWidth") {
-      font-size: 2.5rem; //fallback that doesn't look awful
-      font-size: 7vw;
+      // font-size: 2.5rem; //fallback that doesn't look awful
+      // font-size: 7vw;
+      @include responsive-font( 8vw, 46px, 120px, 46px);
       padding-left: 8vw;
       padding-right: 8vw;
     }

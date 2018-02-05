@@ -81,15 +81,27 @@ abbr[title] {
 //// Quotes
 blockquote {
   padding: 0;
-  padding-left: 1rem;
   margin: 0;
   color: #7a7a7a;
   border-left: .25rem solid $color2;
   p:last-child {
     margin-bottom: 0;
   }
+  max-width: 400px;
+  margin-left: 1rem;
+  margin-right: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
 }
 
+.entry-quotes {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
 
 //// All images... hum!
 img {
@@ -234,7 +246,8 @@ button strong em{
     text-decoration: none;
     span,
     span small{
-      font-size: 9.5vh;
+      //font-size: 9.5vh;
+      @include responsive-font( 8vh, 50px, 100px, 46px);
       display: block;
       line-height: 1!important;
       padding-top: 0;

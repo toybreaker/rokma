@@ -47,6 +47,8 @@ $base-line-height: 1.5;
 
 $filter-opacity: 90%;
 
+
+
 //// BACKGROUND BLEND MODE stuff
 // https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode
 
@@ -79,6 +81,7 @@ $mediaMaxWidth: 1260px;
 @import "cmq";
 // font need go: svg instead!inline or imported w/ liquid tag
 @import "vendor/font-awesome/font-awesome";
+@import "responsive_titles";
 @import "base";// html + lanyon (really?)
 @import "pagination";// used just in Home
 // now with fa-icon: delete w+h and let flex center'em
