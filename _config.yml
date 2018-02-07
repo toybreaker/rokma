@@ -59,5 +59,8 @@ exclude:
   - Gemfile
   - rakefile
   - gulpfile.js
-  
+
+# the following exclude is necessary to make Travis CI work:
+# https://github.com/jekyll/jekyll/issues/5267
+# https://github.com/jekyll/jekyll/issues/2938  
 exclude: ["vendor"]
