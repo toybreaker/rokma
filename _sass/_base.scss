@@ -1,4 +1,3 @@
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -14,7 +13,6 @@ html {
   line-height: $base-line-height;
   font-weight: 400;
   font-family: $base-font;
-
 }
 
 body {
@@ -27,38 +25,53 @@ body {
 a {
   color: $link-color;
   text-decoration: none;
+
   strong {
     color: inherit;
   }
+
   &.active {
     color: black;
   }
   // :focus is linked to :hover for basic accessibility
-  &:hover,
-  &:focus {}
-
+  &:focus,
+  &:hover {}
 }
-
-
 // `:visited` state is usefull!
-body:not(.photography) div:not(.sidebar) a:visited,
-body:not(.black) div:not(.sidebar) a:visited{
+body:not(.black) div:not(.sidebar) a:visited,
+body:not(.photography) div:not(.sidebar) a:visited {
   color: silver;
 }
-.fontsizefixed .underline-on-hover:visited{
+
+.fontsizefixed .underline-on-hover:visited {
   color: silver!important;
 }
 
-
-.fontsizefixed .underline-on-hover:hover{
+.fontsizefixed .underline-on-hover:hover {
   color: #0096ff!important;
 }
 //// Body text
-p { margin-top: 0; margin-bottom: 1rem; }
 
-ul, ol, dl { margin-top: 0; margin-bottom: 1rem; }
-dt {font-weight: 400;}
-dd {margin-bottom: .5rem;}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dt {
+  font-weight: 400;
+}
+
+dd {
+  margin-bottom: 0.5rem;
+}
+
 hr {
   position: relative;
   margin: 1.5rem 0;
@@ -66,43 +79,46 @@ hr {
   border-top: 1px solid #eee;
   border-bottom: 1px solid $brightest-color;
 }
+
 abbr {
   font-size: 85%;
   font-weight: 400;
   color: #555;
   text-transform: uppercase;
 }
+
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted $color2;
 }
-
-
 //// Quotes
 blockquote {
   padding: 0;
   margin: 0;
   color: #7a7a7a;
-  border-left: .25rem solid $color2;
+  border-left: 0.25rem solid $color2;
+
   p:last-child {
     margin-bottom: 0;
   }
   max-width: 400px;
-  margin-left: 1rem;
-  margin-right: 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0 50px 1rem;
   padding-right: 1rem;
   padding-left: 1rem;
-
 }
 
 .entry-quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
-
 //// All images... hum!
 img {
   display: block;
@@ -113,8 +129,6 @@ img {
   // chrome improved images
   image-rendering: -webkit-optimize-contrast;
 }
-
-
 //// Tables
 table {
   margin-bottom: 1rem;
@@ -122,42 +136,42 @@ table {
   border: 1px solid $color2;
   border-collapse: collapse;
 }
+
 td,
 th {
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   border: 1px solid $color2;
 }
+
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: $color3;
 }
 
-
 em {
   font-style: normal;
   font-weight: 200;
 }
-strong em{
+
+strong em {
   font-style: normal;
   font-weight: 200;
   font-size: 2rem;
-  padding-right:.5rem;
+  padding-right: 0.5rem;
 }
-button strong em{
+
+button strong em {
   font-size: 1.4rem;
   font-weight: 400;
   font-family: $base-font;
 }
-
-
-
 //// Custom type
 // Extend paragraphs with `.lead` for larger introductory text.
+
 .lead {
   font-size: 125%;
   font-weight: 200;
 }
-
 
 .message {
   margin-bottom: 1rem;
@@ -166,13 +180,13 @@ button strong em{
   background-color: $color3;
 }
 
-
 .page-title,
 .post-title,
 .post-title a {
   color: $color1;
   position: relative;
 }
+
 .page-title,
 .post-title {
   margin-top: 0;
@@ -190,52 +204,54 @@ button strong em{
   padding-bottom: 2rem;
   border-top: 1px solid #eee;
 }
+
 .related-posts {
   padding-left: 0;
   list-style: none;
-   h3 {
+
+  h3 {
     margin-top: 0;
   }
+
   li small {
     font-size: 75%;
     color: #999;
   }
+
   li a:hover {
     color: #268bd2;
   }
+
   li a:hover small {
     color: inherit;
   }
 }
 
-
 .wrap {
   position: relative;
   width: 100%;
-  @include media( "screen", "<minWidth" ) {
-    top:5rem;
+  @include media("screen", "<minWidth") {
+    top: 5rem;
   }
 }
-
-
 //// Masthead - Small header above content for site name and short desc.
 .masthead {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #ddd;
 }
-.photography .masthead,
-.black .masthead {
-  border-bottom: 1px solid lighten($black, 20) ;
+
+.black .masthead,
+.photography .masthead {
+  border-bottom: 1px solid lighten($black, 20);
 }
 
 .masthead-title {
-  padding-bottom:3rem;
+  padding-bottom: 3rem;
   margin: 0 1rem;
   color: $color6;
   text-transform: uppercase;
-
-  @include media( "screen", "<minWidth" ) {
+  @include media("screen", "<minWidth") {
     text-align: center;
   }
 
@@ -244,10 +260,11 @@ button strong em{
     font-weight: 200;
     line-height: $base-line-height;
     text-decoration: none;
+
     span,
-    span small{
+    span small {
       //font-size: 9.5vh;
-      @include responsive-font( 8vh, 50px, 100px, 46px);
+      @include responsive-font(8vh, 50px, 100px, 46px);
       display: block;
       line-height: 1!important;
       padding-top: 0;
@@ -256,40 +273,44 @@ button strong em{
       margin-bottom: 0;
     }
   }
+
   small {
     font-size: 2rem;
     font-weight: 200;
     letter-spacing: 0;
-    @include media( "screen", "<minWidth" ){
-      display:none;
+    @include media("screen", "<minWidth") {
+      display: none;
     }
   }
 }
-
-
 // Container  - Center the page content.
 .container {
   width: auto;
-  padding-left:0!important;
-  padding-right:0!important;
-  @include media( "screen", ">minWidth" ) {
+  padding-left: 0!important;
+  padding-right: 0!important;
+  @include media("screen", ">minWidth") {
     width: 100%;
-    padding-left:   0;
-    padding-right:  0;
-    margin-left:    0;
-    margin-right:   0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
-  &.content {margin-top: 10vh;}
+
+  &.content {
+    margin-top: 10vh;
+  }
 }
-
-
 // Blog post or page title
 .page-title,
 .post-title,
-.post-title a { color: $color1; }
-.page-title,
-.post-title { margin-top: 0; }
+.post-title a {
+  color: $color1;
+}
 
+.page-title,
+.post-title {
+  margin-top: 0;
+}
 // Meta data line below post title
 .post-date {
   display: block;
@@ -297,82 +318,100 @@ button strong em{
   margin-bottom: 1rem;
   color: $color4;
 }
-
 // Related posts
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-top: 1px solid #eee;
 }
+
 .related-posts {
   padding-left: 0;
   list-style: none;
 }
+
 .related-posts h3 {
   margin-top: 0;
 }
+
 .related-posts li small {
   font-size: 75%;
   color: #999;
 }
+
 .related-posts li a:hover {
   color: #268bd2;
   text-decoration: none;
 }
+
 .related-posts li a:hover small {
   color: inherit;
 }
-
-
 // center stuff past tablets
 .entry-wrapper {
-  margin: 6rem 1rem 1rem 1rem;
-  @include media( "screen", ">bp1Width") {
+  margin: 6rem 1rem 1rem;
+  @include media("screen", ">bp1Width") {
     max-width: 42rem;
-    margin: 6rem auto 2rem auto;
+    margin: 6rem auto 2rem;
   }
 }
-
-
 // @2do put stuff here in place....
 // Headings
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 200;
   line-height: 1.25;
   letter-spacing: -.025rem;
   text-rendering: optimizeLegibility;
   text-transform: capitalize;
   color: #313131;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
+
 h1 {
   font-size: 1.5rem;
-  @include media( "screen", ">minWidth") {
+  @include media("screen", ">minWidth") {
     font-size: 2rem;
   }
 }
+
 h2 {
   margin-top: 1rem;
   font-size: 1.1rem;
-  @include media( "screen", ">minWidth") {
+  @include media("screen", ">minWidth") {
     font-size: 1.5rem;
   }
 }
+
 h3 {
   margin-top: 1.5rem;
   font-size: 1rem;
-  @include media( "screen", ">minWidth") {
+  @include media("screen", ">minWidth") {
     font-size: 1.25rem;
   }
 }
-h4, h5, h6 {
+
+h4,
+h5,
+h6 {
   margin-top: 1rem;
   font-size: 1rem;
 }
-.post-list { list-style-type: none; }
-.post-date { display:none; }
+
+.post-list {
+  list-style-type: none;
+}
+
+.post-date {
+  display: none;
+}
 
 article.entry {
   margin: 5rem initial;
-  text-align:right;
+  text-align: right;
 }

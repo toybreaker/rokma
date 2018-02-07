@@ -30,4 +30,4 @@ Up on the volcano slopes of Bali, being a young woman means learning to graceful
 It’s a special day and an occasion like no other. The Gamelan orchestra acoustic percussions provides the rhythm. Every village has a slightly different way of arranging dresses and head wear. The Rejang dance itself is smooth and simple and very similar from village to village. Experienced women show their style balancing burning incense and bigger offerings. The whole village is present to the ceremony and they do check out the display. While the girls laps slowly till past sunset.
 
 
-Published on non-profit magazine [Fumes](http://fumes.github.io.dev/photo-journalism/women-flowers-and-dances/).
+Published on non-profit magazine [Fumes](https://fumes.junglestar.org/photo-journalism/women-flowers-and-dances/).

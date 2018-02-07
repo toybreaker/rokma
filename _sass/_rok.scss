@@ -289,14 +289,17 @@ p a {
   }
 }
 // bg color classes (used in about page!)
+
 .bg-white {
   background-color: white;
 }
 //UNDO Capitalize
+
 .nocap {
   text-transform: initial;
 }
 // used for entering from side block look
+
 .pull-left {
   @include media("screen", ">bp1Width") {
     margin: 1rem calc(50vw - 8rem) 1rem -3rem;
@@ -311,6 +314,7 @@ p a {
   }
 }
 // overrides style for specific sections
+
 .black,
 .photography {
   color: $trnsp-color2;
@@ -328,6 +332,7 @@ p a {
   .pagecat,
   a {
     color: $trnsp-color2;
+
     &.active {
       color: $color5;
     }
@@ -384,6 +389,7 @@ p a {
         -webkit-animation: sdb07 2s infinite;
         animation: strt 2s infinite;
         opacity: 0;
+        -webkit-box-sizing: border-box;
         box-sizing: border-box;
 
         &:nth-of-type(1) {
@@ -459,6 +465,7 @@ body.gray2 {
   top: 0;
 }
 //images
+
 .web-design .entry-visuals {
   position: relative;
   margin-bottom: 5vh;
@@ -555,6 +562,7 @@ body.gray2 {
   }
 }
 //indexes
+
 .index_only {
   display: none;
 
