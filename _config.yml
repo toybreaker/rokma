@@ -10,8 +10,8 @@ tagline_plus: 'building reputation'
 baseurl: ""
 url: https://rokma.com
 
-version: 16.6.1
-version_details: 'fly with netlify'
+version: 16.7.0
+version_details: 'netli-firefly'
 
 # Outputting
 permalink:   /:categories/:title/
@@ -45,8 +45,16 @@ google:
   analytics: UA-1305149-1
   verify: google32e66f1a5601ec40
 
-plugins: [github-pages, jekyll-feed, jekyll-sitemap, jekyll-seo-tag, html-proofer]
+plugins:
+ - jekyll-seo-tag
+ - jekyll-redirect-from
+ - jekyll-sitemap
+ - jekyll-paginate
 
-exclude: ["gulpfile.js", "package.json", "Gemfile.lock", "LICENSE", "Icon"]
-
-exclude: [vendor]
+exclude:
+  - Gemfile.lock
+  - node_modules
+  - package-lock.json
+  - Gemfile
+  - rakefile
+  - gulpfile.js
