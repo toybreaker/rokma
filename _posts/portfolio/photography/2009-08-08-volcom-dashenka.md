@@ -15,6 +15,4 @@ Image for Volcom® international advertising page.
 
 _Know more about her:_
 
-[Dashenka at Volcom](http://www.volcom.com/art/VolcomArt/detail.asp?id=56)
-
 [Dashenka show in London](http://youtu.be/zZXVch22b-E)

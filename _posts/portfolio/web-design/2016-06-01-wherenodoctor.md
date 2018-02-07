@@ -13,4 +13,4 @@ image:
 - 04.png #android
 ---
 Digital book that works in the browser. A web application that works also offline. Open source project based on open sourced bestseller &lt;Where There Is No Doctor&gt; by David Werner.
-Check the [live webapp](https://junglesta.github.io/wherenodoctor/).
+Check the [live webapp](https://nodoctor.junglestar.org).
