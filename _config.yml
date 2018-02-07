@@ -35,7 +35,7 @@ owner:
   twitter: rokmatwit
   facebook: rokmaphotography
   github: toybreaker
-  linkedin: #rokma
+  linkedin: rokma
   soundcloud: rokma
   googleplus: rokma
 
@@ -59,3 +59,5 @@ exclude:
   - Gemfile
   - rakefile
   - gulpfile.js
+  
+exclude: ["vendor"]
