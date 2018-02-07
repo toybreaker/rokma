@@ -4,7 +4,7 @@
 
 Ultra light mobile-first static website. Responsive UI. Jekyll portfolio, tested!  Adhering to [KISS](https://en.wikipedia.org/wiki/KISS_principle),   [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
-v 16.6.0
+v 16.7.0
 
 
 ## 2DOs

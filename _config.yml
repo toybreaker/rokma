@@ -50,6 +50,7 @@ plugins:
  - jekyll-redirect-from
  - jekyll-sitemap
  - jekyll-paginate
+ - html-proofer
 
 exclude:
   - Gemfile.lock
