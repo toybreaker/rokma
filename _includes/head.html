@@ -45,9 +45,27 @@
 
   {% include open-graph.html %}
 
-  <link href='https://fonts.googleapis.com/css?family=Dosis:200,400,600' rel='stylesheet' type='text/css'>
+  <noscript id="deferred-styles">
+    <link href='https://fonts.googleapis.com/css?family=Dosis:200,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  </noscript>
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  <script type="text/javascript">
+      // Load CSS
+      var loadDeferredStyles = function() {
+          var addStylesNode = document.getElementById("deferred-styles");
+          var replacement = document.createElement("div");
+          replacement.innerHTML = addStylesNode.textContent;
+          document.body.appendChild(replacement)
+          addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+  </script>
+
+
 
   <style> [data-sr] { visibility: hidden; } </style>
 
