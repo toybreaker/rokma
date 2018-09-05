@@ -9,4 +9,3 @@ image:
 - 01.jpg
 ---
 Presentational website for &lt;Eleonora Parodi&gt; Art Clinic.
-Check the [live website](http://eleonoraparodi.com).

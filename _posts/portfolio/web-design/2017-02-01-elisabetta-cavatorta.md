@@ -8,4 +8,4 @@ where: paris, france
 image:
 - 01.jpg
 ---
-Portfolio Lookbook for &lt;Elisabetta Cavatorta&gt; fashion stylist. Online presence from 2009 to 2017. Check the [live website](http://elisabettacavatorta.com). 
+Portfolio Lookbook for &lt;Elisabetta Cavatorta&gt; fashion stylist. Online presence from 2009 to 2017. Check the [live website](https://elisabettacavatorta.com). 

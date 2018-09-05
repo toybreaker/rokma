@@ -13,4 +13,3 @@ image:
 - 04.png #android
 ---
 Contest website for &lt;Politecnico di Milano&gt; Architecture university.
-Check the [live website](http://beyondcittastudi.org).

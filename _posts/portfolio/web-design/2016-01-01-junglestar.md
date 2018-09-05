@@ -13,4 +13,4 @@ image:
 - 04.png #android
 ---
 Hub website for &lt;Junglestar&gt; design agency.
-Check the [live website](http://junglestar.org).
+Check the [live website](https://junglestar.org).
