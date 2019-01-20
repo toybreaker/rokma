@@ -3,7 +3,7 @@ layout: pho
 title: burn-trash
 headline: Burn Trash
 categories: photography
-year: 2019
+year: 2018
 where: bali, indonesia
 catch: personal work by
 image:

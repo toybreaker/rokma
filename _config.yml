@@ -10,7 +10,7 @@ tagline_plus: 'building reputation'
 baseurl: ""
 url: https://rokma.com
 
-version: 16.7.0
+version: 16.7.1
 version_details: 'netli-firefly'
 
 # Outputting
@@ -62,5 +62,5 @@ exclude:
 
 # the following exclude is necessary to make Travis CI work:
 # https://github.com/jekyll/jekyll/issues/5267
-# https://github.com/jekyll/jekyll/issues/2938  
+# https://github.com/jekyll/jekyll/issues/2938
 exclude: ["vendor"]
