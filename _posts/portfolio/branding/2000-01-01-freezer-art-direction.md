@@ -3,7 +3,7 @@ layout: bra
 title: freezer-art-direction
 headline: Freezer art direction
 categories: branding
-grid-small-images: true #true or empty
+grid_small_images: true #true or empty
 year: 1995 > 2000
 where: italy
 backgroundColor: gray1
