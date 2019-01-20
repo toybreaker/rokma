@@ -41,4 +41,4 @@ Maybe is just a “Bule” lack of understanding, a Westerner fixation on critic
 Btw, the tragedy of the commons is a term used in social science to describe a situation in a shared-resource system where individual users acting independently according to their own self-interest behave contrary to the common good of all users by depleting or spoiling that resource through their collective action.
 
 
-Published on non-profit magazine [Fumes](https://fumes.github.io.test/photo-journalism/burn-trash/).
+Published on non-profit magazine [Fumes](https://fumes.junglestar.org/photo-journalism/burn-trash/).
