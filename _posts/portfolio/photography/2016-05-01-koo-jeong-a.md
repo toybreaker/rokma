@@ -4,7 +4,7 @@ title: koo-jeong-a
 headline: Koo Jeong A
 categories: photography
 year: 2016
-where: italy
+where: Italy
 catch: powered by
 image:
 - 01.jpg

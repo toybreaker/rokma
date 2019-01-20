@@ -4,7 +4,7 @@ title: women-flowers-and-dances
 headline: Women, flowers and dances
 categories: photography
 year: 2017
-where: Bali
+where: bali, indonesia
 catch: powered by
 image:
 - 01.jpg
