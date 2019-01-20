@@ -3,6 +3,7 @@ layout: bra
 title: container-club
 headline: Container Club
 categories: branding
+grid-small-images: true #true or empty
 year: 1999
 where: milano, italy
 backgroundColor: black

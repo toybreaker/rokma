@@ -3,6 +3,7 @@ layout: bra
 title: freezer-merchandise
 headline: Freezer Merchandise
 categories: branding
+grid-small-images: true #true or empty
 year: 1995 > 2000
 where: milano, italy
 backgroundColor: black

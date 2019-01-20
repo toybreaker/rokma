@@ -10,6 +10,12 @@
     margin: 0;
     max-width: 450px;
     width: 100%;
+    .grid_big_images & {
+      max-width: none;
+      margin: 1rem 0;
+      padding: 0 1rem;
+
+    }
   }
   .image-grid-item img[src*="svg"]{
     width: 450px;

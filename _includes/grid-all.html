@@ -1,5 +1,5 @@
 {%comment%}
-used in index to display pagination list of posts
+used in index.html to display pagination list of posts
 {%endcomment%}
 
 <div class="wrap all_works {{ page.isindex }}">
@@ -13,7 +13,7 @@ used in index to display pagination list of posts
     </h1>
 
     <div class="posts">
-      
+
       {% for post in paginator.posts %}
 
         {% include item-ball.html %}

@@ -3,6 +3,7 @@ layout: bra
 title: cifra-clothing
 headline: Cifra Branding
 categories: branding
+grid-small-images: true #true or empty
 year: 2001 > 2004
 where: italy
 image:

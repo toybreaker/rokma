@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div id="main" role="main">
+<div id="main" role="main" class="{% if post.grid-small-images %}grid-small-images{% else %}grid_big_images{% endif %}">
 
   {% include grid-small-images.html %}
 
