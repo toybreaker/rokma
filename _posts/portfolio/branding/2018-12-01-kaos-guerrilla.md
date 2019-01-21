@@ -43,4 +43,4 @@ image:
 - 29.jpg
 - 30.jpg
 ---
-Social marketing campaign for &lt;Kaos Guerrilla&gt; brand.
+Social marketing campaign for &lt;Kaos Guerrilla&gt; brand. Distributed trough Instagram, Facebook, Twitter, and Shopify blog. Instagram profile brought from 160 followers to 1430 in few months. 
