@@ -4,6 +4,6 @@ title: branding
 headline: Noteworthy branding works
 categories: branding
 isindex: index
-excerpt: "Products must be recognizable from competition, so you need branding."
+excerpt: "Your products must be recognizable, that's why you need branding, to build your product identity."
 search_omit: true
 ---
