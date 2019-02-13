@@ -4,8 +4,6 @@ Icon
 .jekyll-metadata
 .sass-cache/
 
-Gemfile.lock
-
 .jekyll
 .workinprogress
 _site/
