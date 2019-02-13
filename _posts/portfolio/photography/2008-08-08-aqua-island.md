@@ -16,7 +16,7 @@ image:
 
 Part three of Aqua Serie. Unpublished.
 
-From the Aqua serie:
+From the Aqua serie:  
 [Aqua Sunday]({% post_url /portfolio/photography/2019-01-20-aqua-sunday %})  
 [Aqua Island]({% post_url /portfolio/photography/2008-08-08-aqua-island %}){:.hidden}
 [Aqua City]({% post_url /portfolio/photography/2005-08-08-aqua-city %})  
