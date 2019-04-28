@@ -240,9 +240,13 @@ p a {
     background-color: black;
     margin: auto;
     z-index: 0;
-    opacity: 0.25;
+    opacity: 1;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    @include media("screen", ">minWidth") {
+      opacity: 0.4;
+    }
+
   }
 }
 
@@ -319,6 +323,13 @@ p a {
 .photography {
   color: $trnsp-color2;
   background-color: black;
+
+  .post {
+    border-bottom: 8px solid $darkest-color;
+    @include media("screen", ">minWidth") {
+      border-bottom: 0 none;
+    }
+  }
 
   h1,
   h2,
