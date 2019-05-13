@@ -13,8 +13,8 @@
       <span class="descri title">{{ site.title }}</span>
     </a>
 
-    <a class="to-home catindex" href="{% if page.title == "Home" or page.title == "About" %}/{% else %}{{ site.baseurl }}/{{page.categories}}/{% endif %}"
-    title="back to {{page.categories}} index">
+    <a class="to-home catindex" href="{% if page.title == "Home" or page.title == "About" %}/{% else %}{{ site.baseurl }}/{% endif %}"
+    title="back to home page">
       <span class="avatar">
         <img src="{{ site.baseurl }}/images/{{ site.owner.avatar }}" alt="{{ site.description }}">
       </span>
