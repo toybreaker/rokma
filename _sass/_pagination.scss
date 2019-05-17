@@ -11,9 +11,9 @@
   padding: 1rem;
 }
 
-// Only provide a hover state for linked pagination items 
+// Only provide a hover state for linked pagination items
 a.pagination-item, a.pagination-item:visited, span.pagination-item {
-  color: white!important;
+  color: black!important;
   float: left;
   width: calc(50% - 1rem);
   margin-left: 0;
@@ -22,15 +22,15 @@ a.pagination-item, a.pagination-item:visited, span.pagination-item {
   padding-right: 0;
 }
 a.pagination-item:hover{
-    color: black!important;
+    color: lighten(black, 100%)!important;
 }
 // span.pagination-item {
 //     pointer-events: none;
 // }
 
-.pagination { 
+.pagination {
   overflow: hidden; /* clearfix */
-  color: #ccc; 
+  color: #ccc;
   position: relative;
   z-index:1;
   text-align: center;
@@ -38,6 +38,10 @@ a.pagination-item:hover{
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+  border-bottom: solid black 3px;
+  @include media("screen", ">minWidth") {
+    border-bottom: 0 none;
+  }
   .older{
     margin-right: 1rem;
     padding-right: 10vw;

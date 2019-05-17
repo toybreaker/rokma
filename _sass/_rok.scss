@@ -108,7 +108,7 @@ p a {
   -ms-flex-preferred-size: 400px;
   flex-basis: 400px;
   height: 400px;
-  max-width: 400px;
+  //max-width: 400px;
   overflow: hidden;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -119,6 +119,11 @@ p a {
   padding: 0;
   margin: 0;
   background-color: $nice-color;
+  border-bottom: 3px solid black;
+
+  @include media("screen", ">minWidth") {
+    border-bottom: 0 none;
+  }
 
   .photography & {
     background-color: $black;
