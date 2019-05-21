@@ -3,7 +3,17 @@
   <a href="{{ post.url }}">
 
     <h2 class="post-title">
-      <span class="postshout">{{ post.headline }}</span>
+
+      <span class="postshout">
+        {{ post.headline }}
+
+        {% if page.layout == 'home' %}
+        <span class="post_type">{{ post.categories }}</span>
+        {% endif %}
+      </span>
+
+
+
     </h2>
 
     <span class="posthumb image_{{ post.title }}">
