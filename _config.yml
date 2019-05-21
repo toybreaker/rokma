@@ -10,7 +10,7 @@ tagline_plus: 'building reputation'
 baseurl: ""
 url: https://rokma.com
 
-version: 16.7.1
+version: 16.8.0
 version_details: 'netli-firefly'
 
 # Outputting
