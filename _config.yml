@@ -10,7 +10,7 @@ tagline_plus: 'building reputation'
 baseurl: ""
 url: https://rokma.com
 
-version: 16.8.0
+version: 16.9.0
 version_details: 'netli-firefly'
 
 # Outputting
@@ -34,6 +34,7 @@ owner:
   web: https://rokma.com
   twitter: rokmatwit
   facebook: rokmaphotography
+  instagram: rokmaphotography
   github: toybreaker
   linkedin: rokma
   soundcloud: rokma
