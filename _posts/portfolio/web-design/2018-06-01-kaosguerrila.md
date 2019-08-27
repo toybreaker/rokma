@@ -13,4 +13,4 @@ image:
 - 04.png
 ---
 Shopify store.
-Check out [KaosGuerrilla](https://kaosguerrilla.com)
+Check out [KaosGuerrilla](https://kaosguerrilla.com) live website.

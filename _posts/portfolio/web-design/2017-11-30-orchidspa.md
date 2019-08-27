@@ -13,4 +13,3 @@ image:
 - 04.png
 ---
 Spa website.
-Check out [Bali Orchid Spa](https://baliorchidspa.com)
