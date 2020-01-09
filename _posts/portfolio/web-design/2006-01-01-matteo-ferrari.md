@@ -7,5 +7,6 @@ year: 2015
 where: bali, indonesia
 image:
 - 01.jpg
+onlyoneimage: true # true or empty
 ---
 Fashion portfolio site for photographer &lt;Matteo Ferrari&gt;.

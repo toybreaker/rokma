@@ -2,11 +2,21 @@
 layout: default
 ---
 
-<div id="main" role="main">
+<div id="main" role="main" class="{% if page.image and page.onlyoneimage %} onlyoneimage {% endif %}">
 
   <article class="entry">
 
     <div class="entry-visuals">
+
+      {%comment%} only for post with just 1 image {%endcomment%}
+      {% if page.image and page.onlyoneimage %}
+      <div class="oneimage_container">
+        <div class="oneimage_content">
+          <img src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image }}" class="entry-feature-image oneimage" alt="{{ page.title }}">
+      </div>
+
+
+      {% else %}
 
       {%comment%} fullwidth desktop screen {%endcomment%}
       {% if page.image[0] %}<img src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image[0] }}" class="entry-feature-image a" alt="{{ page.title }}">{% endif %}
@@ -22,6 +32,16 @@ layout: default
       <img
         src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image[3] }}" class="entry-feature-image d" alt="{{ page.title }}">
         {% endif %}
+
+
+
+      {% endif %}
+
+
+
+
+
+
 
     </div>
 

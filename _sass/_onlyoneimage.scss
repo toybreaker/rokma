@@ -1,0 +1,19 @@
+.onlyoneimage {
+  .oneimage_container {
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+    .oneimage_content {
+      width: 100%;
+      height: auto;
+
+      .oneimage {
+        max-width: none;
+        width: 1280px;
+        height: 725px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+      }
+    }
+  }
+}

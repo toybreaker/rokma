@@ -7,6 +7,7 @@ year: 2015
 where: bali, indonesia
 image:
 - 01.jpg
+onlyoneimage: true # true or empty
 ---
 Motivational website for &lt;Junglestar&gt; firm.
 Check the [live website](https://junglestar.org).

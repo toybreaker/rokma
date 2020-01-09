@@ -48,7 +48,7 @@ body:not(.specials) {
 }
 
 p a {
-  text-decoration: underline;
+  border-bottom: 1px solid $color6;
 
   &:hover {
     opacity: 0.5;

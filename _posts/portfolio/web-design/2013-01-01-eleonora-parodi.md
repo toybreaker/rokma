@@ -7,5 +7,6 @@ year: 2012
 where: italy
 image:
 - 01.jpg
+onlyoneimage: true # true or empty
 ---
 Presentational website for &lt;Eleonora Parodi&gt; Art Clinic.

@@ -10,8 +10,8 @@ tagline_plus: 'building reputation'
 baseurl: ""
 url: https://rokma.com
 
-version: 16.9.4
-version_details: 'netlicaon'
+version: 16.10.0
+version_details: 'nettom'
 
 # Outputting
 permalink:   /:categories/:title/

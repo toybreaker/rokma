@@ -7,8 +7,8 @@ $color2: #e5e5e5;
 $color3: #f9f9f9;
 $color4: #9a9a9a;
 $color5: #f5f5f5;
-$color6: #505050;
-$color6: #202020;
+$color6: #353535;
+$color7: #202020;
 $brightest-color: #fff;
 $darkest-color: #161616;
 $bang-color: $brightest-color;
@@ -93,4 +93,5 @@ $mediaMaxWidth: 1260px;
 @import "home";
 @import "about";
 @import "offwhite";
+@import "onlyoneimage";
 @import "image-grid";// flex classes
