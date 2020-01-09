@@ -1,0 +1,67 @@
+$offwhite: rgba(251, 254, 254, 0.9);
+$brand_red: red;
+
+body.offwhite {
+  padding-bottom: 0;
+  background-color: $offwhite;
+  color: $black;
+  margin-bottom: 10rem;
+  & > {
+    background-color: $offwhite;
+    color: $black;
+  }
+  strong,
+  h1,
+  h2,
+  h3,
+  h4,
+  .photography h1,
+  .photography h2,
+  .photography h3,
+  .masthead-title a,
+  .masthead-title a .pagecat,
+  .photography a {
+    color: $black!important;
+  }
+
+  .post-metas {
+    color: lighten($black, 20);
+  }
+
+  .main a { color: $black; }
+
+  .post-meta a {
+    border: solid 1px $black;
+    border-radius: 5px;
+    font-size: 100%;
+    font-weight: unset;
+    color: $black;
+    padding: 1px 10px 1px 10px;
+    display: inline-block;
+    margin: 4px 3px 4px 3px;
+    &:hover {
+      color: $brand_red;
+      border: solid 1px $brand_red;
+    }
+  }
+
+  .post__license a {
+    border: solid 1px $black;
+    border-radius: 5px;
+    font-size: 100%;
+    font-weight: unset;
+    color: $black;
+    padding: 1px 10px 1px 10px;
+    display: inline-block;
+    margin: 4px 3px 4px 3px;
+    &:before {
+      display: none;
+    }
+    &:hover {
+      color: lighten($black, 30);
+      border: solid 1px lighten($black, 30);
+    }
+  }
+
+
+}
