@@ -17,7 +17,7 @@ categories: photography
   <article class="entry">
 
     {% for thumb in page.image %}
-      <img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{thumb}}" class="entry-feature-image" alt="{{ page.title }}"/>
+      <img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{thumb}}" class=" entry-feature-image {{ page.image.vertical }}" alt="{{ page.title }}"/>
     {% endfor %}
 
     <div class="entry-wrapper">
