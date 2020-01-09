@@ -2,7 +2,7 @@
   .oneimage_container {
     overflow-y: hidden;
     overflow-x: scroll;
-    scrollbar-width: none;
+    scrollbar-width: none!important;
 
     .oneimage_content {
       width: 100%;
