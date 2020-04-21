@@ -2,7 +2,7 @@ language: ruby
 script: "bundle exec jekyll build"
 
 rvm:
-- 2.4.1
+- 2.6.3
 
 branches:
   only:

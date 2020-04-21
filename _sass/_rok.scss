@@ -87,7 +87,8 @@ p a {
 
 .postshout {
   position: relative;
-  width: 100%;
+  //width: 100%;
+  //min-width: 100px;
   height: 100%;
   z-index: 1;
   pointer-events: none;
@@ -110,6 +111,7 @@ p a {
   z-index: 1;
   padding: 0.5rem;
   width: calc(100% + 4px);
+  // min-width: 100px;
   bottom: -40px;
   font-size: .9rem;
   font-weight: 500;
@@ -117,13 +119,15 @@ p a {
   line-height: 20px;
   left: - 2px;
   border: solid 2px black;
+  white-space: nowrap;
+  break-inside: avoid;
 }
 
 .post {
-  -webkit-flex-basis: 400px;
-  -ms-flex-preferred-size: 400px;
-  flex-basis: 400px;
-  height: 400px;
+  -webkit-flex-basis: 420px;
+  -ms-flex-preferred-size: 420px;
+  flex-basis: 420px;
+  height: 420px;
   //max-width: 400px;
   overflow: hidden;
   -webkit-box-flex: 1;
@@ -145,18 +149,9 @@ p a {
     background-color: $black;
   }
 
-  .web-design & {
-    background-color: $body-color;
-  }
-
-  .specials & {
-    background-color: $body-color;
-  }
-
-  .advertising & {
-    background-color: $body-color;
-  }
-
+  .web-design &,
+  .specials &,
+  .advertising &,
   .branding & {
     background-color: $body-color;
   }
@@ -178,11 +173,11 @@ p a {
 
   &:hover {
     background-color: white;
+    z-index: 10;
 
     .photography & {
       background-color: $black;
     }
-    z-index: 10;
 
     .post-title {
       -webkit-transition-delay: initial;
@@ -229,8 +224,8 @@ p a {
       transition-timing-function: ease-in-out;
       -webkit-transition-duration: 0.3s;
       transition-duration: 0.3s;
-      -webkit-transform: scale(1.5) translateY(32px);
-      transform: scale(1.5) translateY(32px);
+      -webkit-transform: scale(1.5) translateY(16px);
+      transform: scale(1.5) translateY(16px);
 
       &.square {
         -webkit-transition-delay: initial;
@@ -243,8 +238,20 @@ p a {
         transition-timing-function: ease-in-out;
         -webkit-transition-duration: 0.3s;
         transition-duration: 0.3s;
-        -webkit-transform: scale(1) translateY(-20px);
-        transform: scale(1) translateY(-20px);
+        -webkit-transform: scale(1) translateY(-10px);
+        transform: scale(1) translateY(-10px);
+        @include media( "screen", ">minWidth") {
+          -webkit-transform: scale(1) translateY(-90px);
+          transform: scale(1) translateY(-90px);
+        }
+        @include media( "screen", ">bp1Width") {
+          -webkit-transform: scale(1) translateY(-100px);
+          transform: scale(1) translateY(-100px);
+        }
+        @include media( "screen", ">maxWidth") {
+          -webkit-transform: scale(1) translateY(-75px);
+          transform: scale(1) translateY(-75px);
+        }
       }
     }
   }
@@ -610,4 +617,9 @@ body.gray2 {
 .category_excerpt {
   max-width: 400px;
   margin: 10rem auto;
+}
+
+
+.posthumb.image_icons .entry-feature-image {
+  background: transparent;
 }

@@ -2,7 +2,7 @@ Icon
 .DS_Store
 .sass-cache/
 .jekyll-metadata
-.sass-cache/
+.jekyll-cache/
 
 .jekyll
 .workinprogress

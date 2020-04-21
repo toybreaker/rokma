@@ -10,7 +10,7 @@ tagline_plus: 'building reputation'
 baseurl: ""
 url: https://rokma.com
 
-version: 16.10.0
+version: 16.10.1
 version_details: 'nettom'
 
 # Outputting

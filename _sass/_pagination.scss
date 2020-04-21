@@ -23,6 +23,7 @@ a.pagination-item, a.pagination-item:visited, span.pagination-item {
 }
 a.pagination-item:hover{
     color: lighten(black, 100%)!important;
+    border: 0 none;
 }
 // span.pagination-item {
 //     pointer-events: none;
