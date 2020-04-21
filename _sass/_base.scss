@@ -30,9 +30,15 @@ a {
     color: inherit;
   }
   &:hover {
-    opacity: 0.6;
+    //opacity: 0.6;
     border-bottom: 1px solid $color4;
   }
+  .sidebar & {
+    &:hover {
+      border-bottom: 0 none;
+    }
+  }
+
 
   &.active {
     color: black;
