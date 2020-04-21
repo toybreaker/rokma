@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/toybreaker/rokma.svg?branch=source)](https://travis-ci.org/toybreaker/rokma)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9a736c24-fd74-472d-9e31-683308faf7f0/deploy-status)](https://app.netlify.com/sites/rokma/deploys)
+
 ### [Rokma](https://rokma.com)
 
 Ultra light mobile-first static website. Responsive UI. Jekyll portfolio, tested!  Adhering to [KISS](https://en.wikipedia.org/wiki/KISS_principle),   [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
