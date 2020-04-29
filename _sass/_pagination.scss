@@ -12,7 +12,9 @@
 }
 
 // Only provide a hover state for linked pagination items
-a.pagination-item, a.pagination-item:visited, span.pagination-item {
+a.pagination-item,
+a.pagination-item:visited,
+span.pagination-item {
   color: black!important;
   float: left;
   width: calc(50% - 1rem);
@@ -20,6 +22,13 @@ a.pagination-item, a.pagination-item:visited, span.pagination-item {
   margin-right: 0;
   padding-left: 0;
   padding-right: 0;
+  .onelinkonly & {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
 }
 a.pagination-item:hover{
     color: lighten(black, 100%)!important;
@@ -47,6 +56,7 @@ a.pagination-item:hover{
     margin-right: 1rem;
     padding-right: 10vw;
     text-align:right;
+
   }
   .newer{
     margin-left: 1rem;

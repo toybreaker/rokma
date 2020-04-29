@@ -1,4 +1,4 @@
-<div class="pagination">
-<a class="pagination-item newer" title="go back to the beginning of the list" href="{{ paginator.previous_page_path }}">Less</a>
-<a class="pagination-item older" title="see more works by rokma" href="{{ paginator.next_page_path }}">More</a>
+<div class="pagination {% if paginator.previous_page == null %}onelinkonly{% endif %}{% if paginator.next_page == null %}onelinkonly{% endif %}">
+{% if paginator.previous_page %}<a class="pagination-item newer" title="go back to the previous page" href="{{ paginator.previous_page_path }}">See previous works</a>{% endif %}
+{% if paginator.next_page %}<a class="pagination-item older" title="see more works by rokma" href="{{ paginator.next_page_path }}">See more works</a>{% endif %}
 </div>
