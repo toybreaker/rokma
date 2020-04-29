@@ -3,8 +3,7 @@
 
   {% include head.html %}
 
-
-  <body class="{{ page.categories }} {{ page.backgroundColor }} {{ page.title | downcase }} layout-reverse {% if bodyclass %}{{ page.bodyclass }}{% endif %} {% if page.offwhite %}offwhite{% endif %}">
+  <body class="{{ page.categories }}{% if page.backgroundColor %} {{ page.backgroundColor }}{% endif %} {{ page.title | downcase }} layout-reverse{% if bodyclass %} {{ page.bodyclass }}{% endif %}{% if page.offwhite %} offwhite{% endif %}">
 
     {% include sidebar.html %}
 

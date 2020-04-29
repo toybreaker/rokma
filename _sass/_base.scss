@@ -106,8 +106,12 @@ abbr[title] {
 blockquote {
   padding: 0;
   margin: 0;
-  color: $color2;
-  border-left: 0.25rem solid $color2;
+  color: $color7;
+  border-left: 0.25rem solid $color7;
+  .black & {
+    color: $color2;
+    border-left: 0.25rem solid $color2;
+  }
 
   p:last-child {
     margin-bottom: 0;
