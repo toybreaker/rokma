@@ -15,17 +15,21 @@
 	<meta name="twitter:creator" content="@{{ author.twitter }}">
 {% endif %}
 
-{% if page.index_image %}
+{% if page.title == "Home" %}
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image:src" content="{{ site.url }}/images/{{ page.categories }}/{{ page.title }}/{{ page.index_image}}">
+	<meta name="twitter:image:src" content="{{ site.url }}/assets/images/01.jpg">
+{% elsif page.isindex %}
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image:src" content="{{ site.url }}/assets/images/{{ page.categories }}/01.jpg">
+{% elsif page.index_image %}
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image:src" content="{{ site.url }}/assets/images/{{ page.categories }}/{{ page.title }}/{{ page.index_image}}">
+{% elsif page.image.[0] %}
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image:src" content="{{ site.url }}/assets/images/{{ page.categories }}/{{ page.title }}/{{ page.image.[0]}}">
 {% else %}
-	{% if page.image.[0] %}
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:image:src" content="{{ site.url }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.[0]}}">
-	{% else %}
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:image:src" content="{{ site.url }}/images/{{ site.logo }}">
-	{% endif %}
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image:src" content="{{ site.url }}/assets/images/{{ site.logo }}">
 {% endif %}
 
 <!-- Open Graph -->
@@ -36,14 +40,17 @@
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="{% if page.headline %}{{ page.headline }}{% else %}{{ site.title }}{% endif %}">
 
-{% if page.index_image %}
-	<meta property="og:image" content="{{ site.url }}/images/{{ page.categories }}/{{ page.title }}/{{ page.index_image }}">
+
+{% if page.title == "Home" %}
+	<meta property="og:image" content="{{ site.url }}/assets/images/01.jpg">
+{% elsif page.isindex %}
+	<meta property="og:image" content="{{ site.url }}/assets/images/{{ page.categories }}/01.jpg">
+{% elsif page.index_image %}
+	<meta property="og:image" content="{{ site.url }}/assets/images/{{ page.categories }}/{{ page.title }}/{{ page.index_image }}">
+{% elsif page.image.[0] %}
+	<meta property="og:image" content="{{ site.url }}/assets/images/{{ page.categories }}/{{ page.title }}/{{ page.image.[0] }}">
 {% else %}
-	{% if page.image.[0] %}
-		<meta property="og:image" content="{{ site.url }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image.[0] }}">
-	{% else %}
-	<meta property="og:image" content="{{ site.url }}/images/{{ site.logo }}">
-	{% endif %}
+	<meta property="og:image" content="{{ site.url }}/assets/images/{{ site.logo }}">
 {% endif %}
 
 {% if page.excerpt %}

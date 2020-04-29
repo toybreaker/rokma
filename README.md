@@ -3,7 +3,7 @@
 
 ### [Rokma](https://rokma.com)
 
-Ultra light mobile-first static website. Responsive UI. Jekyll portfolio, tested!  Adhering to [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)[KISS](https://en.wikipedia.org/wiki/KISS_principle)!
+Ultra light mobile-first static website. Responsive images. Jekyll portfolio, tested!  Adhering to [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)[KISS](https://en.wikipedia.org/wiki/KISS_principle)!
 
 version: 17.0.0
 
@@ -12,14 +12,10 @@ version: 17.0.0
 
 Urgent:
 
-- 50% css? really!? camon... uncss the bloat!
-
-- responsive img w/ srcset & [gulp grinder](https://github.com/toybreaker/grinder)
+- 50% css? really!? un-bloat!
 
 
 Maybe:
-
-- youtube video embeds
 
 - service workers
 
