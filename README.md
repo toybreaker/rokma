@@ -5,7 +5,7 @@
 
 Ultra light mobile-first static website. Responsive UI. Jekyll portfolio, tested!  Adhering to [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)[KISS](https://en.wikipedia.org/wiki/KISS_principle)!
 
-version: 16.10.1
+version: 17.0.0
 
 
 ## 2DOs
@@ -30,9 +30,57 @@ Maybe:
 - [ ] [vegas](https://github.com/jaysalvat/vegas) (64kb) | need at least zepto (9kb) or jquery(84kb)
 - [X] native scroll + [scrollReveal.js](https://github.com/jlmakes/scrollReveal.js/tree/master) (9kb)
 
+
+
+
+## Dev prerequisites:
+
+### Install node dependencies into project's local dir
+
+```sh
+npm install
+```
+
+
+
 ## Develop:
 
 [Travis-ci](https://github.com/toybreaker/rokma/blob/gh-pages/.travis.yml) will test source branch.
+
+### Run gulp to produce images
+
+Open a new terminal window and
+
+#### Rename all to lowercase + del
+
+```sh
+gulp lower
+```
+
+#### Produce all the different sizes images + del
+
+```sh
+gulp sizes
+```
+
+#### Rename images, deleting current file names, with dir name and progressive index + del
+
+```sh
+gulp rename
+```
+
+#### Rename images adding dir name and progressive index + del
+
+```sh
+gulp curate
+```
+
+#### Rename files, deleting current file names, and using dir name and progressive index
+
+```sh
+gulp renamefiles
+```
+
 
 
 ## Warning:

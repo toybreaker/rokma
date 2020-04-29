@@ -1,0 +1,42 @@
+<figure class="post_content_image">
+
+  {% comment %}
+  assign the page image and split at the extension dot
+  {% endcomment %}
+
+  {% assign f = photo | split: '.' %}
+
+  {% if page.layout == "category_index" %}
+
+  <img class="entry-feature-image {{ page.image.vertical }}" loading="lazy"
+  src="/assets/images/{{page.categories}}/{{title}}{{ f[0] | relative_url }}{{ include.name }}-640.{{ f[1] }}" alt="{{ title }} photo by Rokma" />
+
+  {% elsif page.layout == "home" %}
+
+  <img class="home entry-feature-image" loading="lazy"
+  src="/assets/images/{{post.categories}}/{{post.title}}{{ f[0] | relative_url }}{{ include.name }}-640.{{ f[1] }}" alt="{{ post.headline }} photo by Rokma" />
+
+  {% else %}
+
+  <img
+  data-sr=''
+  class="entry-feature-image {{ page.image.vertical }}"
+  loading="lazy"
+  src="/assets/images/{{page.categories}}/{{title}}{{ f[0] | relative_url }}{{ include.name }}-640.{{ f[1] }}"
+  srcset="/assets/images/{{page.categories}}/{{title}}{{ f[0] | relative_url }}{{ include.name }}-640.{{ f[1] }} 640w,
+  /assets/images/{{page.categories}}/{{title}}{{ f[0] | relative_url }}{{ include.name }}-880.{{ f[1] }} 880w,
+  /assets/images/{{page.categories}}/{{title}}{{ f[0] | relative_url }}{{ include.name }}-1024.{{ f[1] }} 1024w,
+  /assets/images/{{page.categories}}/{{title}}{{ f[0] | relative_url }}{{ include.name }}-1920.{{ f[1] }} 1920w"
+  sizes="100vw"
+  alt="{{ title }} photo by Rokma "
+  />
+
+
+
+  {% endif %}
+
+
+
+
+
+ </figure>
