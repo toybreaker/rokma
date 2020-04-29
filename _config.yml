@@ -10,8 +10,8 @@ tagline_plus: 'building reputation'
 baseurl: ""
 url: https://rokma.com
 
-version: 16.10.1
-version_details: 'bumbalek'
+version: 17.0.0
+version_details: 'reponsee'
 
 # Outputting
 permalink:   /:categories/:title/

@@ -13,11 +13,15 @@ categories: photography
 </div>
 
 
-<div id="main" role="main" class="main">
+<div id="main" role="main" class="main filed_in_{{ page.categories }}">
   <article class="entry">
 
-    {% for thumb in page.image %}
-      <img data-sr='' src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{thumb}}" class=" entry-feature-image {{ page.image.vertical }}" alt="{{ page.title }}"/>
+		{% capture title %}{{ page.title }}{% endcapture %}
+
+    {% for photo in page.image %}
+
+			{% include responsive_image.html %}
+
     {% endfor %}
 
     <div class="entry-wrapper">
