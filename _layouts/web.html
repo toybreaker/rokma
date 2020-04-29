@@ -12,25 +12,25 @@ layout: default
       {% if page.image and page.onlyoneimage %}
       <div class="oneimage_container">
         <div class="oneimage_content">
-          <img src="{{ site.baseurl }}/assets/images/{{ page.categories }}/{{ page.title }}/{{ page.image }}" class="entry-feature-image oneimage" alt="{{ page.title }}">
+          <img src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image }}" class="entry-feature-image oneimage" alt="{{ page.title }}">
       </div>
 
 
       {% else %}
 
       {%comment%} fullwidth desktop screen {%endcomment%}
-      {% if page.image[0] %}<img src="{{ site.baseurl }}/assets/images/{{ page.categories }}/{{ page.title }}/{{ page.image[0] }}" class="entry-feature-image a" alt="{{ page.title }}">{% endif %}
+      {% if page.image[0] %}<img src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image[0] }}" class="entry-feature-image a" alt="{{ page.title }}">{% endif %}
 
       {%comment%} tablet screen {%endcomment%}
-      {% if page.image[1] %}<img src="{{ site.baseurl }}/assets/images/{{ page.categories }}/{{ page.title }}/{{ page.image[1] }}" class="entry-feature-image b" alt="{{ page.title }}">{% endif %}
+      {% if page.image[1] %}<img src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image[1] }}" class="entry-feature-image b" alt="{{ page.title }}">{% endif %}
 
       {%comment%} phone screen {%endcomment%}
-      {% if page.image[2] %}<img src="{{ site.baseurl }}/assets/images/{{ page.categories }}/{{ page.title }}/{{ page.image[2] }}" class="entry-feature-image c" alt="{{ page.title }}">{% endif %}
+      {% if page.image[2] %}<img src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image[2] }}" class="entry-feature-image c" alt="{{ page.title }}">{% endif %}
 
       {%comment%} crappy droid {%endcomment%}
       {% if page.image[3] %}
       <img
-        src="{{ site.baseurl }}/assets/images/{{ page.categories }}/{{ page.title }}/{{ page.image[3] }}" class="entry-feature-image d" alt="{{ page.title }}">
+        src="{{ site.baseurl }}/images/{{ page.categories }}/{{ page.title }}/{{ page.image[3] }}" class="entry-feature-image d" alt="{{ page.title }}">
         {% endif %}
 
 

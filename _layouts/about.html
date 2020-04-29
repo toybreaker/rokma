@@ -3,29 +3,7 @@ layout: default
 ---
 
 	<div class="image-wrap">
-
-		<figure class="entry-feature-image">
-
-		  {% comment %}
-		  assign the page image and split at the extension dot
-		  {% endcomment %}
-
-		  {% assign f = page.image | split: '.' %}
-
-		  <img
-		  class="entry-feature-image"
-		  loading="lazy"
-		  src="/assets/images/about/{{ f[0] | relative_url }}{{ include.name }}-640.{{ f[1] }}"
-		  srcset="/assets/images/about/{{ f[0] | relative_url }}{{ include.name }}-640.{{ f[1] }} 640w,
-		  /assets/images/about/{{ f[0] | relative_url }}{{ include.name }}-880.{{ f[1] }} 880w,
-		  /assets/images/about/{{ f[0] | relative_url }}{{ include.name }}-1024.{{ f[1] }} 1024w,
-		  /assets/images/about/{{ f[0] | relative_url }}{{ include.name }}-1920.{{ f[1] }} 1920w"
-		  sizes="100vw"
-		  alt="{{ title }} photo by Rokma "
-		  />
-
-		 </figure>
-
+		<img src="/images//about/o-1680x943.jpg" class="entry-feature-image" alt="about">
   </div>
 
 	<div class="page">

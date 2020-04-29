@@ -7,12 +7,9 @@ layout: default
 	  <div class="container content">
 
 	    <div class="posts">
-
 	      {% for post in site.categories[page.categories] %}
 
-	        {% capture title %}{{ post.title }}{% endcapture %}
-
-					{% include item-ball.html %}
+	        {% include item-ball.html %}
 
 	      {% endfor %}
 	    </div>

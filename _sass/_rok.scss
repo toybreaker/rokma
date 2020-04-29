@@ -167,8 +167,8 @@ p a {
     //img
     max-width: 100%;
     will-change: scale;
-    -webkit-transform: scale(2);
-    transform: scale(2);
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
   }
 
   &:hover {
@@ -224,20 +224,8 @@ p a {
       transition-timing-function: ease-in-out;
       -webkit-transition-duration: 0.3s;
       transition-duration: 0.3s;
-      -webkit-transform: scale(1) translateY(-10px);
-      transform: scale(1) translateY(-10px);
-      @include media( "screen", ">minWidth") {
-        -webkit-transform: scale(0.9) translateY(-30px);
-        transform: scale(0.9) translateY(-30px);
-      }
-      @include media( "screen", ">bp1Width") {
-        -webkit-transform: scale(0.8) translateY(-100px);
-        transform: scale(0.8) translateY(-100px);
-      }
-      @include media( "screen", ">maxWidth") {
-        -webkit-transform: scale(0.9) translateY(-45px);
-        transform: scale(0.9) translateY(-45px);
-      }
+      -webkit-transform: scale(1.5) translateY(16px);
+      transform: scale(1.5) translateY(16px);
 
       &.square {
         -webkit-transition-delay: initial;
@@ -333,7 +321,7 @@ p a {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    //opacity: 0.5;
+    opacity: 0.5;
   }
 }
 // bg color classes (used in about page!)
@@ -398,8 +386,7 @@ p a {
   }
 
   .postshout {
-    color: darken($white, 20);
-    font-weight: 400;
+    color: darken($white, 40);
   }
 
   .tagline {

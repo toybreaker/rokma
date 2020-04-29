@@ -1,6 +1,6 @@
-<div class="post" >
+<div class="post" data-sr=''>
 
-  <a class="post_link" href="{{ post.url }}">
+  <a href="{{ post.url }}">
 
     <h2 class="post-title">
 
@@ -12,13 +12,17 @@
         {% endif %}
       </span>
 
+
+
     </h2>
 
     <span class="posthumb image_{{ post.title }}">
 
-      {% capture photo %}{{ post.image.[0] }}{% endcapture %}
+    {%comment%}
+    if index_image else first image
+    {%endcomment%}
 
-      {% include responsive_image.html %}
+    <img src="{{ site.baseurl }}/images/{{ post.categories }}/{{ post.title }}/{% if post.index_image %}{{ post.index_image }}{% else %}{{ post.image.[0] }}{% endif %}" class="entry-feature-image {% if post.index_image %}square{% endif %}" alt="{{ post.title }}">
 
     </span>
   </a>
