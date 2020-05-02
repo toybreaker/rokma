@@ -312,7 +312,7 @@ transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
 #sidebar-checkbox:checked + .sidebar {
-  z-index: 10;
+  z-index: 101;
   visibility: visible;
 }
 
