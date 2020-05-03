@@ -10,7 +10,7 @@ tagline_plus: 'building reputation'
 baseurl: ""
 url: https://rokma.com
 
-version: 17.2.0
+version: 17.2.1
 version_details: 'svgable'
 
 # Outputting
@@ -60,8 +60,7 @@ exclude:
   - Gemfile
   - rakefile
   - gulpfile.js
-
-# the following exclude is necessary to make Travis CI work:
-# https://github.com/jekyll/jekyll/issues/5267
-# https://github.com/jekyll/jekyll/issues/2938
-exclude: ["vendor"]
+  # the following exclude is necessary to make Travis CI work:
+  # https://github.com/jekyll/jekyll/issues/5267
+  # https://github.com/jekyll/jekyll/issues/2938
+  - ["vendor"]

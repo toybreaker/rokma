@@ -3,3 +3,9 @@
     border: 0 none;
   }
 }
+
+.tagline a {
+  &:hover {
+    border-bottom: 0 none;
+  }
+}
