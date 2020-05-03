@@ -10,13 +10,7 @@ version: 17.0.0
 
 ## 2DOs
 
-Urgent:
-
-- 50% css? really!? un-bloat!
-
-
-Maybe:
-
+- cleanup
 - service workers
 
 ## Slider considerations:

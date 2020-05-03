@@ -5,13 +5,17 @@
 
   <body class="home layout-reverse sidebar-underlay {{ page.bg }}">
 
+    {% include svg/defs.html %}
+
     {% include sidebar.html %}
 
     {{ content }}
 
     {%comment%} Toggle Button if home {% endcomment %}
 		<div class="sidebar-toggle-button">
-		  <label for="sidebar-checkbox" class="sidebar-toggle"><span class="fa fa-bars"></span></label>
+		  <label for="sidebar-checkbox" class="sidebar-toggle">
+        {% include svg/use.html id="icn--burger" class="burger" %}
+      </label>
 		</div>
 
     {% include scripts.html %}

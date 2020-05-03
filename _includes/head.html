@@ -67,9 +67,12 @@
       else window.addEventListener('load', loadDeferredStyles);
   </script>
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css"> -->
 
-
+  {% capture inline_css %}
+    {% include main.scss %}
+  {% endcapture %}
+  <style>{{ inline_css | scssify }}</style>
 
   <style> [data-sr] { visibility: hidden; } </style>
 

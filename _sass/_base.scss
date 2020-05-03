@@ -363,14 +363,13 @@ button strong em {
 }
 // center stuff past tablets
 .entry-wrapper {
-  margin: 6rem 1rem 1rem;
+  margin: 6rem 2rem 1rem;
   @include media("screen", ">bp1Width") {
-    max-width: 42rem;
-    margin: 6rem auto 2rem;
+    //max-width: 42rem;
+    margin: 6rem 3rem 2rem;
   }
 }
-// @2do put stuff here in place....
-// Headings
+
 
 h1,
 h2,
@@ -426,6 +425,6 @@ h6 {
 }
 
 article.entry {
-  margin: 5rem initial;
+  margin: 5rem 1rem;
   text-align: right;
 }

@@ -5,7 +5,9 @@
   <div class="middle">
 
     <div class="tog sidebar-toggle-button">
-      <label for="sidebar-checkbox" class="sidebar-toggle"><span class="fa fa-remove"></span></label>
+      <label for="sidebar-checkbox" class="sidebar-toggle">
+        {% include svg/use.html id="icn--x" class="x" %}
+      </label>
     </div>
 
     <a class="to-home" href="{% if page.url == site.baseurl %}{{ site.baseurl }}{% else %}{{ site.baseurl }}/{% endif %}"
@@ -34,8 +36,11 @@
     </nav>
 
     <div class="sidebar-item">
+
       {% include contact.html %}
+
       {% include sidebar__footer.html %}
+
     </div>
 
   </div>

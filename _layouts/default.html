@@ -5,6 +5,9 @@
 
   <body class="{{ page.categories }}{% if page.backgroundColor %} {{ page.backgroundColor }}{% endif %} {{ page.title | downcase }} layout-reverse{% if bodyclass %} {{ page.bodyclass }}{% endif %}{% if page.offwhite %} offwhite{% endif %}">
 
+
+    {% include svg/defs.html %}
+
     {% include sidebar.html %}
 
     <div class="wrap {{ page.isindex }}">
@@ -37,7 +40,9 @@
 
     {%comment%} Toggle Button if not home  {% endcomment %}
     <div class="sidebar-toggle-button">
-      <label for="sidebar-checkbox" class="sidebar-toggle"><span class="fa fa-bars"></span></label>
+      <label for="sidebar-checkbox" class="sidebar-toggle">
+        {% include svg/use.html id="icn--burger" class="burger" %}
+      </label>
     </div>
 
     {% include scripts.html %}
