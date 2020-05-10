@@ -1,0 +1,22 @@
+{
+  "name": "rokma",
+  "version": "2.0.0",
+  "description": "portfolio",
+  "scripts": {
+    "build": "bundle exec jekyll serve --watch --trace"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toybreaker/rokma.git"
+  },
+  "author": "rokma",
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "change-case": "^3.1.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-responsive": "^2.14.0"
+  }
+}

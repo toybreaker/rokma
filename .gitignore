@@ -3,12 +3,9 @@ Icon
 .sass-cache/
 .jekyll-metadata
 .jekyll-cache/
-
 .jekyll
 .workinprogress
 _site/
 __LAB
-images/_*
-
-/node_modules
-package.json
+node_modules
+_src/uploads
