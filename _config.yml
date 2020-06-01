@@ -10,8 +10,8 @@ tagline_plus: 'building reputation'
 baseurl: ""
 url: https://rokma.com
 
-version: 17.2.1
-version_details: 'svgable'
+version: 17.3.0
+version_details: 'ScrollSnap'
 
 # Outputting
 permalink:   /:categories/:title/

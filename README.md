@@ -31,6 +31,18 @@ version: 17.0.0
 npm install
 ```
 
+## Make the following folder structure:
+
+```sh
+_src  
+  uploads  
+   _files_renamed  
+   _files_to_rename  
+   _images_to_lowercase  
+   _images_to_rename  
+   _images_to_size  
+```
+
 
 
 ## Develop:
