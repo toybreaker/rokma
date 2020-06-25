@@ -23,7 +23,7 @@ version: 17.0.0
 
 
 
-## Dev prerequisites:
+## Dev prerequisite
 
 ### Install node dependencies into project's local dir
 
