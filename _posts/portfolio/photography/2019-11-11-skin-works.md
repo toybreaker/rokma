@@ -16,9 +16,10 @@ image:
 - 07.jpg
 - 08.jpg
 - 09.jpg
-
 ---
 
 
 
 Published on non-profit magazine [Fumes](https://fumes.junglestar.org/art/skin-works/).
+
+Fine art prints. [Order here](https://fumes.junglestar.org/art/skin-works/#fineartprints)!

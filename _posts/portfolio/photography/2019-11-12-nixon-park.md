@@ -7,6 +7,7 @@ year: 2019
 where: Auckland, New Zealand
 catch: personal work by
 offwhite: true # true or empty
+published_on: "https://fumes.junglestar.org/photo-journalism/nixon-park/"
 image:
 - 01.jpg
 - 02.jpg
@@ -24,5 +25,6 @@ image:
 ---
 
 
-
 Published on non-profit magazine [Fumes](https://fumes.junglestar.org/art/nixon-park/).
+
+Fine art prints. [Order here](https://fumes.junglestar.org/photo-journalism/nixon-park/#fineartprints)!
