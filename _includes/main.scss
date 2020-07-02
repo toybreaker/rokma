@@ -13,32 +13,32 @@ $bang-color: $brightest-color;
 $trnsp-color1: rgba(255,255,255,.1);
 $trnsp-color2: rgba(255,255,255,.6);
 
-$body-color         : #fff;
-$text-color         : #222;
-$base-color         : #343434;
-$comp-color         : spin($base-color, 180);
-$border-color       : #ddd;
-$white              : #fff;
-$black              : #000;
+$body-color: #fff;
+$text-color: #222;
+$base-color: #343434;
+$comp-color: spin($base-color, 180);
+$border-color: #ddd;
+$white: #fff;
+$black: #000;
 
-$accent-color       : $bang-color;
-$link-color         : #0096FF; //rgba(0, 150, 255, 0.75); lanyon//303030;
+$accent-color: $bang-color;
+$link-color: #0096FF; //rgba(0, 150, 255, 0.75); lanyon//303030;
 
-$table-border-color           : $border-color;
-$table-border                 : 1px solid $table-border-color;
-$table-background             : $body-color;
-$table-header-color           : lighten($table-background, 10);
-$table-hover-color            : darken($table-background, 2);
-$table-stripe-color           : darken($table-background, 4);
-$table-stripe-color-hover     : darken($table-stripe-color, 5);
+$table-border-color: $border-color;
+$table-border: 1px solid $table-border-color;
+$table-background: $body-color;
+$table-header-color: lighten($table-background, 10);
+$table-hover-color: darken($table-background, 2);
+$table-stripe-color: darken($table-background, 4);
+$table-stripe-color-hover: darken($table-stripe-color, 5);
 
 $colorRGBa1: rgba(255, 255, 255, .5);
 
 $border-radius: 5px;
-$nice-color : gold;
-$base-color : $colorRGBa1;
-$htmlbg-color : black;
-$blend-mode : normal; //screen;
+$nice-color: gold;
+$base-color: $colorRGBa1;
+$htmlbg-color: black;
+$blend-mode: normal; //screen;
 $filter-opacity: 90%;
 
 // TYPOGRAPHY
@@ -56,19 +56,4 @@ $mediaMaxWidth: 1260px;
 
 // $ettings
 
-@import
-"cmq",
-"responsive_titles",
-"base",
-"pagination",
-"sidebar",
-"social-icons",
-"rok",
-"svg",
-"links",
-"home",
-"about",
-"offwhite",
-"onlyoneimage",
-"image-grid"
-;
+@import "cmq", "responsive_titles", "base", "pagination", "sidebar", "social-icons", "rok", "svg", "links", "home", "about", "offwhite", "onlyoneimage", "image-grid", "fineartprints";

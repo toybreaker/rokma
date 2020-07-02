@@ -1,0 +1,29 @@
+.button {
+  font-size: .90rem;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: transparent;
+
+  a:hover {
+    text-decoration: none;
+    border: 0 none;
+  }
+
+  .offwhite & {
+    border: 2px solid black;
+  }
+
+  &.button_pad {
+    padding: 10px 20px;
+  }
+
+  &:active,
+  &:hover {
+    border: 2px solid red;
+    color: red!important;
+
+    a {
+      color: red!important;
+    }
+  }
+}
