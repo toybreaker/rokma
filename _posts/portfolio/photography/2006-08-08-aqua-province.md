@@ -12,9 +12,11 @@ image:
 - 04.jpg
 - 05.jpg
 - 06.jpg
+fineartprints_link: true ## true or false
+fumes_category: art
 ---
-
 Part two of Aqua Serie. Unpublished.
+
 
 From the Aqua serie:  
 [Aqua Sunday]({% post_url /portfolio/photography/2019-01-20-aqua-sunday %})  

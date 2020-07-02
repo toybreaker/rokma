@@ -22,9 +22,7 @@ image:
 - 11.jpg
 - 12.jpg
 - 13.jpg
+fineartprints_link: true ## true or false
+fumes_category: photo-journalism
 ---
-
-
 Published on non-profit magazine [Fumes](https://fumes.junglestar.org/art/nixon-park/).
-
-Fine art prints. [Order here](https://fumes.junglestar.org/photo-journalism/nixon-park/#fineartprints)!
