@@ -10,7 +10,7 @@ tagline_plus:        'building reputation'
 baseurl:             ""
 url:                 https://rokma.com
 
-version:             17.6.0
+version:             18.0.0
 version_details:     'ScrollToFineArtPrints'
 
 # Outputting

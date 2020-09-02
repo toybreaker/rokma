@@ -1,11 +1,10 @@
-[![Build Status](https://travis-ci.org/toybreaker/rokma.svg?branch=source)](https://travis-ci.org/toybreaker/rokma)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9a736c24-fd74-472d-9e31-683308faf7f0/deploy-status)](https://app.netlify.com/sites/rokma/deploys)
 
 ### [Rokma](https://rokma.com)
 
-Ultra light mobile-first static website. Responsive images. Jekyll portfolio, tested!  Adhering to [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)[KISS](https://en.wikipedia.org/wiki/KISS_principle)!
+Ultra light mobile-first static website. Responsive images. Jekyll portfolio.  Adhering to [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)[KISS](https://en.wikipedia.org/wiki/KISS_principle)!
 
-version: 17.0.0
+version: 18.0.0
 
 
 ## 2DOs
@@ -22,68 +21,9 @@ version: 17.0.0
 
 
 
-
-## Dev prerequisite
-
-### Install node dependencies into project's local dir
-
-```sh
-npm install
-```
-
-## Make the following folder structure:
-
-```sh
-_src  
-  uploads  
-   _files_renamed  
-   _files_to_rename  
-   _images_to_lowercase  
-   _images_to_rename  
-   _images_to_size  
-```
-
-
-
 ## Develop:
 
-[Travis-ci](https://github.com/toybreaker/rokma/blob/gh-pages/.travis.yml) will test source branch.
-
-### Run gulp to produce images
-
-Open a new terminal window and
-
-#### Rename all to lowercase + del
-
-```sh
-gulp lower
-```
-
-#### Produce all the different sizes images + del
-
-```sh
-gulp sizes
-```
-
-#### Rename images, deleting current file names, with dir name and progressive index + del
-
-```sh
-gulp rename
-```
-
-#### Rename images adding dir name and progressive index + del
-
-```sh
-gulp curate
-```
-
-#### Rename files, deleting current file names, and using dir name and progressive index
-
-```sh
-gulp renamefiles
-```
-
-
+Use [GRINDER](https://github.com/toybreaker/grinder) to process photos and ouput responsive images sets.
 
 ## Warning:
 
