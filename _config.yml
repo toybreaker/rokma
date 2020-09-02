@@ -56,8 +56,4 @@ plugins:
 exclude:
   - vendor
   - Gemfile.lock
-  - node_modules
-  - package-lock.json
   - Gemfile
-  - rakefile
-  - gulpfile.js
