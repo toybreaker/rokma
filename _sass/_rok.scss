@@ -51,7 +51,7 @@ p a {
   border-bottom: 1px solid $color6;
 
   &:hover {
-    opacity: 0.5;
+    opacity: .5;
   }
 }
 
@@ -109,7 +109,7 @@ p a {
   background-color: rgba(255, 255, 255, 0.75);
   color: black;
   z-index: 1;
-  padding: 0.5rem;
+  padding: .5rem;
   width: calc(100% + 4px);
   // min-width: 100px;
   bottom: -40px;
@@ -149,10 +149,10 @@ p a {
     background-color: $black;
   }
 
-  .web-design &,
-  .specials &,
   .advertising &,
-  .branding & {
+  .branding &,
+  .specials &,
+  .web-design & {
     background-color: $body-color;
   }
 
@@ -186,8 +186,8 @@ p a {
       transition-property: all;
       -webkit-transition-timing-function: ease-in-out;
       transition-timing-function: ease-in-out;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
+      -webkit-transition-duration: .3s;
+      transition-duration: .3s;
       top: 0;
       z-index: 11;
       width: 100%;
@@ -222,19 +222,19 @@ p a {
       transition-property: transform, -webkit-transform;
       -webkit-transition-timing-function: ease-in-out;
       transition-timing-function: ease-in-out;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
+      -webkit-transition-duration: .3s;
+      transition-duration: .3s;
       -webkit-transform: scale(1) translateY(-10px);
       transform: scale(1) translateY(-10px);
-      @include media( "screen", ">minWidth") {
+      @include media("screen", ">minWidth") {
         -webkit-transform: scale(0.9) translateY(-30px);
         transform: scale(0.9) translateY(-30px);
       }
-      @include media( "screen", ">bp1Width") {
+      @include media("screen", ">bp1Width") {
         -webkit-transform: scale(0.75) translateY(-80px);
         transform: scale(0.75) translateY(-80px);
       }
-      @include media( "screen", ">maxWidth") {
+      @include media("screen", ">maxWidth") {
         -webkit-transform: scale(0.85) translateY(-25px);
         transform: scale(0.85) translateY(-25px);
       }
@@ -248,19 +248,19 @@ p a {
         transition-property: transform, -webkit-transform;
         -webkit-transition-timing-function: ease-in-out;
         transition-timing-function: ease-in-out;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
+        -webkit-transition-duration: .3s;
+        transition-duration: .3s;
         -webkit-transform: scale(1) translateY(-10px);
         transform: scale(1) translateY(-10px);
-        @include media( "screen", ">minWidth") {
+        @include media("screen", ">minWidth") {
           -webkit-transform: scale(1) translateY(-90px);
           transform: scale(1) translateY(-90px);
         }
-        @include media( "screen", ">bp1Width") {
+        @include media("screen", ">bp1Width") {
           -webkit-transform: scale(1) translateY(-100px);
           transform: scale(1) translateY(-100px);
         }
-        @include media( "screen", ">maxWidth") {
+        @include media("screen", ">maxWidth") {
           -webkit-transform: scale(1) translateY(-75px);
           transform: scale(1) translateY(-75px);
         }
@@ -288,7 +288,7 @@ p a {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     @include media("screen", ">minWidth") {
-      opacity: 0.4;
+      opacity: .4;
     }
 
   }
@@ -455,14 +455,14 @@ p a {
 
         &:nth-of-type(2) {
           top: 16px;
-          -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+          -webkit-animation-delay: .15s;
+          animation-delay: .15s;
         }
 
         &:nth-of-type(3) {
           top: 32px;
-          -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+          -webkit-animation-delay: .3s;
+          animation-delay: .3s;
         }
       }
     }
@@ -632,7 +632,11 @@ body.gray2 {
   margin: 10rem auto;
 }
 
-
 .posthumb.image_icons .entry-feature-image {
   background: transparent;
+}
+
+.main {
+  max-width: $max_width;
+  margin: 0 auto;
 }
