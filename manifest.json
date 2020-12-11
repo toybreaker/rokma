@@ -1,7 +1,6 @@
 {
   "name": "Rokma Communication Design",
   "short_name": "Rokma",
-  "start_url": "https:\/\/rokma.com",
   "background_color": "#fed83f",
   "theme_color": "#fff",
   "display": "standalone",
