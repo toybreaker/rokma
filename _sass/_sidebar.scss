@@ -3,29 +3,19 @@
 
 // Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504*/
 
-
 $sidebarwidth-base: 98vw;
 $sidebarwidth-min: 45vw;
-$sidebarwidth: 30vw;/*bp1*/
+$sidebarwidth: 30vw;
+/*bp1*/
 $sidebarwidth-max: 22vw;
 // this for the menu when open go vertically middle off the sidebar edge*/
 // aproximated here...*/
-$sidebarwidthplus: 13.75rem; /*calc( 16 rem - (55px : 2) )*/
-
+$sidebarwidthplus: 13.75rem;
+/*calc( 16 rem - (55px : 2) )*/
 
 .sidebar {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
 
   overflow-y: scroll; // fixed scrollbar
@@ -43,19 +33,19 @@ $sidebarwidthplus: 13.75rem; /*calc( 16 rem - (55px : 2) )*/
   // on mobiles navigation need to be big so to touch it easily
   // basically stay big (line-height) on mobiles and go small on big screens
   // needed to compensate the growing of font-size with growing vw
-  @include media( "screen", "<minWidth") {
+  @include media("screen", "<minWidth") {
     width: $sidebarwidth-base;
     left: -$sidebarwidth-base;
   }
-  @include media( "screen", ">minWidth", "<bp1Width") {
+  @include media("screen", ">minWidth", "<bp1Width") {
     width: $sidebarwidth-min;
     left: -$sidebarwidth-min;
   }
-  @include media( "screen", ">bp1Width", "<maxWidth") {
+  @include media("screen", ">bp1Width", "<maxWidth") {
     width: $sidebarwidth;
     left: -$sidebarwidth;
   }
-  @include media( "screen", ">maxWidth") {
+  @include media("screen", ">maxWidth") {
     width: $sidebarwidth-max;
     left: -$sidebarwidth-max;
   }
@@ -64,32 +54,40 @@ $sidebarwidthplus: 13.75rem; /*calc( 16 rem - (55px : 2) )*/
     font-weight: 400;
     color: $brightest-color;
   }
+
   .avatar img {
-    border-radius:50%; //opera mini issue here
-    margin:1rem auto;
-    width:50%;
+    border-radius: 50%; //opera mini issue here
+    margin: 1rem auto;
+    width: 50%;
   }
+
   .to-home {
     color: rgba(0,150,255,.75);
+
     &:hover {
       color: rgba(0,150,255,1);
     }
   }
-  .descri{
-    display:block;
+
+  .descri {
+    display: block;
     text-align: center;
     line-height: 1.2;
     padding-bottom: 20px;
     padding-left: 1.5em;
     padding-right: 1.5rem;
+
     &.title {
       padding-top: 20px;
       padding-bottom: 0;
     }
   }
-  .fontsizefixed { font-size: 14px; }
 
-// this is the toggle X to close sidebar
+  .fontsizefixed {
+    font-size: 14px;
+  }
+
+  // this is the toggle X to close sidebar
   .tog {
     z-index: 1000;
     position: absolute;
@@ -100,6 +98,7 @@ $sidebarwidthplus: 13.75rem; /*calc( 16 rem - (55px : 2) )*/
 // Sidebar content*/
 .sidebar-item {
   padding: 1rem;
+
   p:last-child {
     margin-bottom: 0;
   }
@@ -119,8 +118,8 @@ $sidebarwidthplus: 13.75rem; /*calc( 16 rem - (55px : 2) )*/
 }
 
 .sidebar-nav-item.active,
-a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
+a.sidebar-nav-item:focus,
+a.sidebar-nav-item:hover {
   text-decoration: none;
   background-color: $trnsp-color1;
   border-color: transparent;
@@ -128,18 +127,20 @@ a.sidebar-nav-item:focus {
 
 // Hide the sidebar checkbox that we toggle with `.sidebar-toggle`
 .sidebar-checkbox {
-  display:none;
+  display: none;
 }
 
-.sidebar-toggle-button {//button
+.sidebar-toggle-button {
+  //button
   position: fixed;
-  top:1rem;
-  right:1rem;
+  top: 1rem;
+  right: 1rem;
   z-index: 100;
   display: block!important;
 }
 
-.sidebar-toggle {//label
+.sidebar-toggle {
+  //label
   width: 48px;
   height: 48px;
   display: block;
@@ -153,16 +154,16 @@ a.sidebar-nav-item:focus {
 .layout-reverse .sidebar {
   left: auto;
   // right: -$sidebarwidth;
-  @include media( "screen", "<minWidth") {
+  @include media("screen", "<minWidth") {
     right: -$sidebarwidth-base;
   }
-  @include media( "screen", ">minWidth", "<bp1Width") {
+  @include media("screen", ">minWidth", "<bp1Width") {
     right: -$sidebarwidth-min;
   }
-  @include media( "screen", ">bp1Width", "<maxWidth") {
+  @include media("screen", ">bp1Width", "<maxWidth") {
     right: -$sidebarwidth;
   }
-  @include media( "screen", ">maxWidth") {
+  @include media("screen", ">maxWidth") {
     right: -$sidebarwidth-max;
   }
 }
@@ -174,50 +175,41 @@ a.sidebar-nav-item:focus {
 
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar,
 .layout-reverse #sidebar-checkbox:checked ~ .wrap {
-  -webkit-transform: translateX(-$sidebarwidth);
   transform: translateX(-$sidebarwidth);
   // needed to compensate the growing of font-size with growing vw
-  @include media( "screen", "<minWidth") {
-  -webkit-transform: translateX(-$sidebarwidth-base);
-          transform: translateX(-$sidebarwidth-base);
+  @include media("screen", "<minWidth") {
+    transform: translateX(-$sidebarwidth-base);
   }
-  @include media( "screen", ">minWidth", "<bp1Width") {
-    -webkit-transform: translateX(-$sidebarwidth-min);
-            transform: translateX(-$sidebarwidth-min);
+  @include media("screen", ">minWidth", "<bp1Width") {
+    transform: translateX(-$sidebarwidth-min);
   }
-  @include media( "screen", ">bp1Width", "<maxWidth" ) {
-    -webkit-transform: translateX(-$sidebarwidth);
-            transform: translateX(-$sidebarwidth);
+  @include media("screen", ">bp1Width", "<maxWidth") {
+    transform: translateX(-$sidebarwidth);
   }
-  @include media( "screen", ">maxWidth") {
-    -webkit-transform: translateX(-$sidebarwidth-max);
-            transform: translateX(-$sidebarwidth-max);
+  @include media("screen", ">maxWidth") {
+    transform: translateX(-$sidebarwidth-max);
   }
 }
 
-.wrap,
-.sidebar {
+.sidebar,
+.wrap {
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-.wrap,
-.sidebar-toggle {
--webkit-transition: -webkit-transform .3s ease-in-out;
-transition: -webkit-transform .3s ease-in-out;
-transition: transform .3s ease-in-out;
-transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+.sidebar-toggle,
+.wrap {
+  transition: transform .3s ease-in-out;
 }
 
 // kill some deafults
-.sidebar-toggle:focus,
-.sidebar-toggle:active
-.sidebar-toggle:hover,
-.sidebar-toggle-button:focus,
 .sidebar-toggle-button:active,
-.sidebar-toggle-button:hover {
+.sidebar-toggle-button:focus,
+.sidebar-toggle-button:hover,
+.sidebar-toggle:active .sidebar-toggle:hover,
+.sidebar-toggle:focus {
   outline: 0!important;
-  border:0;
+  border: 0;
 }
 
 .sidebar-toggle-button {
@@ -239,29 +231,23 @@ transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
 #sidebar-checkbox:checked ~ .sidebar,
-#sidebar-checkbox:checked ~ .wrap,
-#sidebar-checkbox:checked ~ .sidebar-toggle {
+#sidebar-checkbox:checked ~ .sidebar-toggle,
+#sidebar-checkbox:checked ~ .wrap {
   //needed to compensate the growing of font-size with growing vw..
-  @include media( "screen", "<minWidth") {
-    -webkit-transform: translateX($sidebarwidth-base);
+  @include media("screen", "<minWidth") {
     transform: translateX($sidebarwidth-base);
 
   }
-  @include media( "screen", ">minWidth", "<bp1Width") {
-    -webkit-transform: translateX($sidebarwidth-min);
-            transform: translateX($sidebarwidth-min);
+  @include media("screen", ">minWidth", "<bp1Width") {
+    transform: translateX($sidebarwidth-min);
   }
-  @include media( "screen", ">bp1Width", "<maxWidth") {
-    -webkit-transform: translateX($sidebarwidth);
-            transform: translateX($sidebarwidth);
+  @include media("screen", ">bp1Width", "<maxWidth") {
+    transform: translateX($sidebarwidth);
   }
-  @include media( "screen", ">maxWidth") {
-    -webkit-transform: translateX($sidebarwidth-max);
-            transform: translateX($sidebarwidth-max);
+  @include media("screen", ">maxWidth") {
+    transform: translateX($sidebarwidth-max);
   }
 }
-
-
 
 // make page adapt when sidebar is open*/
 // sidebar is open, page is narrower now - change text-align for blocks*/
@@ -270,22 +256,37 @@ transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 
 #sidebar-checkbox:checked ~ .wrap {
   padding-left: $sidebarwidth;
-  @include media( "screen", "<minWidth") {
-   padding-left: $sidebarwidth-base;
+  @include media("screen", "<minWidth") {
+    padding-left: $sidebarwidth-base;
   }
-  @include media( "screen", ">minWidth", "<bp1Width") {
-   padding-left: $sidebarwidth-min;
+  @include media("screen", ">minWidth", "<bp1Width") {
+    padding-left: $sidebarwidth-min;
   }
-  @include media( "screen", ">bp1Width", "<maxWidth" ) {
-   padding-left: $sidebarwidth;
+  @include media("screen", ">bp1Width", "<maxWidth") {
+    padding-left: $sidebarwidth;
   }
-  @include media( "screen", ">maxWidth"){
-   padding-left: $sidebarwidth-max;
+  @include media("screen", ">maxWidth") {
+    padding-left: $sidebarwidth-max;
   }
 
-  .taglineplus {display:none;}
-  .entry-wrapper {text-align:left;}
-  .bamboo {margin-left:0;margin-right:0;}
-  .bamboo.last {display:none;}
-  .seemore {text-align:right;}
+  .taglineplus {
+    display: none;
+  }
+
+  .entry-wrapper {
+    text-align: left;
+  }
+
+  .bamboo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .bamboo.last {
+    display: none;
+  }
+
+  .seemore {
+    text-align: right;
+  }
 }

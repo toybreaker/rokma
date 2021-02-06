@@ -2,20 +2,26 @@ svg {
   width: $icon_size;
   height: $icon_size;
   fill: $color4;
+
   &:hover {
     fill: white;
   }
+
   .sidebar-toggle & {
     width: $icon_size*0.8;
     height: $icon_size*0.8;
+
     &.burger {
       fill: $text-color;
-      &:hover {
+
+      pref &:hover {
         opacity: .8;
       }
     }
+
     &.x {
       fill: $color4;
+
       &:hover {
         opacity: .8;
       }
@@ -23,17 +29,20 @@ svg {
   }
 }
 
-.photography,
-.black  {
+.black,
+.photography {
   .sidebar-toggle {
     svg.burger {
       fill: $color4;
+
       &:hover {
         opacity: .8;
       }
     }
+
     svg.x {
       fill: $color4;
+
       &:hover {
         opacity: .8;
       }
@@ -49,15 +58,22 @@ svg {
   height: 100px;
   top: -25px;
   left: 25px;
+
   .svg_stamp_look {
-     fill: white;
-     stroke: rgba(0, 150, 255, 0.75);
-     stroke-linecap: round;
+    fill: white;
+    stroke: rgba(0, 150, 255, 0.75);
+    stroke-linecap: round;
   }
+
   .quote & {
-    .svg_stamp_look { stroke-width: 2; }
+    .svg_stamp_look {
+      stroke-width: 2;
+    }
   }
+
   .clients & {
-    .svg_stamp_look { stroke-width: 2; }
+    .svg_stamp_look {
+      stroke-width: 2;
+    }
   }
 }
