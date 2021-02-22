@@ -1,4 +1,4 @@
-version:             18.0.2
+version:             18.1.0
 title:               Rokma
 locale:              en
 description:         "Communication Design and production."
@@ -16,7 +16,7 @@ version_details:     'ScrollToFineArtPrints'
 # Outputting
 permalink:           /:categories/:title/
 relative_permalinks: false
-paginate:            15
+paginate:            9
 paginate_path:       "index/:num/"
 
 # Setup

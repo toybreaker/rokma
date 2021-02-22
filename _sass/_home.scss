@@ -45,6 +45,17 @@
       padding-left: 8vw;
       padding-right: 8vw;
     }
+
+    &.small {
+      @include responsive-font(4vw, 20px, 40px, 20px);
+
+      @include media("screen", ">minWidth") {
+
+        @include responsive-font(3vw, 20px, 40px, 20px);
+        padding-left: 8vw;
+        padding-right: 8vw;
+      }
+    }
   }
 
   .tagline {
@@ -66,17 +77,14 @@
   }
 
   //top to bot
-  .hat {}
+
+  // .phrase1 {}
+  // .phrase2 {}
+  // .phrase3 {}
 
   .all_works {
     height: auto;
     background-color: $nice-color;
-  }
-
-  .on {}
-
-  .andon {
-    background-color: white;
   }
 
   .wrap.last {

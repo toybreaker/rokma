@@ -21,46 +21,6 @@ body {
   text-size-adjust: 100%;
 }
 
-a {
-  color: $link-color;
-  text-decoration: none;
-
-  strong {
-    color: inherit;
-  }
-
-  &:hover {
-    //opacity: 0.6;
-    border-bottom: 1px solid $color4;
-  }
-
-  .sidebar & {
-    &:hover {
-      border-bottom: 0 none;
-    }
-  }
-
-  &.active {
-    color: black;
-    border-bottom: 1px solid $color2;
-  }
-  // :focus is linked to :hover for basic accessibility
-  &:focus,
-  &:hover {}
-}
-// `:visited` state is usefull!
-body:not(.black) div:not(.sidebar) a:visited,
-body:not(.photography) div:not(.sidebar) a:visited {
-  color: silver;
-}
-
-.fontsizefixed .underline-on-hover:visited {
-  color: silver!important;
-}
-
-.fontsizefixed .underline-on-hover:hover {
-  color: #0096ff!important;
-}
 //// Body text
 
 p {
@@ -269,25 +229,6 @@ button strong em {
   text-transform: uppercase;
   @include media("screen", "<minWidth") {
     text-align: center;
-  }
-
-  a {
-    color: $darkest-color;
-    font-weight: 200;
-    line-height: $base-line-height;
-    text-decoration: none;
-
-    span,
-    span small {
-      //font-size: 9.5vh;
-      @include responsive-font(8vh, 50px, 100px, 46px);
-      display: block;
-      line-height: 1!important;
-      padding-top: 0;
-      padding-bottom: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
   }
 
   small {
