@@ -1,0 +1,27 @@
+{% comment %}
+figure block for use in posts inside markdown.
+Example:
+<div>{% include blocks/figure.html name="" caption="test" class="class" %}</div>
+this will grab the first image used also in the post header
+or
+<div>{% include blocks/figure.html name="-04" caption="test" class="class" %}</div>
+this will grab the 4th image
+{% endcomment %}
+
+<figure class="post_content_image {{ include.class }}">
+  {% comment %}
+  assign the page image and split at the extension dot
+  {% endcomment %}
+  {% assign f = page.image | split: '.' %}
+  <img loading="lazy" src="{{ f[0] | relative_url }}{{ include.name }}-640.{{ f[1] }}"
+       srcset="{{ f[0] | relative_url }}{{ include.name }}-640.{{ f[1] }} 640w,
+               {{ f[0] | relative_url }}{{ include.name }}-880.{{ f[1] }} 880w,
+               {{ f[0] | relative_url }}{{ include.name }}-1024.{{ f[1] }} 1024w,
+               {{ f[0] | relative_url }}{{ include.name }}-1920.{{ f[1] }} 1920w"
+       sizes="100vw" alt="{{ page.name }} - {{ page.subtitle }}" />
+
+      {% if include.caption %}
+      <figcaption><span>{{ include.caption }}</span></figcaption>
+      {% endif %}
+
+ </figure>
