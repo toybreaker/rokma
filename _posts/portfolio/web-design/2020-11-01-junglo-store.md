@@ -1,5 +1,5 @@
 ---
-layout: bra-new
+layout: web_new
 title: junglo-store
 headline: Junglo Store
 categories: web-design
@@ -24,3 +24,5 @@ images:
 Online store creation.
 
 Customised Shopify e-commerce store for Jungloshoes brand.
+
+Check the [Jungloshoes live website](https://jungloshoes.com/?source=rokma.com)

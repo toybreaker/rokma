@@ -1,5 +1,5 @@
 ---
-layout: bra-new
+layout: bra_new
 title: valeria-delacerda
 headline: Valeria Delacerda
 categories: branding
