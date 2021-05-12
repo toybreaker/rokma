@@ -1,0 +1,75 @@
+{% include blocks/ascii_art_rokma_signature.html %}
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} {{ site.tagline }}
+    {% else %}
+      {{ site.title }} {{ page.headline }}
+    {% endif %}
+  </title>
+
+  {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% else %}<meta name="description" content="{{ site.shout_description }} - {% if page.title == "Home" %} {{ site.title }} {{ site.tagline }}{% else %}{{ site.title }} {{ page.headline }}{% endif %}">{% endif %}
+
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#7f0">
+  <meta name="apple-mobile-web-app-title" content="Rokma">
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon-180x180.png">
+
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-16x16.png" sizes="16x16">
+
+  <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
+
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Rokma">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-TileImage" content="{{ site.baseurl }}/mstile-144x144.png">
+  <meta name="msapplication-config" content="{{ site.baseurl }}/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
+
+  {% include blocks/open_graph.html %}
+
+  <noscript id="deferred-styles">
+    <link href='https://fonts.googleapis.com/css?family=Dosis:200,400,600&display=swap' rel='stylesheet' type='text/css'>
+
+  </noscript>
+
+  <script type="text/javascript">
+      // Load CSS
+      var loadDeferredStyles = function() {
+          var addStylesNode = document.getElementById("deferred-styles");
+          var replacement = document.createElement("div");
+          replacement.innerHTML = addStylesNode.textContent;
+          document.body.appendChild(replacement)
+          addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+  </script>
+
+  {% capture inline_css %}{% include main.scss %}{% endcapture %}
+  <style>{{ inline_css | scssify }}</style>
+
+  <style>[data-sr] { visibility: hidden; }</style>
+
+</head>

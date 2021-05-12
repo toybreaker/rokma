@@ -2,21 +2,24 @@
 layout: home
 title: Home
 isindex: index
-tagline: 'believes your customers should understand you.'
-excerpt: 'Rokma believes your customers should understand you.'
+phrase1: 'believes your customers should understand you.'
+phrase2: 'helps you deliver your message.'
+phrase3: 'makes your offer recognizable.'
+phrase4: 'now...'
+phrase5: 'let the light shine.'
+phrase6: 'Know more about Rokma >'
+excerpt: 'Rokma believes your customers should understand you. Rokma offers Communication Design for small companies. Imagine, plan, produce, launch, or just Consulting!'
 ---
+
 <span class="version hidden">{{ site.version }} | {{ site.version_details }}</span>
 
-
-<div class="wrap hat">
+<div class="wrap phrase1">
 
   <div class="masthead">
     <div class="container">
       <h1 class="masthead-title" data-sr='enter right move 4500px' >
         {{ site.title }}
-        <span class="tagline">
-          {{ page.tagline }}
-        </span>
+        <span class="tagline">{{ page.phrase1 }}</span>
       </h1>
     </div>
   </div>
@@ -25,24 +28,20 @@ excerpt: 'Rokma believes your customers should understand you.'
 
 {% include grid-all.html %}
 
-<div class="wrap on">
+<div class="wrap phrase2">
   <div class="container content">
     <h1 class="masthead-title" data-sr='enter right move 2000px' >
         {{ site.title }}
-        <span class="tagline">
-          helps you deliver your message.
-        </span>
+        <span class="tagline">{{ page.phrase2 }}</span>
       </h1>
   </div>
 </div>
 
-<div class="wrap andon">
+<div class="wrap phrase3">
   <div class="container content">
     <h1 class="masthead-title" data-sr='enter left move 2000px' >
         {{ site.title }}
-        <span class="tagline">
-          makes your offer recognizable.
-        </span>
+        <span class="tagline">{{ page.phrase3 }}</span>
       </h1>
   </div>
 </div>
@@ -50,9 +49,12 @@ excerpt: 'Rokma believes your customers should understand you.'
 <div class="wrap last">
   <div class="container content">
     <h1 class="masthead-title" data-sr='enter right move 2000px' >
-        <span class="tagline">
-          <a href="/photography/"><strong>now...</strong><br>let light shine.</a>
-        </span>
-      </h1>
+      <span class="tagline">
+        <a href="/photography/"><strong>{{ page.phrase4 }}</strong><br>{{ page.phrase5 }}</a>
+      </span>
+    </h1>
+    <div class="masthead-title small underline_on_hover" data-sr='wait 2s, enter left move 2000px'  >
+      <a class="homepage_last_link" href="/about/">{{ page.phrase6 }}</a>
+    </div>
   </div>
 </div>

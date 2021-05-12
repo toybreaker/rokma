@@ -1,6 +1,4 @@
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -19,48 +17,10 @@ body {
   background-color: $body-color;
   overflow-x: hidden!important;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
-a {
-  color: $link-color;
-  text-decoration: none;
-
-  strong {
-    color: inherit;
-  }
-  &:hover {
-    //opacity: 0.6;
-    border-bottom: 1px solid $color4;
-  }
-  .sidebar & {
-    &:hover {
-      border-bottom: 0 none;
-    }
-  }
-
-
-  &.active {
-    color: black;
-    border-bottom: 1px solid $color2;
-  }
-  // :focus is linked to :hover for basic accessibility
-  &:focus,
-  &:hover {}
-}
-// `:visited` state is usefull!
-body:not(.black) div:not(.sidebar) a:visited,
-body:not(.photography) div:not(.sidebar) a:visited {
-  color: silver;
-}
-
-.fontsizefixed .underline-on-hover:visited {
-  color: silver!important;
-}
-
-.fontsizefixed .underline-on-hover:hover {
-  color: #0096ff!important;
-}
 //// Body text
 
 p {
@@ -80,7 +40,7 @@ dt {
 }
 
 dd {
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 hr {
@@ -107,10 +67,11 @@ blockquote {
   padding: 0;
   margin: 0;
   color: $color7;
-  border-left: 0.25rem solid $color7;
+  border-left: .25rem solid $color7;
+
   .black & {
     color: $color2;
-    border-left: 0.25rem solid $color2;
+    border-left: .25rem solid $color2;
   }
 
   p:last-child {
@@ -126,9 +87,11 @@ blockquote {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h2 {
     text-transform: none;
   }
+
   blockquote {
     max-width: none;
   }
@@ -138,10 +101,9 @@ img {
   display: block;
   max-width: 100%;
   margin: 1rem auto;
-  // opera mini issue here:
   border-radius: $border-radius;
   // chrome improved images
-  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 //// Tables
 table {
@@ -153,7 +115,7 @@ table {
 
 td,
 th {
-  padding: 0.25rem 0.5rem;
+  padding: .25rem .5rem;
   border: 1px solid $color2;
 }
 
@@ -171,7 +133,7 @@ strong em {
   font-style: normal;
   font-weight: 200;
   font-size: 2rem;
-  padding-right: 0.5rem;
+  padding-right: .5rem;
 }
 
 button strong em {
@@ -269,25 +231,6 @@ button strong em {
     text-align: center;
   }
 
-  a {
-    color: $darkest-color;
-    font-weight: 200;
-    line-height: $base-line-height;
-    text-decoration: none;
-
-    span,
-    span small {
-      //font-size: 9.5vh;
-      @include responsive-font(8vh, 50px, 100px, 46px);
-      display: block;
-      line-height: 1!important;
-      padding-top: 0;
-      padding-bottom: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
   small {
     font-size: 2rem;
     font-weight: 200;
@@ -370,7 +313,6 @@ button strong em {
   }
 }
 
-
 h1,
 h2,
 h3,
@@ -383,7 +325,7 @@ h6 {
   text-rendering: optimizeLegibility;
   text-transform: capitalize;
   color: #313131;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 h1 {

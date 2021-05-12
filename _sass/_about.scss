@@ -1,4 +1,5 @@
 //// ABOUT template
+
 .about {
   * > {
     margin: 0;
@@ -9,12 +10,21 @@
     margin-right: auto;
   }
   background-color: transparent;
-  .masthead { display: none; }
+
+  .masthead {
+    display: none;
+  }
 
   // different color and :hover color for different locations..
   .wrap a {
-    .fa {color: $link-color; cursor: pointer;}
-    &:hover .fa {color: white;}
+    .fa {
+      color: $link-color;
+      cursor: pointer;
+    }
+
+    &:hover .fa {
+      color: white;
+    }
   }
 
   //background sun shot fixed for home
@@ -25,9 +35,7 @@
     width: 200%;
     height: 200%;
     z-index: -100;
-
-    -webkit-transform:translateZ(0);
-    transform:translateZ(0);
+    transform: translateZ(0);
 
     background-color: $body-color;
 
@@ -42,35 +50,23 @@
       min-width: 50%;
       min-height: 50%;
 
-      image-rendering: optimizeQuality; // Gecko, moz
-      -ms-interpolation-mode: bicubic; // IE
-      image-rendering: -moz-crisp-edges;         // Firefox
-      image-rendering:   -o-crisp-edges;         // Opera
-      image-rendering: -webkit-optimize-contrast;// Webkit (non-standard naming)
-      -ms-interpolation-mode: nearest-neighbor;  // IE (non-standard property)
+      image-rendering: optimizeQuality; // Gecko, moz // IE         // Firefox         // Opera// Webkit (non-standard naming)
+      -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: pixelated;
+      // IE (non-standard property)
     }
   }
 
   .page {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin: 0;
     padding: 0;
   }
+
   .page-block {
     position: relative;
     width: 70%;
@@ -80,21 +76,24 @@
     text-align: justify;
     background-color: white;
     margin-bottom: 2rem;
+
     &.quote {
       margin-bottom: 10rem;
     }
   }
+
   .left_triangle:before {
     content: "";
     position: absolute;
     top: calc(50% - 50px);
     left: -2.5rem;
-  	width: 0;
-  	height: 0;
-  	border-top: 50px solid transparent;
-  	border-right: 50px solid white;
-  	border-bottom: 50px solid transparent;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid white;
+    border-bottom: 50px solid transparent;
   }
+
   .right_triangle:before {
     content: "";
     position: absolute;
@@ -107,8 +106,8 @@
     border-bottom: 50px solid transparent;
   }
 
-
-  .page-title {//h1
+  .page-title {
+    //h1
     color: white;
     width: 100%;
     min-height: 90vh;
@@ -120,6 +119,7 @@
     text-align: left;
     margin-top: 0;
   }
+
   .cite {
     color: white;
     position: absolute;
@@ -128,8 +128,6 @@
     margin-bottom: 0;
   }
 }
-
-
 
 .last {
   border: 0 none;
@@ -140,40 +138,18 @@
   background-size: cover;
   background-attachment: fixed;
   background: transparent; //Fallback for operaMini
-  background: linear-gradient(
-  rgba(0,0,0,0) 0%,
-  rgba(0,0,0,.1) 30%,
-  rgba(0,0,0,.2) 60%,
-  rgba(0,0,0,.35) 80%,
-  rgba(0,0,0,.5) 90%,
-  rgba(0,0,0,.6)
-  );
-
-  -webkit-background-blend-mode: luminosity;
+  background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.1) 30%, rgba(0,0,0,.2) 60%, rgba(0,0,0,.35) 80%, rgba(0,0,0,.5) 90%, rgba(0,0,0,.6));
   background-blend-mode: luminosity;
 
   .social-block {
-    width:100%;
+    width: 100%;
     padding-bottom: 5vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
 
-    @include media( "screen", ">minWidth") {
+    @include media("screen", ">minWidth") {
       height: auto;
       display: block;
       padding-top: 1rem;
@@ -183,22 +159,36 @@
     .title {
       text-align: center;
       line-height: 5;
-      margin-top:0;
+      margin-top: 0;
       width: auto;
       color: white;
     }
   }
 }
 
-
 // checkbox:checked case hide the shot
 .about {
   #sidebar-checkbox:checked ~ .wrap {
-    body & { background-color: white;}
-    img { display:none; }
-    .last { display:none; }
-    .cite { color:black; }
-    .page-block {text-align: left;}
+    body & {
+      background-color: white;
+    }
+
+    img {
+      display: none;
+    }
+
+    .last {
+      display: none;
+    }
+
+    .cite {
+      color: black;
+    }
+
+    .page-block {
+      text-align: left;
+    }
+
     .page {
       .page-title {
         min-height: 0;

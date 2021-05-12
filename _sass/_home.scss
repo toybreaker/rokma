@@ -1,13 +1,9 @@
-
 .home {
-
   .wrap {
     background-size: cover;
     background-attachment: fixed;
     background: $nice-color; //Fallback for operaMini
-    background: linear-gradient( $base-color 20%, $nice-color );
-
-    -webkit-background-blend-mode: $blend-mode;
+    background: linear-gradient($base-color 20%, $nice-color);
     background-blend-mode: $blend-mode;
   }
 
@@ -19,92 +15,98 @@
       background-color: $nice-color;
 
       /* make avatar gray*/
-      -webkit-filter: grayscale(.9);
-      -webkit-filter: grayscale($filter-opacity);
-      -moz-filter : grayscale($filter-opacity);
-      -ms-filter : grayscale($filter-opacity);
-      -o-filter : grayscale($filter-opacity);
       filter: grayscale($filter-opacity);
 
-      filter: gray; // IE 6-9 */
-
-      filter : url ("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'gs\'><feColorMatrixtype=\'matrix\'values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#gs");// Firefox 3.5+, Firefox mobile
+      filter: gray; // Firefox 3.5+, Firefox mobile
     }
   }
 
   // and the text under the circle yellow
-  .descri { color: $nice-color; }
+  .descri {
+    color: $nice-color;
+  }
 
   //// HOME HEAD stuff
   // no header border for home...
-  .masthead { border: 0 none; }
+  .masthead {
+    border: 0 none;
+  }
 
   // and big letters..
   .masthead-title {
     font-weight: 600;
     line-height: 1;
-    //font-size: 2rem; //fallback that doesn't look awful
-    //font-size: 12vw;
 
-    @include responsive-font( 12vw, 50px, 120px, 46px);
+    @include responsive-font(12vw, 50px, 120px, 46px);
 
-    @include media( "screen", ">minWidth") {
-      // font-size: 2.5rem; //fallback that doesn't look awful
-      // font-size: 7vw;
-      @include responsive-font( 8vw, 46px, 120px, 46px);
+    @include media("screen", ">minWidth") {
+
+      @include responsive-font(8vw, 46px, 120px, 46px);
       padding-left: 8vw;
       padding-right: 8vw;
     }
+
+    &.small {
+      @include responsive-font(4vw, 20px, 40px, 20px);
+
+      @include media("screen", ">minWidth") {
+
+        @include responsive-font(3vw, 20px, 40px, 20px);
+        padding-left: 8vw;
+        padding-right: 8vw;
+      }
+    }
   }
+
   .tagline {
     font-weight: 200;
     color: black;
     text-transform: uppercase;
   }
-  .posthumb { background-color: $nice-color; }
+
+  .posthumb {
+    background-color: $nice-color;
+  }
 
   // wraps for home
   .wrap {
-    height:100vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    height: 100vh;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 
   //top to bot
-  .hat {}
+
+  // .phrase1 {}
+  // .phrase2 {}
+  // .phrase3 {}
+
   .all_works {
     height: auto;
     background-color: $nice-color;
   }
-  .on { }
-  .andon { background-color: white; }
 
   .wrap.last {
     padding-top: 0;
     height: 100vh;
     padding-bottom: 0;
+
     .container.content {
       margin-top: 0;
     }
+
     .masthead-title a {
       line-height: 1;
     }
+
     .masthead-title,
     .tagline {
       margin: 0;
       padding: 0;
-      text-align:center;
+      text-align: center;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+
       a {
         color: black;
       }
@@ -112,15 +114,24 @@
   }
 }
 
-.home .underline-on-hover:hover{
+.home .underline-on-hover:hover {
   color: $nice-color!important;
 }
 
 // SIDEBAR in HOME do some more...
 .home {
   #sidebar-checkbox:checked ~ .wrap {
-    img,
     .pagination,
-    .posts {display:none;}
+    .posts,
+    img {
+      display: none;
+    }
   }
+}
+
+a.homepage_last_link {
+  display: block;
+  height: 48px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

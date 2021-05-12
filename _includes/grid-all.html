@@ -16,11 +16,11 @@ used in index.html to display pagination list of posts
 
       {% for post in paginator.posts %}
 
-        {% include item-ball.html %}
+        {% include blocks/card.html %}
 
       {% endfor %}
 
-      {% include pagination.html %}
+      {% include blocks/pagination.html %}
 
     </div>
 

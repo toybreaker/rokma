@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div id="main" role="main" class="{% if page.grid_small_images %}grid-small-images{% else %}grid_big_images{% endif %} web-new_layout">
+
+  <article class="entry">
+
+    {% include blocks/responsive_images.html %}
+
+    {% include  blocks/entry_text.html %}
+
+  </article>
+
+  <div class="entry-wrapper seemore">
+    <h3 class="post-list-title center nocap">See more websites designed and produced by Rokma.</h3>
+    <ul class="post-list">
+      {% for post in site.categories.web-design %}
+      <li>
+        <article>
+          <a class="{% if page.url contains post.url %}active{% endif %}" href="{{ site.baseurl }}{{ post.url }}">{{ post.headline }} <small class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time></small></a>
+        </article>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</div>

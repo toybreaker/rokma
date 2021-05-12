@@ -1,0 +1,48 @@
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<div class="sidebar" id="sidebar">
+
+  <div class="middle">
+
+    <div class="tog sidebar-toggle-button">
+      <label for="sidebar-checkbox" class="sidebar-toggle">
+        {% include svg/use.html id="icn--x" class="x" %}
+      </label>
+    </div>
+
+    <a class="to-home" href="{% if page.url == site.baseurl %}{{ site.baseurl }}{% else %}{{ site.baseurl }}/{% endif %}"
+    title="back to home page">
+      <span class="descri title">{{ site.title }}</span>
+    </a>
+
+    <a class="to-home catindex" href="{% if page.title == "Home" or page.title == "About" %}/{% else %}{{ site.baseurl }}/{% endif %}"
+    title="back to home page">
+      <span class="avatar">
+        <img src="{{ site.baseurl }}/assets/images/{{ site.owner.avatar }}" alt="{{ site.description }}">
+      </span>
+    </a>
+
+    <a class="to-home" href="{% if page.url == site.baseurl %}{{ site.baseurl }}{% else %}{{ site.baseurl }}/{% endif %}"
+    title="back to home page">
+      <span class="descri">{{ site.description }}</span>
+    </a>
+
+    <nav class="sidebar-nav">
+
+      {% for link in site.data.navigation %}
+        <a class="sidebar-nav-item" title="see Rokma's {{ link.section }} works" href="{{ site.baseurl }}/{{ link.section }}/">{{ link.section }}</a>
+      {% endfor %}
+
+    </nav>
+
+    <div class="sidebar-item">
+
+      {% include blocks/contact.html %}
+
+      {% include blocks/sidebar_footer.html %}
+
+    </div>
+
+  </div>
+
+</div>

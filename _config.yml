@@ -1,3 +1,4 @@
+version:             18.3.0
 title:               Rokma
 locale:              en
 description:         "Communication Design and production."
@@ -10,13 +11,12 @@ tagline_plus:        'building reputation'
 baseurl:             ""
 url:                 https://rokma.com
 
-version:             17.5.0
 version_details:     'ScrollToFineArtPrints'
 
 # Outputting
 permalink:           /:categories/:title/
 relative_permalinks: false
-paginate:            15
+paginate:            9
 paginate_path:       "index/:num/"
 
 # Setup
@@ -56,8 +56,4 @@ plugins:
 exclude:
   - vendor
   - Gemfile.lock
-  - node_modules
-  - package-lock.json
   - Gemfile
-  - rakefile
-  - gulpfile.js

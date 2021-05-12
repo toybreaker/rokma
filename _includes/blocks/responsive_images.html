@@ -1,0 +1,29 @@
+{%comment%}
+responsive images block with captions from yaml frontmatter
+{%endcomment%}
+
+<div class="image-grid">
+
+  {% for thumb in page.images %}
+    <div class="image-grid-item">
+
+      <figure class="post_content_image">
+        {% comment %}
+        assign the page image and split at the extension dot
+        {% endcomment %}
+        {% assign f = thumb.filename | split: '.' %}
+        <img loading="lazy" src="/assets/images/{{page.categories}}/{{page.title}}/{{ f[0] }}-640.{{ f[1] }}"
+             srcset="/assets/images/{{page.categories}}/{{page.title}}/{{ f[0] }}-640.{{ f[1] }} 640w,
+                     /assets/images/{{page.categories}}/{{page.title}}/{{ f[0] }}-880.{{ f[1] }} 880w,
+                     /assets/images/{{page.categories}}/{{page.title}}/{{ f[0] }}-1024.{{ f[1] }} 1024w,
+                     /assets/images/{{page.categories}}/{{page.title}}/{{ f[0] }}-1920.{{ f[1] }} 1920w"
+             sizes="100vw" alt="{{ page.name }} - {{ page.subtitle }}" />
+
+            <figcaption class="center"><span>{{thumb.caption}}</span></figcaption>
+
+       </figure>
+
+    </div>
+  {% endfor %}
+
+</div>
