@@ -25,4 +25,4 @@ image:
 fineartprints_link: true ## true or false
 fumes_category: photo-journalism
 ---
-Published on non-profit magazine [Fumes](https://fumes.junglestar.org/art/nixon-park/).
+Nixon park is a free, public skatepark in the capital Auckland. Published on non-profit magazine [Fumes](https://fumes.junglestar.org/art/nixon-park/).

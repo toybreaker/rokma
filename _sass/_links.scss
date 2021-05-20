@@ -40,14 +40,14 @@ body:not(.photography) div:not(.sidebar) a:visited {
 }
 
 .masthead-title a {
-  color: $darkest-color;
+  color: $color6;
   font-weight: 200;
   line-height: $base-line-height;
   text-decoration: none;
 
   span,
   span small {
-    @include responsive-font(8vh, 50px, 100px, 46px);
+    @include responsive-font(7vh, 50px, 100px, 46px);
     display: block;
     line-height: 1!important;
     padding-top: 0;

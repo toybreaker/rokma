@@ -10,7 +10,7 @@ image:
 - 01.jpg
 - 02.jpg
 ---
-Image for Volcom® international advertising page.
+Image for Volcom® international magazine advertising.
 
 
 _Know more about her:_

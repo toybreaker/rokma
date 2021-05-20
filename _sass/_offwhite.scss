@@ -28,6 +28,11 @@ body.offwhite {
     color: lighten($black, 20);
   }
 
+  .owner,
+  .taglineshort {
+    color: lighten($black, 60);
+  }
+
   .main a { color: $black; }
 
   .post-meta a {

@@ -18,4 +18,4 @@ image:
 - 09.jpg
 - 10.jpg
 ---
-Published on non-profit magazine [Fumes](https://fumes.junglestar.org/photo-journalism/art-is-a-selfie-background/).
+A reflection on the meaning and practical significance of art pieces in Bali, Indonesia. Published on non-profit magazine [Fumes](https://fumes.junglestar.org/photo-journalism/art-is-a-selfie-background/).
