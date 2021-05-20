@@ -134,4 +134,14 @@ a.homepage_last_link {
   height: 48px;
   padding-top: 10px;
   padding-bottom: 10px;
+  &:hover {
+    color: red!important;
+    border-bottom: 0 none!important;
+  }
+}
+
+a.homepage_bottom_link {
+  &:hover {
+    color: $color6!important;
+  }
 }
