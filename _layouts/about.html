@@ -2,29 +2,12 @@
 layout: default
 ---
 
-	<div class="image-wrap">
+	<div class="bgimage">
 
-		<figure class="entry-feature-image">
-
-		  {% comment %}
-		  assign the page image and split at the extension dot
-		  {% endcomment %}
-
-		  {% assign f = page.image | split: '.' %}
-
-		  <img
-		  class="entry-feature-image"
-		  loading="lazy"
-		  src="/assets/images/about/{{ f[0] | relative_url }}{{ include.name }}-640.{{ f[1] }}"
-		  srcset="/assets/images/about/{{ f[0] | relative_url }}{{ include.name }}-640.{{ f[1] }} 640w,
-		  /assets/images/about/{{ f[0] | relative_url }}{{ include.name }}-880.{{ f[1] }} 880w,
-		  /assets/images/about/{{ f[0] | relative_url }}{{ include.name }}-1024.{{ f[1] }} 1024w,
-		  /assets/images/about/{{ f[0] | relative_url }}{{ include.name }}-1920.{{ f[1] }} 1920w"
-		  sizes="100vw"
-		  alt="{{ title }} photo by Rokma "
-		  />
-
-		 </figure>
+		<picture>
+			<source srcset="/assets/images/about/01.avif" type="image/avif">
+			<img src="/assets/images/about/01.jpg" alt="{{ title }} photo by Rokma">
+		</picture>
 
   </div>
 
@@ -51,7 +34,7 @@ layout: default
 
 		<div class="page-block clients right_triangle">
 
-			<h3 class="title">Clients</h3>
+			<h2 class="h3 title">Clients</h2>
 
 			{% for work in site.data.clients %}
 				{{work.name}},
@@ -61,7 +44,7 @@ layout: default
 
 		<div class="page-block clients left_triangle">
 
-			<h3 class="title">Editorial Clients</h3>
+			<h2 class="h3 title">Editorial Clients</h2>
 
 			{% for work in site.data.editorial_clients %}
 			  {{work.name}},
@@ -72,7 +55,7 @@ layout: default
 
 		<div class="last">
 			<div class="social-block">
-				<h3 class="title">Get&nbsp;in&nbsp;touch!</h3>
+				<h2 class="h3 title">Get&nbsp;in&nbsp;touch!</h2>
 				{%comment%} form here {%endcomment%}
 				{% include blocks/contact.html %}
 			</div>

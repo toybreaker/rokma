@@ -102,8 +102,6 @@ img {
   max-width: 100%;
   margin: 1rem auto;
   border-radius: $border-radius;
-  // chrome improved images
-  image-rendering: crisp-edges;
 }
 //// Tables
 table {
@@ -313,50 +311,6 @@ button strong em {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 200;
-  line-height: 1.25;
-  letter-spacing: -.025rem;
-  text-rendering: optimizeLegibility;
-  text-transform: capitalize;
-  color: #313131;
-  margin-bottom: .5rem;
-}
-
-h1 {
-  font-size: 1.5rem;
-  @include media("screen", ">minWidth") {
-    font-size: 2rem;
-  }
-}
-
-h2 {
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  @include media("screen", ">minWidth") {
-    font-size: 1.5rem;
-  }
-}
-
-h3 {
-  margin-top: 1.5rem;
-  font-size: 1rem;
-  @include media("screen", ">minWidth") {
-    font-size: 1.25rem;
-  }
-}
-
-h4,
-h5,
-h6 {
-  margin-top: 1rem;
-  font-size: 1rem;
-}
 
 .post-list {
   list-style-type: none;

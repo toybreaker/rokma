@@ -29,7 +29,7 @@ markdown:            kramdown
 
 owner:
   name:              Rokma
-  avatar:            o-avatar.jpg
+  avatar:            o-avatar #no extension cos it picks up the .avif or the .jpg
   email:             rokmabox@gmail.com
   web:               https://rokma.com
   twitter:           rokmatwit
