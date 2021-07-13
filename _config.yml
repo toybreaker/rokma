@@ -1,9 +1,9 @@
-version:             18.3.0
+version:             18.4.0
 title:               Rokma
 locale:              en
 description:         "Communication Design and production."
 shout_description:   "Flexible Communication Design for small companies. Imagine > Plan > Produce > Launch. And also just consulting!"
-logo:                01.jpg
+logo:                01.jpg #used in openGraph
 tagline:             'empowers small enterprises'
 tagline_short:       'empowers'
 tagline_plus:        'building reputation'

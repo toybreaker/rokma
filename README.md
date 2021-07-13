@@ -4,7 +4,7 @@
 
 Ultra light mobile-first static website. Responsive images. Jekyll portfolio.  Adhering to [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)[KISS](https://en.wikipedia.org/wiki/KISS_principle)!
 
-version: 18.0.2
+version: 18.4.0
 
 
 ## 2DOs
