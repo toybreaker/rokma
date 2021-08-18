@@ -84,11 +84,15 @@
     justify-content: center;
     margin: 0;
     padding: 0;
+
+    .blue_text {
+      color: hsla(225, 93%, 27%, 1);
+    }
   }
 
   .page-block {
     position: relative;
-    width: 70%;
+    width: 81%;
     max-width: 500px;
     align-self: center;
     padding: 1rem;
@@ -101,28 +105,31 @@
     }
   }
 
+  //ballon triangles
+  $bt_size: 30px;
+
   .left_triangle:before {
     content: "";
     position: absolute;
-    top: calc(50% - 50px);
-    left: -2.5rem;
+    top: calc(50% - #{$bt_size}); //note the syntax to use the variable here #{}
+    left: -$bt_size;
     width: 0;
     height: 0;
-    border-top: 50px solid transparent;
-    border-right: 50px solid white;
-    border-bottom: 50px solid transparent;
+    border-top: $bt_size solid transparent;
+    border-right: $bt_size solid white;
+    border-bottom: $bt_size solid transparent;
   }
 
   .right_triangle:before {
     content: "";
     position: absolute;
-    top: calc(50% - 50px);
-    right: -2.5rem;
+    top: calc(50% - #{$bt_size};
+    right: -$bt_size;
     width: 0;
     height: 0;
-    border-top: 50px solid transparent;
-    border-left: 50px solid white;
-    border-bottom: 50px solid transparent;
+    border-top: $bt_size solid transparent;
+    border-left: $bt_size solid white;
+    border-bottom: $bt_size solid transparent;
   }
 
   .page-title {
@@ -142,9 +149,14 @@
   .cite {
     color: white;
     position: absolute;
-    bottom: -3rem;
     font-weight: bold;
     margin-bottom: 0;
+    padding-right: 20px;
+    bottom: -3.5rem;
+
+    @include media("screen", ">minWidth") {
+      bottom: -2.5rem;
+    }
   }
 }
 
@@ -161,7 +173,7 @@
   background-blend-mode: luminosity;
 
   .social-block {
-    width: 100%;
+    width: 90%;
     padding-bottom: 5vh;
     display: flex;
     flex-direction: column;

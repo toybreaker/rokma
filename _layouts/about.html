@@ -18,23 +18,29 @@ layout: default
 		data-sr='enter top ease-out move 400px no reset'
 		>{{ page.title }} {{ site.title }}</h1>
 
-		<div class="page-block quote left_triangle">
+		<div class="page-block quote left_triangle ">
+			Rokma was very clear and upfront about the service he provides, and more than delivered on his promises to get our website up and running smoothly... end result was a fast loading website with all the desired features... thank you Rokma!
+			<p class="cite">Greg Rankine, Founder of Globe Indo®</p>
+
+		</div>
+
+		<div class="page-block quote right_triangle">
 			Working with Rokma is a smooth process that starts with discussing the topic and exploring its aspects, zooming in on the details and out on the big picture, evaluating pro and cons until the direction is clear and shared... then he dives into deep research, planning and execution and you can sleep peacefully.
 
 			<p class="cite">Claudio Bernardini, Founder of Bastard®</p>
 
 		</div>
 
-		<div class="page-block quote right_triangle">
+		<div class="page-block quote left_triangle">
 			Can you hire a mind to benefit your company? Rokma's story demonstrates you definitively can! This guy has lived and worked all over the world and is familiar with a broad selection of cultural views. A natural maker, he has capably taken many projects from conception to completion, building startups before start-up times. An entrepreneur involved in publishing, advertising, visual communication and web design since the beginning he has always stayed current. Some of his works led the way, opening paths and setting new norms in their context.
 
 			<p class="cite">Joan Epher, Founder of Surf Zombie Wax®</p>
 
 		</div>
 
-		<div class="page-block clients right_triangle">
+		<div class="page-block clients right_triangle blue_text">
 
-			<h2 class="h3 title">Clients</h2>
+			<h2 class="h3 title blue_text">Clients</h2>
 
 			{% for work in site.data.clients %}
 				{{work.name}},
@@ -42,9 +48,9 @@ layout: default
 
 		</div>
 
-		<div class="page-block clients left_triangle">
+		<div class="page-block clients left_triangle blue_text">
 
-			<h2 class="h3 title">Editorial Clients</h2>
+			<h2 class="h3 title blue_text">Editorial Clients</h2>
 
 			{% for work in site.data.editorial_clients %}
 			  {{work.name}},
