@@ -1,20 +1,24 @@
 /* Stop fussin' start sassin' */
+p a {
+  border-bottom: 1px solid $color6;
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+
+.pagecat {
+  color: black;
+  .black & {
+    color: white;
+  }
+}
+
 .taglineplus {
   @include media("screen", "<maxWidth") {
     display: none;
   }
-}
-
-.pagecat {
-  color: black;
-}
-
-.black .pagecat {
-  color: white;
-}
-
-.hidden {
-  display: none;
 }
 
 .advertising,
@@ -44,207 +48,6 @@ body:not(.specials) {
   .tagline,
   .taglineplus {
     display: none;
-  }
-}
-
-p a {
-  border-bottom: 1px solid $color6;
-
-  &:hover {
-    opacity: .5;
-  }
-}
-
-.posts {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.post-title {
-  padding: 1rem 0;
-  margin: 0;
-  position: relative;
-  top: 5rem;
-}
-
-.postshout {
-  position: relative;
-  //width: 100%;
-  //min-width: 100px;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-  margin: 1rem;
-  border: solid 2px black;
-  padding: 1rem;
-  color: black;
-  background-color: $nice-color;
-
-  .photography & {
-    background-color: black;
-    border-color: $trnsp-color2;
-  }
-}
-
-.post_type {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.75);
-  color: black;
-  z-index: 1;
-  padding: .5rem;
-  width: calc(100% + 4px);
-  min-width: 100px;
-  bottom: -40px;
-  font-size: .9rem;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  left: - 2px;
-  border: solid 2px black;
-  white-space: nowrap;
-  -moz-column-break-inside: avoid;
-  break-inside: avoid;
-}
-
-.post {
-  flex-basis: 420px;
-  height: 420px;
-  //max-width: 400px;
-  overflow: hidden;
-  flex-grow: 1;
-  position: relative;
-  z-index: 1;
-  padding: 0;
-  margin: 0;
-  background-color: $nice-color;
-  border-bottom: 3px solid black;
-
-  @include media("screen", ">minWidth") {
-    border-bottom: 0 none;
-  }
-
-  .photography & {
-    background-color: $black;
-  }
-
-  .advertising &,
-  .branding &,
-  .specials &,
-  .web-design & {
-    background-color: $body-color;
-  }
-
-  a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
-
-  .entry-feature-image {
-    //img
-    max-width: 100%;
-    will-change: scale;
-    transform: scale(2);
-  }
-
-  &:hover {
-    background-color: white;
-    z-index: 10;
-
-    .photography & {
-      background-color: $black;
-    }
-
-    .post-title {
-      transition-delay: initial;
-      transition-property: all;
-      transition-timing-function: ease-in-out;
-      transition-duration: .3s;
-      top: 0;
-      z-index: 11;
-      width: 100%;
-      font-size: 2rem;
-      background-color: white;
-
-      .photography & {
-        background-color: black;
-      }
-    }
-
-    .postshout {
-      margin: 1rem;
-      border: solid 2px transparent;
-      padding: 1rem;
-      background-color: transparent;
-    }
-
-    .post_type {
-      display: none;
-    }
-
-    .entry-feature-image {
-      opacity: 1;
-      filter: grayscale(0%);
-      transition-delay: initial;
-      transition-property: transform;
-      transition-timing-function: ease-in-out;
-      transition-duration: .3s;
-      transform: scale(1) translateY(-10px);
-      @include media("screen", ">minWidth") {
-        transform: scale(0.9) translateY(-30px);
-      }
-      @include media("screen", ">bp1Width") {
-        transform: scale(0.75) translateY(-80px);
-      }
-      @include media("screen", ">maxWidth") {
-        transform: scale(0.85) translateY(-25px);
-      }
-
-      &.square {
-        transition-delay: initial;
-        transition-property: transform;
-        transition-timing-function: ease-in-out;
-        transition-duration: .3s;
-        transform: scale(1) translateY(-10px);
-        @include media("screen", ">minWidth") {
-          transform: scale(1) translateY(-90px);
-        }
-        @include media("screen", ">bp1Width") {
-          transform: scale(1) translateY(-100px);
-        }
-        @include media("screen", ">maxWidth") {
-          transform: scale(1) translateY(-75px);
-        }
-      }
-    }
-  }
-}
-
-.posthumb {
-  //span
-  position: relative;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-
-  .black & {
-    background-color: black;
-  }
-
-  .entry-feature-image {
-    background-color: black;
-    margin: auto;
-    z-index: 0;
-    opacity: 1;
-    filter: grayscale(100%);
-    @include media("screen", ">minWidth") {
-      opacity: .4;
-    }
-
   }
 }
 
@@ -287,21 +90,20 @@ p a {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    //opacity: 0.5;
   }
 }
-// bg color classes (used in about page!)
 
+// bg color classes (used in about page!)
 .bg-white {
   background-color: white;
 }
-//UNDO Capitalize
 
+//UNDO Capitalize
 .nocap {
   text-transform: initial;
 }
-// used for entering from side block look
 
+// used for entering from side block look
 .pull-left {
   @include media("screen", ">bp1Width") {
     margin: 1rem calc(50vw - 8rem) 1rem -3rem;
@@ -315,149 +117,7 @@ p a {
     padding-right: 6rem!important;
   }
 }
-// overrides style for specific sections
 
-.black,
-.photography {
-  color: $trnsp-color2;
-  background-color: black;
-
-  .post {
-    border-bottom: 8px solid $darkest-color;
-    @include media("screen", ">minWidth") {
-      border-bottom: 0 none;
-    }
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: $bang-color!important;
-  }
-
-  .pagecat,
-  a {
-    color: $trnsp-color2;
-
-    &.active {
-      color: $color5;
-    }
-  }
-
-  .post-list a:visited {
-    color: silver!important;
-  }
-
-  .postshout {
-    color: darken($white, 20);
-    font-weight: 400;
-  }
-
-  .tagline {
-    display: none;
-  }
-
-  .taglineshort {
-    display: inline!important;
-  }
-
-  .masthead-title .title {
-    color: rgba(0, 150, 255, 0.75);
-
-    &:hover {
-      color: #0096ff;
-    }
-  }
-
-  .start {
-    position: relative;
-    color: rgb(77, 77, 77);
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 1;
-    position: absolute;
-    width: 20vw;
-    left: 40vw;
-
-    a {
-      padding-top: 80px;
-
-      span {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 24px;
-        height: 24px;
-        margin-left: -12px;
-        border-left: 1px solid rgb(77, 77, 77);
-        border-bottom: 1px solid rgb(77, 77, 77);
-        transform: rotate(-45deg);
-        -webkit-animation: strt 2s infinite;
-        animation: strt 2s infinite;
-        opacity: 0;
-        box-sizing: border-box;
-
-        &:nth-of-type(1) {
-          -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-        }
-
-        &:nth-of-type(2) {
-          top: 16px;
-          -webkit-animation-delay: .15s;
-          animation-delay: .15s;
-        }
-
-        &:nth-of-type(3) {
-          top: 32px;
-          -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-        }
-      }
-    }
-  }
-  @-webkit-keyframes strt {
-    0% {
-      opacity: 0;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes strt {
-    0% {
-      opacity: 0;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-}
-
-body.black {
-  background-color: #000!important;
-}
-
-body.gray1 {
-  background-color: #E5E4E2!important;
-}
-
-body.gray2 {
-  background-color: #EFEFED!important;
-}
 
 .centertext,
 .center {
@@ -472,112 +132,6 @@ body.gray2 {
   position: absolute;
   left: -40px;
   top: 0;
-}
-//images
-
-.web-design .entry-visuals {
-  position: relative;
-  margin-bottom: 5vh;
-  @include media("screen", ">minWidth") {
-    margin-bottom: 34vh;
-  }
-  @include media("screen", ">bp1Width") {
-    margin-bottom: 33vh;
-  }
-  @include media("screen", ">maxWidth") {
-    margin-bottom: 5vh;
-  }
-}
-
-.web-design .entry-feature-image {
-  position: relative;
-  top: 0;
-  left: 0;
-
-  &.a {
-    //dtp
-    top: 0;
-    left: -17%;
-    max-width: 180%;
-    @include media("screen", ">minWidth") {
-      max-width: 150%;
-      left: -10%;
-    }
-    @include media("screen", ">bp1Width") {
-      max-width: 130%;
-      left: 0;
-    }
-    @include media("screen", ">maxWidth") {
-      max-width: 100%;
-    }
-  }
-
-  &.b {
-    //ipad
-    max-width: 40vw;
-    @include media("screen", ">minWidth") {
-      max-width: 46vw;
-      position: absolute;
-      left: auto;
-      right: 10vw;
-      top: auto;
-      bottom: -28vh;
-    }
-    @include media("screen", ">maxWidth") {
-      left: 60vw;
-      right: auto;
-      bottom: 5vh;
-    }
-  }
-
-  &.c {
-    //nexus6
-    max-width: 30vw;
-    @include media("screen", ">minWidth") {
-      position: absolute;
-      left: 20vw;
-      top: auto;
-      bottom: -30vh;
-    }
-    @include media("screen", ">bp1Width") {
-      left: 44vw;
-      top: auto;
-      bottom: -25vh;
-    }
-    @include media("screen", ">maxWidth") {
-      left: 78vw;
-      top: auto;
-      bottom: 0;
-    }
-  }
-
-  &.d {
-    //crappydroid
-    max-width: 24vw;
-    @include media("screen", ">minWidth") {
-      position: absolute;
-      left: 3vw;
-      top: auto;
-      bottom: -15vh;
-    }
-    @include media("screen", ">bp1Width") {
-      left: 29vw;
-      top: auto;
-    }
-    @include media("screen", ">maxWidth") {
-      left: 51vw;
-      bottom: 0;
-    }
-  }
-}
-//indexes
-
-.index_only {
-  display: none;
-
-  .index & {
-    display: block;
-  }
 }
 
 .category_excerpt {
@@ -594,9 +148,7 @@ body.gray2 {
 
 }
 
-.posthumb.image_icons .entry-feature-image {
-  background: transparent;
-}
+
 
 .main {
   max-width: $max_width;

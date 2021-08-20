@@ -1,0 +1,249 @@
+// overrides style for specific sections
+.black,
+.photography {
+  color: $trnsp-color2;
+  background-color: black;
+
+  .post {
+    border-bottom: 8px solid $darkest-color;
+    @include media("screen", ">minWidth") {
+      border-bottom: 0 none;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $bang-color!important;
+  }
+
+  .pagecat,
+  a {
+    color: $trnsp-color2;
+
+    &.active {
+      color: $color5;
+    }
+  }
+
+  .post-list a:visited {
+    color: silver!important;
+  }
+
+  .postshout {
+    color: darken($white, 20);
+    font-weight: 400;
+  }
+
+  .tagline {
+    display: none;
+  }
+
+  .taglineshort {
+    display: inline!important;
+  }
+
+  .masthead-title .title {
+    color: rgba(0, 150, 255, 0.75);
+
+    &:hover {
+      color: #0096ff;
+    }
+  }
+
+  .start {
+    position: relative;
+    color: rgb(77, 77, 77);
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1;
+    position: absolute;
+    width: 20vw;
+    left: 40vw;
+
+    a {
+      padding-top: 80px;
+
+      span {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 24px;
+        height: 24px;
+        margin-left: -12px;
+        border-left: 1px solid rgb(77, 77, 77);
+        border-bottom: 1px solid rgb(77, 77, 77);
+        transform: rotate(-45deg);
+        -webkit-animation: strt 2s infinite;
+                animation: strt 2s infinite;
+        opacity: 0;
+        box-sizing: border-box;
+
+        &:nth-of-type(1) {
+          -webkit-animation-delay: 0s;
+                  animation-delay: 0s;
+        }
+
+        &:nth-of-type(2) {
+          top: 16px;
+          -webkit-animation-delay: .15s;
+                  animation-delay: .15s;
+        }
+
+        &:nth-of-type(3) {
+          top: 32px;
+          -webkit-animation-delay: .3s;
+                  animation-delay: .3s;
+        }
+      }
+    }
+  }
+  @-webkit-keyframes strt {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes strt {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+body.black {
+  background-color: #000!important;
+}
+
+body.gray1 {
+  background-color: #E5E4E2!important;
+}
+
+body.gray2 {
+  background-color: #EFEFED!important;
+}
+
+
+//images
+.web-design .entry-visuals {
+  position: relative;
+  margin-bottom: 5vh;
+  @include media("screen", ">minWidth") {
+    margin-bottom: 34vh;
+  }
+  @include media("screen", ">bp1Width") {
+    margin-bottom: 33vh;
+  }
+  @include media("screen", ">maxWidth") {
+    margin-bottom: 5vh;
+  }
+}
+
+.web-design .entry-feature-image {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &.a {
+    //dtp
+    top: 0;
+    left: -17%;
+    max-width: 180%;
+    @include media("screen", ">minWidth") {
+      max-width: 150%;
+      left: -10%;
+    }
+    @include media("screen", ">bp1Width") {
+      max-width: 130%;
+      left: 0;
+    }
+    @include media("screen", ">maxWidth") {
+      max-width: 100%;
+    }
+  }
+
+  &.b {
+    //ipad
+    max-width: 40vw;
+    @include media("screen", ">minWidth") {
+      max-width: 46vw;
+      position: absolute;
+      left: auto;
+      right: 10vw;
+      top: auto;
+      bottom: -28vh;
+    }
+    @include media("screen", ">maxWidth") {
+      left: 60vw;
+      right: auto;
+      bottom: 5vh;
+    }
+  }
+
+  &.c {
+    //nexus6
+    max-width: 30vw;
+    @include media("screen", ">minWidth") {
+      position: absolute;
+      left: 20vw;
+      top: auto;
+      bottom: -30vh;
+    }
+    @include media("screen", ">bp1Width") {
+      left: 44vw;
+      top: auto;
+      bottom: -25vh;
+    }
+    @include media("screen", ">maxWidth") {
+      left: 78vw;
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  &.d {
+    //crappydroid
+    max-width: 24vw;
+    @include media("screen", ">minWidth") {
+      position: absolute;
+      left: 3vw;
+      top: auto;
+      bottom: -15vh;
+    }
+    @include media("screen", ">bp1Width") {
+      left: 29vw;
+      top: auto;
+    }
+    @include media("screen", ">maxWidth") {
+      left: 51vw;
+      bottom: 0;
+    }
+  }
+}
+
+//indexes
+.index_only {
+  display: none;
+
+  .index & {
+    display: block;
+  }
+}

@@ -1,7 +1,7 @@
 ---
 layout: web
 title:  KaosGuerrilla
-headline: Kaos Guerrilla
+headline: Kaos Guerrilla Store
 categories: web-design
 year: 2018
 where: bali, indonesia

@@ -1,0 +1,10 @@
+.hidden {
+  display: none;
+}
+
+.hide_on_mobile {
+   display: none;
+   @include media("screen", ">minWidth") {
+     display: initial;
+   }
+}

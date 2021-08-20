@@ -1,6 +1,5 @@
-
 //// Pagination
-// Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+// Super lightweight (HTML-wise) blog pagination. `span`s are provided for when
 // there are no more previous or next posts to show.
 
 // Pagination items can be `span`s or `a`s
@@ -8,14 +7,14 @@
   display: inline;
   margin: 1rem;
   display: block;
-  padding: 1rem;
+  padding: 0.75rem;
 }
 
 // Only provide a hover state for linked pagination items
 a.pagination-item,
 a.pagination-item:visited,
 span.pagination-item {
-  color: black!important;
+  color: black !important;
   float: left;
   width: calc(50% - 1rem);
   margin-left: 0;
@@ -33,16 +32,12 @@ span.pagination-item {
 }
 
 a.pagination-item:hover {
-  color: lighten(black, 100%)!important;
+  color: lighten(black, 100%) !important;
   border: 0 none;
 }
-// span.pagination-item {
-//     pointer-events: none;
-// }
 
 .pagination {
   overflow: hidden;
-  /* clearfix */
   color: #ccc;
   position: relative;
   z-index: 1;
@@ -51,21 +46,22 @@ a.pagination-item:hover {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: space-between;
   border-bottom: solid black 3px;
   @include media("screen", ">minWidth") {
     border-bottom: 0 none;
   }
 
   .older {
-    margin-right: 1rem;
-    padding-right: 10vw;
+    margin-right: 0.5rem;
+    padding-right: 5vw;
     text-align: right;
-
   }
 
   .newer {
-    margin-left: 1rem;
-    padding-left: 10vw;
+    margin-left: 0.5rem;
+    padding-left: 5vw;
     text-align: left;
   }
 }
