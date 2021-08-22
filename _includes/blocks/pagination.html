@@ -1,4 +1,4 @@
 <div class="pagination {% if paginator.previous_page == null %}onelinkonly{% endif %}{% if paginator.next_page == null %}onelinkonly{% endif %}">
-{% if paginator.previous_page %}<a class="pagination-item newer" title="go back to the previous page" href="{{ paginator.previous_page_path }}"><span class="hide_on_mobile">SEE</span> PREVIOUS WORKS</a>{% endif %}
-{% if paginator.next_page %}<a class="pagination-item older" title="see more works by rokma" href="{{ paginator.next_page_path }}"><span class="hide_on_mobile">SEE</span> MORE WORKS</a>{% endif %}
+{% if paginator.previous_page %}<a class="pagination-item newer" title="go back to the previous page" href="{{ paginator.previous_page_path }}"><span class="hide_on_phones">SEE</span> PREVIOUS WORKS</a>{% endif %}
+{% if paginator.next_page %}<a class="pagination-item older" title="see more works by rokma" href="{{ paginator.next_page_path }}"><span class="hide_on_phones">SEE</span> MORE WORKS</a>{% endif %}
 </div>

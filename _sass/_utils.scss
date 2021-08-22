@@ -2,9 +2,16 @@
   display: none;
 }
 
-.hide_on_mobile {
-   display: none;
-   @include media("screen", ">minWidth") {
-     display: initial;
-   }
+.show_on_phones {
+  display: initial;
+  @include media("screen", ">minWidth") {
+    display: none!important;
+  }
+}
+
+.hide_on_phones {
+  display: none;
+  @include media("screen", ">minWidth") {
+    display: inline;
+  }
 }
