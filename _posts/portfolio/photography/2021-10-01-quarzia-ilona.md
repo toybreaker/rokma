@@ -7,7 +7,7 @@ year: 2021
 where: Bali, Indonesia
 catch: personal work by
 offwhite: true # true or empty
-publish: notyet # empty will not publish
+publish: notyet # notyet will not publish
 image:
   - 01.jpg
   - 02.jpg

@@ -9,7 +9,11 @@ layout: default
     <h3 class="post-list-title center nocap">Browse specials from Rokma</h3>
 	  <ul class="post-list">
 	    {% for post in site.categories.specials %}
-      <li><article><a class="{% if page.url contains post.url %}active{% endif %}" href="{{ site.baseurl }}{{ post.url }}">{{ post.headline }} <small class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time></small></a></article></li>
+        {% unless post.publish contains "notyet" %}
+
+          <li><article><a class="{% if page.url contains post.url %}active{% endif %}" href="{{ site.baseurl }}{{ post.url }}">{{ post.headline }} <small class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time></small></a></article></li>
+
+        {% endunless %}
 	    {% endfor %}
 	  </ul>
 	</div>
