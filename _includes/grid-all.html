@@ -15,10 +15,13 @@ used in index.html to display pagination list of posts
     <div class="posts">
 
       {% for post in paginator.posts %}
+        {% unless post.publish contains "notyet" %}
 
-        {% include blocks/card.html %}
+          {% include blocks/card.html %}
 
+        {% endunless %}
       {% endfor %}
+
 
       {% include blocks/pagination.html %}
 
