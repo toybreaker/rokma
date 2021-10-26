@@ -44,8 +44,12 @@ layout: default
     <h3 class="post-list-title center nocap">See more {{ page.categories }} works from Rokma</h3>
     <ul class="post-list">
     {% for post in site.categories.photography %}
-      <li><article><a class="{% if page.url contains post.url %}active{% endif %}" href="{{ site.baseurl }}{{ post.url }}">{{ post.headline }}</a></article></li>
-    {% endfor %}
+			{% unless post.publish contains "notyet" %}
+
+	      <li><article><a class="{% if page.url contains post.url %}active{% endif %}" href="{{ site.baseurl }}{{ post.url }}">{{ post.headline }}</a></article></li>
+				
+	    {% endunless %}
+		{% endfor %}
     </ul>
   </div>
 </div>
