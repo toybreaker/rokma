@@ -9,3 +9,5 @@ _site/
 __LAB
 node_modules
 _src/uploads
+*.code-workspace
+rokma.code-workspace
