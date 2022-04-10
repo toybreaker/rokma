@@ -9,4 +9,5 @@ image:
 - 01.jpg
 onlyoneimage: true # true or empty
 ---
-Website for &lt;Pinksummer&gt; contemporary art gallery. Online presence from 2015 to 2016.
+Website for &lt;Pinksummer&gt; contemporary art gallery. Online presence.    
+[2015>2016].

@@ -25,4 +25,5 @@ Online store creation.
 
 Customised Shopify e-commerce store for Jungloshoes brand.
 
-Check the [Jungloshoes live website](https://jungloshoes.com/?source=rokma.com)
+Check the [Jungloshoes live website](https://jungloshoes.com/?source=rokma.com).  
+[2020>today].

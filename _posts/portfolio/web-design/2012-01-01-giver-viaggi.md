@@ -10,4 +10,4 @@ image:
 onlyoneimage: true # true or empty
 ---
 Catalog website for &lt;Giver Viaggi&gt; firm.
-Designed and managed the online presence for Giver Viaggi from 2006 to 2012.
+Designed and managed the online presence for Giver Viaggi.   [2006>2012].

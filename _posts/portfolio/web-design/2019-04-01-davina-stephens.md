@@ -13,4 +13,5 @@ image:
 - 04.png
 ---
 Artist portfolio.
-Check out [Davina Stephens](https://davinastephens.com) live website
+Check out [Davina Stephens](https://davinastephens.com) live website.  
+[2019>today].

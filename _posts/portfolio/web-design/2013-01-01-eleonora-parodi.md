@@ -10,3 +10,5 @@ image:
 onlyoneimage: true # true or empty
 ---
 Presentational website for &lt;Eleonora Parodi&gt; Art Clinic.
+.  
+[2013>2014].

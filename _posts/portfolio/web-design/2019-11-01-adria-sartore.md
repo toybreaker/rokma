@@ -13,4 +13,5 @@ image:
 - 04.png
 ---
 Artist portfolio.
-Check out [Adria Sartore](https://adriasartore.com) live website
+Check out [Adria Sartore](https://adriasartore.com) live website.  
+[2019>today].
