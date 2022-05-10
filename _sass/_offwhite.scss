@@ -68,15 +68,14 @@ body.offwhite {
     }
   }
 
-.post-list a {
-  color: $color6;
+  .post-list {
+    a {
+      color: $color6;
 
-  &.active {
-    color: black;
-    border-bottom: 1px solid $color6;
+      &.active {
+        color: black;
+        border-bottom: 1px solid $color6;
+      }
+    }
   }
-}
-
-
-
 }

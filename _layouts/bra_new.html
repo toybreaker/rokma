@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div id="main" role="main" class="{% if page.grid_small_images %}grid-small-images{% else %}grid_big_images{% endif %} bra-new_layout">
+<div id="main" role="main" class="NEW {% if page.grid_small_images %}grid-small-images{% else %}grid_big_images{% endif %} bra-new_layout">
 
   <article class="entry">
 
@@ -17,7 +17,7 @@ layout: default
       {% for post in site.categories.branding %}
         {% unless post.publish contains "notyet" %}
 
-          <li><article><a class="{% if page.url contains post.url %}active{% endif %}" href="{{ site.baseurl }}{{ post.url }}">{{ post.headline }} <small class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time></small></a></article></li>
+          <li><a class="{% if page.url contains post.url %}active{% endif %}" href="{{ site.baseurl }}{{ post.url }}">{{ post.headline }} <small class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time></small></a></li>
 
         {% endunless %}
       {% endfor %}

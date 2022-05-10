@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 gem "jekyll"
-gem 'html-proofer'
+gem "html-proofer"
 gem "webrick", "~> 1.7"
 
 # If you have any plugins, put them here!

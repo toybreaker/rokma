@@ -312,8 +312,21 @@ button strong em {
 }
 
 
+
+
 .post-list {
   list-style-type: none;
+  padding-top: $space;
+  li {
+    min-height: $tap_min_size+10px;
+  }
+  a {
+    color: $color6;
+    display: inline-block;
+    min-height: $tap_min_size;
+    padding-top: $tap_padding_size;
+    padding-bottom: $tap_padding_size;
+  }
 }
 
 .post-date {

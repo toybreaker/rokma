@@ -46,8 +46,8 @@ layout: default
     {% for post in site.categories.photography %}
 			{% unless post.publish contains "notyet" %}
 
-	      <li><article><a class="{% if page.url contains post.url %}active{% endif %}" href="{{ site.baseurl }}{{ post.url }}">{{ post.headline }}</a></article></li>
-				
+	      <li><a class="{% if page.url contains post.url %}active{% endif %}" href="{{ site.baseurl }}{{ post.url }}">{{ post.headline }}</a></li>
+
 	    {% endunless %}
 		{% endfor %}
     </ul>
