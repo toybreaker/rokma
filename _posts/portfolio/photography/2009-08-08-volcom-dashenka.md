@@ -10,9 +10,5 @@ image:
 - 01.jpg
 - 02.jpg
 ---
-Image for Volcom® international magazine advertising.
-
-
-_Know more about her:_
-
-[Dashenka show in London](http://youtu.be/zZXVch22b-E)
+Image for Volcom®.
+Used for International Print-press Advertising.
