@@ -13,5 +13,5 @@ image:
 - 04.png
 ---
 Non profit magazine.
-Check out [magicgreen](https://magicgreen.junglestar.org) live website.  
+Check out [magicgreen](https://magicgreen.junglestar.org?source=rokma.com) live website.
 [2020>today].

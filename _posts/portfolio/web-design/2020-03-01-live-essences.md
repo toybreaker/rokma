@@ -12,6 +12,6 @@ image:
 - 03.png
 - 04.png
 ---
-Website with WhatsApp direct order feature.
-Check out [Live Essences](https://live-essences.com) live website.  
-[2020>today].
+Fast and streamlined website with WhatsApp direct order feature.<br>
+Ported from SquareSpace and made it fast, snappy and optimized for mobiles.
+[2020>2022].

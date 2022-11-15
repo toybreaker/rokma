@@ -1,4 +1,4 @@
-version:             20.0.0
+version:             20.0.1
 title:               Rokma
 locale:              en
 description:         "Communication Design and Production."
@@ -38,9 +38,8 @@ owner:
   github:            toybreaker
   linkedin:          rokma
   soundcloud:        rokma
-  googleplus:        rokma
 
-producer:            https://www.junglestar.org
+producer:            https://junglestar.org
 
 google:
   analytics:         UA-1305149-1
@@ -57,3 +56,4 @@ exclude:
   - vendor
   - Gemfile.lock
   - Gemfile
+  - log
