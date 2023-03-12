@@ -22,7 +22,8 @@ a {
   }
   // :focus is linked to :hover for basic accessibility
   &:focus,
-  &:hover {}
+  &:hover {
+  }
 }
 
 // `:visited` state is useful!
@@ -32,24 +33,24 @@ body:not(.photography) div:not(.sidebar) a:visited {
 }
 
 .fontsizefixed .underline-on-hover:visited {
-  color: silver!important;
+  color: silver !important;
 }
 
 .fontsizefixed .underline-on-hover:hover {
-  color: #0096ff!important;
+  color: #0096ff !important;
 }
 
 .masthead-title a {
   color: $color6;
-  font-weight: 200;
+  font-weight: 300;
   line-height: $base-line-height;
   text-decoration: none;
 
   span,
   span small {
-    @include responsive-font(7vh, 50px, 100px, 46px);
+    transition: opacity 0.3s ease-out;
     display: block;
-    line-height: 1!important;
+    line-height: 1 !important;
     padding-top: 0;
     padding-bottom: 0;
     margin-top: 0;

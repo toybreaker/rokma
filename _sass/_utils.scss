@@ -4,14 +4,18 @@
 
 .show_on_phones {
   display: initial;
-  @include media("screen", ">minWidth") {
-    display: none!important;
+  @include media('screen', '>minWidth') {
+    display: none !important;
   }
 }
 
 .hide_on_phones {
   display: none;
-  @include media("screen", ">minWidth") {
+  @include media('screen', '>minWidth') {
     display: inline;
   }
+}
+
+.uppercase {
+  text-transform: uppercase;
 }

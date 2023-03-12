@@ -13,19 +13,19 @@
     <div class="wrap {{ page.isindex }}">
 
       <div class="container masthead">
-        <h3 class="masthead-title">
+        <h3 class="masthead-title h1 uppercase">
           <a href="/{{page.categories}}/" title="Home">
 
             {% if page.categories == "photography" %}
-              <span class="pagecat">{{page.categories}}</span>
-              <span class="title">{{page.headline}}</span>
-              <span class="powered">{{page.catch}} {{site.title}}</span>
+            <span class="pagecat">{{page.categories}}</span>
+            <span class="title">{{page.headline}}</span>
+            <span class="powered">{{page.catch}} {{site.title}}</span>
             {% else %}
-              <span class="owner">{{ site.title }}</span>
-              <span class="pagecat">{{ page.categories }}</span>
-              <span class="taglineshort"> <small>{{ site.tagline_short }}</small></span>
-              <span class="tagline"> <small>{{ site.tagline }}</small></span>
-              <span class="taglineplus"><small>{{ site.tagline_plus }}</small></span>
+            <span class="owner">{{ site.title }}</span>
+            <span class="pagecat">{{ page.categories }}</span>
+            <span class="taglineshort"> <small>{{ site.tagline_short }}</small></span>
+            <span class="tagline"> <small>{{ site.tagline }}</small></span>
+            <span class="taglineplus"><small>{{ site.tagline_plus }}</small></span>
             {% endif %}
 
           </a>
@@ -38,7 +38,7 @@
 
     </div>
 
-    {%comment%} Toggle Button if not home  {% endcomment %}
+    {%comment%} Toggle Button if not home {% endcomment %}
     <div class="sidebar-toggle-button">
       <label for="sidebar-checkbox" class="sidebar-toggle">
         {% include svg/use.html id="icn--burger" class="burger" %}
@@ -50,4 +50,5 @@
     {% include scripts/script_append_to_copy.html %}
     {% include scripts/script_google_analytics.html %}
   </body>
+
 </html>

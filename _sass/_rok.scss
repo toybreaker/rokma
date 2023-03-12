@@ -123,6 +123,12 @@ body:not(.specials) {
 .center {
   text-align: center;
 }
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
 .wrap > *:visited:before {
   content: "";

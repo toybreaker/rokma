@@ -34,32 +34,17 @@
 
   // and big letters..
   .masthead-title {
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1;
 
-    @include responsive-font(12vw, 50px, 120px, 46px);
-
-    @include media("screen", ">minWidth") {
-
-      @include responsive-font(8vw, 46px, 120px, 46px);
-      padding-left: 8vw;
-      padding-right: 8vw;
-    }
-
-    &.small {
-      @include responsive-font(4vw, 20px, 40px, 20px);
-
-      @include media("screen", ">minWidth") {
-
-        @include responsive-font(3vw, 20px, 40px, 20px);
-        padding-left: 8vw;
-        padding-right: 8vw;
-      }
+    @include media('screen', '>minWidth') {
+      padding-left: 8cqw;
+      padding-right: 8cqw;
     }
   }
 
   .tagline {
-    font-weight: 200;
+    font-weight: 400;
     color: black;
     text-transform: uppercase;
   }
@@ -70,7 +55,7 @@
 
   // wraps for home
   .wrap {
-    height: 100vh;
+    height: 100cqh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +74,7 @@
 
   .wrap.last {
     padding-top: 0;
-    height: 100vh;
+    height: 100cqh;
     padding-bottom: 0;
 
     .container.content {
@@ -105,7 +90,6 @@
       margin: 0;
       padding: 0;
       text-align: center;
-      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 
       a {
         color: black;
@@ -115,7 +99,7 @@
 }
 
 .home .underline-on-hover:hover {
-  color: $nice-color!important;
+  color: $nice-color !important;
 }
 
 // SIDEBAR in HOME do some more...
@@ -135,13 +119,13 @@ a.homepage_last_link {
   padding-top: 10px;
   padding-bottom: 10px;
   &:hover {
-    color: red!important;
-    border-bottom: 0 none!important;
+    color: red !important;
+    border-bottom: 0 none !important;
   }
 }
 
 a.homepage_bottom_link {
   &:hover {
-    color: $color6!important;
+    color: $color6 !important;
   }
 }

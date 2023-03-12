@@ -6,7 +6,7 @@
 
 html {
   background-color: $color6;
-  overflow-x: hidden!important;
+  overflow-x: hidden !important;
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-weight: 400;
@@ -15,7 +15,7 @@ html {
 
 body {
   background-color: $body-color;
-  overflow-x: hidden!important;
+  overflow-x: hidden !important;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -40,7 +40,7 @@ dt {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 hr {
@@ -67,11 +67,11 @@ blockquote {
   padding: 0;
   margin: 0;
   color: $color7;
-  border-left: .25rem solid $color7;
+  border-left: 0.25rem solid $color7;
 
   .black & {
     color: $color2;
-    border-left: .25rem solid $color2;
+    border-left: 0.25rem solid $color2;
   }
 
   p:last-child {
@@ -113,7 +113,7 @@ table {
 
 td,
 th {
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   border: 1px solid $color2;
 }
 
@@ -131,7 +131,7 @@ strong em {
   font-style: normal;
   font-weight: 200;
   font-size: 2rem;
-  padding-right: .5rem;
+  padding-right: 0.5rem;
 }
 
 button strong em {
@@ -168,7 +168,7 @@ button strong em {
 
 .post-date {
   display: block;
-  margin-top: -.5rem;
+  margin-top: -0.5rem;
   margin-bottom: 1rem;
   color: $color4;
 }
@@ -204,14 +204,14 @@ button strong em {
 .wrap {
   position: relative;
   width: 100%;
-  @include media("screen", "<minWidth") {
+  @include media('screen', '<minWidth') {
     top: 5rem;
   }
 }
-//// Masthead - Small header above content for site name and short desc.
+
 .masthead {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1cqv;
+  padding-bottom: 1cqv;
   border-bottom: 1px solid #ddd;
 }
 
@@ -225,15 +225,15 @@ button strong em {
   margin: 0 1rem;
   color: $color6;
   text-transform: uppercase;
-  @include media("screen", "<minWidth") {
+  @include media('screen', '<minWidth') {
     text-align: center;
   }
 
   small {
-    font-size: 2rem;
+    //font-size: 2rem;
     font-weight: 200;
     letter-spacing: 0;
-    @include media("screen", "<minWidth") {
+    @include media('screen', '<minWidth') {
       display: none;
     }
   }
@@ -241,9 +241,9 @@ button strong em {
 // Container  - Center the page content.
 .container {
   width: auto;
-  padding-left: 0!important;
-  padding-right: 0!important;
-  @include media("screen", ">minWidth") {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  @include media('screen', '>minWidth') {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -269,7 +269,7 @@ button strong em {
 // Meta data line below post title
 .post-date {
   display: block;
-  margin-top: -.5rem;
+  margin-top: -0.5rem;
   margin-bottom: 1rem;
   color: $color4;
 }
@@ -305,20 +305,17 @@ button strong em {
 // center stuff past tablets
 .entry-wrapper {
   margin: 6rem 2rem 1rem;
-  @include media("screen", ">bp1Width") {
+  @include media('screen', '>bp1Width') {
     //max-width: 42rem;
     margin: 6rem 3rem 2rem;
   }
 }
 
-
-
-
 .post-list {
   list-style-type: none;
   padding-top: $space;
   li {
-    min-height: $tap_min_size+10px;
+    min-height: $tap_min_size + 10px;
   }
   a {
     color: $color6;

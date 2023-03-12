@@ -1,56 +1,56 @@
-version:             20.0.3
-title:               Rokma
-locale:              en
-description:         "Communication Design and Production."
-shout_description:   "Flexible Communication Design for small companies. Imagine > Plan > Produce > Launch. Also just consulting!"
-logo:                01.jpg #used in openGraph
-tagline:             'empowers small enterprises'
-tagline_short:       'empowers'
-tagline_plus:        'building reputation'
+version: 20.1.0
+title: Rokma
+locale: en
+description: "Communication Design and Production."
+shout_description: "Flexible Communication Design for small companies. Imagine > Plan > Produce > Launch. Also just consulting!"
+logo: 01.jpg #used in openGraph
+tagline: "empowers small enterprises"
+tagline_short: "empowers"
+tagline_plus: "building reputation"
 
-baseurl:             ""
-url:                 https://rokma.com
+baseurl: ""
+url: https://rokma.com
 
-version_details:     'ScrollToFineArtPrints'
+version_details: "ScrollToFineArtPrints"
 
 # Outputting
-permalink:           /:categories/:title/
+permalink: /:categories/:title/
 relative_permalinks: false
-paginate:            9
-paginate_path:       "index/:num/"
+paginate: 9
+paginate_path: "index/:num/"
 
 # Setup
 sass:
-  sass_dir:          _sass
-  style:             :compressed
+  sass_dir: _sass
+  style: :compressed
   # style:           :expanded
 
-markdown:            kramdown
+markdown: kramdown
 
 owner:
-  name:              Rokma
-  avatar:            o-avatar #no extension cos it picks up the .avif or the .jpg
-  email:             rokmabox@gmail.com
-  web:               https://rokma.com
-  twitter:           rokmatwit
-  facebook:          rokmaphotography
-  instagram:         rokmaphotography
-  github:            toybreaker
-  linkedin:          rokma
-  soundcloud:        rokma
+  name: Rokma
+  avatar: o-avatar #no extension cos it picks up the .avif or the .jpg
+  email: rokmabox@gmail.com
+  web: https://rokma.com
+  twitter: rokmatwit
+  facebook: rokmaphotography
+  instagram: rokmaphotography
+  github: toybreaker
+  linkedin: rokma
+  soundcloud: rokma
 
-producer:            https://junglestar.org
+producer: https://junglestar.org
 
 google:
-  analytics:         UA-1305149-1
-  verify:            google32e66f1a5601ec40
+  analytics: UA-1305149-1
+  verify: google32e66f1a5601ec40
 
 plugins:
- - jekyll-seo-tag
- - jekyll-redirect-from
- - jekyll-sitemap
- - jekyll-paginate
- - html-proofer
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-paginate
+  - html-proofer
 
 exclude:
   - vendor
