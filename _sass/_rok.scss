@@ -3,10 +3,9 @@ p a {
   border-bottom: 1px solid $color6;
 
   &:hover {
-    opacity: .5;
+    opacity: 0.5;
   }
 }
-
 
 .pagecat {
   color: black;
@@ -16,7 +15,7 @@ p a {
 }
 
 .taglineplus {
-  @include media("screen", "<maxWidth") {
+  @include media('screen', '<maxWidth') {
     display: none;
   }
 }
@@ -27,7 +26,7 @@ p a {
 .specials,
 .web-design {
   .taglineplus {
-    display: none!important;
+    display: none !important;
   }
 }
 
@@ -105,19 +104,18 @@ body:not(.specials) {
 
 // used for entering from side block look
 .pull-left {
-  @include media("screen", ">bp1Width") {
+  @include media('screen', '>bp1Width') {
     margin: 1rem calc(50vw - 8rem) 1rem -3rem;
-    padding-left: 6rem!important;
+    padding-left: 6rem !important;
   }
 }
 
 .pull-right {
-  @include media("screen", ">bp1Width") {
+  @include media('screen', '>bp1Width') {
     margin: 1rem -3rem 1rem calc(50vw - 8rem);
-    padding-right: 6rem!important;
+    padding-right: 6rem !important;
   }
 }
-
 
 .centertext,
 .center {
@@ -131,7 +129,7 @@ body:not(.specials) {
 }
 
 .wrap > *:visited:before {
-  content: "";
+  content: '';
   display: block;
   width: 20px;
   height: 20px;
@@ -142,19 +140,16 @@ body:not(.specials) {
 
 .category_excerpt {
   max-width: 400px;
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
-  @include media("screen", ">minWidth") {
+  @include media('screen', '>minWidth') {
     min-height: 0;
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
-
 }
-
-
 
 .main {
   max-width: $max_width;

@@ -60,7 +60,7 @@
 
   .bgimage {
     position: fixed;
-    top: -5vh; //compensate container margin
+    top: -5svh; //compensate container margin
     width: 105%;
     height: 105%;
     z-index: -100;
@@ -136,8 +136,8 @@
     //h1
     color: white;
     width: 100%;
-    min-height: 90vh;
-    line-height: 80vh;
+    min-height: 90svh;
+    line-height: 80svh;
     text-align: center;
   }
 
@@ -176,7 +176,7 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 5vh;
+    padding-bottom: 5svh;
     display: flex;
     flex-direction: column;
     align-items: center;

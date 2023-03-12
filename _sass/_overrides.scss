@@ -6,7 +6,7 @@
 
   .post {
     border-bottom: 8px solid $darkest-color;
-    @include media("screen", ">minWidth") {
+    @include media('screen', '>minWidth') {
       border-bottom: 0 none;
     }
   }
@@ -17,7 +17,7 @@
   h4,
   h5,
   h6 {
-    color: $bang-color!important;
+    color: $bang-color !important;
   }
 
   .pagecat,
@@ -30,7 +30,7 @@
   }
 
   .post-list a:visited {
-    color: silver!important;
+    color: silver !important;
   }
 
   .postshout {
@@ -43,7 +43,7 @@
   }
 
   .taglineshort {
-    display: inline!important;
+    display: inline !important;
   }
 
   .masthead-title .title {
@@ -78,25 +78,25 @@
         border-bottom: 1px solid rgb(77, 77, 77);
         transform: rotate(-45deg);
         -webkit-animation: strt 2s infinite;
-                animation: strt 2s infinite;
+        animation: strt 2s infinite;
         opacity: 0;
         box-sizing: border-box;
 
         &:nth-of-type(1) {
           -webkit-animation-delay: 0s;
-                  animation-delay: 0s;
+          animation-delay: 0s;
         }
 
         &:nth-of-type(2) {
           top: 16px;
-          -webkit-animation-delay: .15s;
-                  animation-delay: .15s;
+          -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
         }
 
         &:nth-of-type(3) {
           top: 32px;
-          -webkit-animation-delay: .3s;
-                  animation-delay: .3s;
+          -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
         }
       }
     }
@@ -130,30 +130,29 @@
 }
 
 body.black {
-  background-color: #000!important;
+  background-color: #000 !important;
 }
 
 body.gray1 {
-  background-color: #E5E4E2!important;
+  background-color: #e5e4e2 !important;
 }
 
 body.gray2 {
-  background-color: #EFEFED!important;
+  background-color: #efefed !important;
 }
-
 
 //images
 .web-design .entry-visuals {
   position: relative;
-  margin-bottom: 5vh;
-  @include media("screen", ">minWidth") {
-    margin-bottom: 34vh;
+  margin-bottom: 5svh;
+  @include media('screen', '>minWidth') {
+    margin-bottom: 34svh;
   }
-  @include media("screen", ">bp1Width") {
-    margin-bottom: 33vh;
+  @include media('screen', '>bp1Width') {
+    margin-bottom: 33svh;
   }
-  @include media("screen", ">maxWidth") {
-    margin-bottom: 5vh;
+  @include media('screen', '>maxWidth') {
+    margin-bottom: 5svh;
   }
 }
 
@@ -167,15 +166,15 @@ body.gray2 {
     top: 0;
     left: -17%;
     max-width: 180%;
-    @include media("screen", ">minWidth") {
+    @include media('screen', '>minWidth') {
       max-width: 150%;
       left: -10%;
     }
-    @include media("screen", ">bp1Width") {
+    @include media('screen', '>bp1Width') {
       max-width: 130%;
       left: 0;
     }
-    @include media("screen", ">maxWidth") {
+    @include media('screen', '>maxWidth') {
       max-width: 100%;
     }
   }
@@ -183,36 +182,36 @@ body.gray2 {
   &.b {
     //ipad
     max-width: 40vw;
-    @include media("screen", ">minWidth") {
+    @include media('screen', '>minWidth') {
       max-width: 46vw;
       position: absolute;
       left: auto;
       right: 10vw;
       top: auto;
-      bottom: -28vh;
+      bottom: -28svh;
     }
-    @include media("screen", ">maxWidth") {
+    @include media('screen', '>maxWidth') {
       left: 60vw;
       right: auto;
-      bottom: 5vh;
+      bottom: 5svh;
     }
   }
 
   &.c {
     //nexus6
     max-width: 30vw;
-    @include media("screen", ">minWidth") {
+    @include media('screen', '>minWidth') {
       position: absolute;
       left: 20vw;
       top: auto;
-      bottom: -30vh;
+      bottom: -30svh;
     }
-    @include media("screen", ">bp1Width") {
+    @include media('screen', '>bp1Width') {
       left: 44vw;
       top: auto;
-      bottom: -25vh;
+      bottom: -25svh;
     }
-    @include media("screen", ">maxWidth") {
+    @include media('screen', '>maxWidth') {
       left: 78vw;
       top: auto;
       bottom: 0;
@@ -222,17 +221,17 @@ body.gray2 {
   &.d {
     //crappydroid
     max-width: 24vw;
-    @include media("screen", ">minWidth") {
+    @include media('screen', '>minWidth') {
       position: absolute;
       left: 3vw;
       top: auto;
-      bottom: -15vh;
+      bottom: -15svh;
     }
-    @include media("screen", ">bp1Width") {
+    @include media('screen', '>bp1Width') {
       left: 29vw;
       top: auto;
     }
-    @include media("screen", ">maxWidth") {
+    @include media('screen', '>maxWidth') {
       left: 51vw;
       bottom: 0;
     }
