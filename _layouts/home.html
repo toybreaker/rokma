@@ -11,16 +11,17 @@
 
     {{ content }}
 
-    {%comment%} Toggle Button if home {% endcomment %}
-		<div class="sidebar-toggle-button">
-		  <label for="sidebar-checkbox" class="sidebar-toggle">
+    {% comment %} Toggle Button if home {% endcomment %}
+    <div class="sidebar-toggle-button">
+      <label for="sidebar-checkbox" class="sidebar-toggle">
         {% include svg/use.html id="icn--burger" class="burger" %}
       </label>
-		</div>
+    </div>
 
     {% include scripts/scripts.html %}
     {% include scripts/script_ext_link.html %}
     {% include scripts/script_append_to_copy.html %}
     {% include scripts/script_google_analytics.html %}
   </body>
+
 </html>

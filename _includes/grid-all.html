@@ -5,7 +5,7 @@ used in index.html to display pagination list of posts
 <div class="wrap all_works {{ page.isindex }}">
   <div class="container content">
 
-    <h1 class="masthead-title" data-sr='enter left move 1500px'>
+    <h1 class="masthead_title" data-sr='enter left move 1500px'>
       {{ site.title }}
       <span class="tagline" data-sr='wait 1s enter left move 3000px reset'>
         empowers your work.
@@ -15,11 +15,11 @@ used in index.html to display pagination list of posts
     <div class="posts">
 
       {% for post in paginator.posts %}
-        {% unless post.publish contains "notyet" %}
+      {% unless post.publish contains "notyet" %}
 
-          {% include blocks/card.html %}
+      {% include blocks/card.html %}
 
-        {% endunless %}
+      {% endunless %}
       {% endfor %}
 
 

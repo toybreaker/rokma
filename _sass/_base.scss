@@ -11,6 +11,7 @@ html {
   line-height: $base-line-height;
   font-weight: 400;
   font-family: $base-font;
+  white-space: normal;
 }
 
 body {
@@ -220,7 +221,7 @@ button strong em {
   border-bottom: 1px solid lighten($black, 20);
 }
 
-.masthead-title {
+.masthead_title {
   padding-bottom: 3rem;
   margin: 0 1rem;
   color: $color6;

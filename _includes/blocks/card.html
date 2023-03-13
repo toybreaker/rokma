@@ -1,26 +1,24 @@
-<div class="post" >
+<div class="post">
 
   <a class="post_link" href="{{ post.url }}">
 
-    <h2 class="post-title">
+    <div class="postshout">
+      <h2 class="post-title"></h2>
+      <div class="post_type"></div>{{ post.headline }}
+      {% if page.layout == 'home' %}
+      <div class="post_type">{{ post.categories }}</div>
+      {% endif %}
+    </div>
 
-      <span class="postshout">
-        {{ post.headline }}
 
-        {% if page.layout == 'home' %}
-        <span class="post_type">{{ post.categories }}</span>
-        {% endif %}
-      </span>
 
-    </h2>
-
-    <span class="posthumb image_{{ post.title }}">
+    <div class="posthumb image_{{ post.title }}">
 
       {% capture photo %}{{ post.image.[0] }}{% endcapture %}
 
       {% include blocks/post_content_image.html %}
 
-    </span>
+    </div>
   </a>
 
 </div>

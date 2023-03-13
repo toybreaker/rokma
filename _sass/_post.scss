@@ -1,27 +1,29 @@
-
+//style for component file: "card.html"
 .posts {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+
+  width: 100%;
+  grid-template-columns: auto 1fr 1fr;
 }
 
 .post-title {
   padding: 1rem 0;
   margin: 0;
-  position: relative;
-  top: 5rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .postshout {
   position: relative;
-  height: 100%;
+  width: 100cqw;
   z-index: 1;
   pointer-events: none;
-  margin: 1rem;
+  margin: $space;
   border: solid 2px black;
-  padding: 1rem;
+  padding: $space;
   color: black;
   background-color: $nice-color;
 
@@ -36,36 +38,33 @@
   background-color: rgba(255, 255, 255, 0.75);
   color: black;
   z-index: 1;
-  padding: .5rem;
+  padding: $space;
   width: calc(100% + 4px);
   min-width: 100px;
   bottom: -40px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
   height: 40px;
   line-height: 20px;
-  left: - 2px;
+  left: -2px;
   border: solid 2px black;
   white-space: nowrap;
   -moz-column-break-inside: avoid;
-       break-inside: avoid;
+  break-inside: avoid;
 }
-
 
 .post {
   flex-basis: 420px;
-  height: 380px;
+  height: calc(100vw / 3);
   overflow: hidden;
   flex-grow: 1;
-  position: relative;
-  z-index: 1;
   padding: 0;
   margin: 0;
   background-color: $nice-color;
-  border-bottom: 3px solid black;
+  //border-bottom: 3px solid black;
 
-  @include media("screen", ">minWidth") {
-    border-bottom: 0 none;
+  @include media('screen', '>minWidth') {
+    // border-bottom: 0 none;
   }
 
   .photography & {
@@ -84,6 +83,8 @@
     width: 100%;
     height: 100%;
     text-align: center;
+    overflow: hidden;
+    position: relative;
   }
 
   .entry-feature-image {
@@ -105,9 +106,9 @@
       transition-delay: initial;
       transition-property: all;
       transition-timing-function: ease-in-out;
-      transition-duration: .3s;
+      transition-duration: 0.3s;
       top: 0;
-      z-index: 11;
+      z-index: 15;
       width: 100%;
       font-size: 2rem;
       background-color: white;
@@ -134,15 +135,15 @@
       transition-delay: initial;
       transition-property: transform;
       transition-timing-function: ease-in-out;
-      transition-duration: .3s;
+      transition-duration: 0.3s;
       transform: scale(1) translateY(-10px);
-      @include media("screen", ">minWidth") {
+      @include media('screen', '>minWidth') {
         transform: scale(0.9) translateY(-30px);
       }
-      @include media("screen", ">bp1Width") {
+      @include media('screen', '>bp1Width') {
         transform: scale(0.75) translateY(-80px);
       }
-      @include media("screen", ">maxWidth") {
+      @include media('screen', '>maxWidth') {
         transform: scale(0.85) translateY(-25px);
       }
 
@@ -150,15 +151,15 @@
         transition-delay: initial;
         transition-property: transform;
         transition-timing-function: ease-in-out;
-        transition-duration: .3s;
+        transition-duration: 0.3s;
         transform: scale(1) translateY(-10px);
-        @include media("screen", ">minWidth") {
+        @include media('screen', '>minWidth') {
           transform: scale(1) translateY(-90px);
         }
-        @include media("screen", ">bp1Width") {
+        @include media('screen', '>bp1Width') {
           transform: scale(1) translateY(-100px);
         }
-        @include media("screen", ">maxWidth") {
+        @include media('screen', '>maxWidth') {
           transform: scale(1) translateY(-75px);
         }
       }
@@ -167,11 +168,9 @@
 }
 
 .posthumb {
-  //span
-  position: relative;
-  top: 0;
-  left: 0;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 
   .black & {
     background-color: black;
@@ -180,11 +179,10 @@
   .entry-feature-image {
     background-color: black;
     margin: auto;
-    z-index: 0;
     opacity: 1;
     filter: grayscale(100%);
-    @include media("screen", ">minWidth") {
-      opacity: .4;
+    @include media('screen', '>minWidth') {
+      opacity: 0.4;
     }
   }
 

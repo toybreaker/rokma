@@ -18,10 +18,10 @@ body.offwhite {
   .photography h1,
   .photography h2,
   .photography h3,
-  .masthead-title a,
-  .masthead-title a .pagecat,
+  .masthead_title a,
+  .masthead_title a .pagecat,
   .photography a {
-    color: $black!important;
+    color: $black !important;
   }
 
   .post-metas {
@@ -33,7 +33,9 @@ body.offwhite {
     color: lighten($black, 60);
   }
 
-  .main a { color: $black; }
+  .main a {
+    color: $black;
+  }
 
   .post-meta a {
     border: solid 1px $black;

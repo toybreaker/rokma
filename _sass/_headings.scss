@@ -17,6 +17,8 @@ h6 {
   text-transform: capitalize;
   color: #313131;
   margin-bottom: 0.5rem;
+  // word-break: break-word;
+  // white-space: pre-wrap;
 }
 
 .h1,
@@ -27,13 +29,13 @@ h1 {
 .h2,
 h2 {
   margin-top: 1rem;
-  font-size: clamp(7cqw, 7cqw, 7cqw); //1.25rem;
+  font-size: clamp(7cqw, 8cqw, 9cqw); //1.25rem;
 }
 
 .h3,
 h3 {
   margin-top: 1.5rem;
-  font-size: clamp(5cqw, 5cqw, 5cqw); //1.1rem;
+  font-size: clamp(5cqw, 6cqw, 7cqw); //1.1rem;
 }
 
 .h4,
@@ -42,6 +44,6 @@ h3 {
 h4,
 h5,
 h6 {
-  margin-top: clamp(5cqw, 5cqw, 5cqw); //1rem;
-  font-size: clamp(5cqw, 5cqw, 5cqw); //1rem;
+  margin-top: clamp(3cqw, 4cqw, 5cqw); //1rem;
+  font-size: clamp(4cqw, 4cqw, 5cqw); //1rem;
 }
