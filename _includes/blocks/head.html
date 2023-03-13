@@ -8,13 +8,15 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} {{ site.tagline }}
+    {{ site.title }} {{ site.tagline }}
     {% else %}
-      {{ site.title }} {{ page.headline }}
+    {{ site.title }} {{ page.headline }}
     {% endif %}
   </title>
 
-  {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% else %}<meta name="description" content="{{ site.shout_description }} - {% if page.title == "Home" %} {{ site.title }} {{ site.tagline }}{% else %}{{ site.title }} {{ page.headline }}{% endif %}">{% endif %}
+  {% if page.excerpt %}
+  <meta name="description" content="{{ page.excerpt | strip_html }}">{% else %}
+  <meta name="description" content="{{ site.shout_description }} - {% if page.title == "Home" %} {{ site.title }} {{ site.tagline }}{% else %}{{ site.title }} {{ page.headline }}{% endif %}">{% endif %}
 
 
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -54,23 +56,33 @@
   </noscript>
 
   <script type="text/javascript">
-      // Load CSS
-      var loadDeferredStyles = function() {
-          var addStylesNode = document.getElementById("deferred-styles");
-          var replacement = document.createElement("div");
-          replacement.innerHTML = addStylesNode.textContent;
-          document.body.appendChild(replacement)
-          addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
+    // Load CSS
+    var loadDeferredStyles = function () {
+      var addStylesNode = document.getElementById("deferred-styles");
+      var replacement = document.createElement("div");
+      replacement.innerHTML = addStylesNode.textContent;
+      document.body.appendChild(replacement)
+      addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+      window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    if (raf) raf(function () { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
   </script>
 
+  {% comment %}
   {% capture inline_css %}{% include main.scss %}{% endcapture %}
   <style>{{ inline_css | scssify }}</style>
 
-  <style>[data-sr] { visibility: hidden; }</style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css">
+  {% endcomment %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+
+  <style>
+    [data-sr] {
+      visibility: hidden;
+    }
+  </style>
 
 </head>

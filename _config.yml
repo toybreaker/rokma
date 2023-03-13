@@ -21,7 +21,7 @@ paginate_path: "index/:num/"
 
 # Setup
 sass:
-  sass_dir: _sass
+  sass_dir: _scss
   style: :compressed
   # style:           :expanded
 
