@@ -1,4 +1,3 @@
-
 .posts {
   display: flex;
   flex-direction: row;
@@ -36,21 +35,21 @@
   background-color: rgba(255, 255, 255, 0.75);
   color: black;
   z-index: 1;
-  padding: .5rem;
+  padding: 0.5rem;
   width: calc(100% + 4px);
   min-width: 100px;
   bottom: -40px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
   height: 40px;
   line-height: 20px;
-  left: - 2px;
+  left: -2px;
   border: solid 2px black;
   white-space: nowrap;
   -moz-column-break-inside: avoid;
-       break-inside: avoid;
+  break-inside: avoid;
+  text-transform: uppercase;
 }
-
 
 .post {
   flex-basis: 420px;
@@ -64,7 +63,7 @@
   background-color: $nice-color;
   border-bottom: 3px solid black;
 
-  @include media("screen", ">minWidth") {
+  @include media('screen', '>minWidth') {
     border-bottom: 0 none;
   }
 
@@ -93,6 +92,10 @@
     transform: scale(2.1);
   }
 
+  h2.post-title {
+    font-size: 1.25rem !important;
+  }
+
   &:hover {
     background-color: white;
     z-index: 10;
@@ -105,11 +108,11 @@
       transition-delay: initial;
       transition-property: all;
       transition-timing-function: ease-in-out;
-      transition-duration: .3s;
+      transition-duration: 0.3s;
       top: 0;
       z-index: 11;
       width: 100%;
-      font-size: 2rem;
+      font-size: 2rem !important;
       background-color: white;
 
       .photography & {
@@ -134,15 +137,15 @@
       transition-delay: initial;
       transition-property: transform;
       transition-timing-function: ease-in-out;
-      transition-duration: .3s;
+      transition-duration: 0.3s;
       transform: scale(1) translateY(-10px);
-      @include media("screen", ">minWidth") {
+      @include media('screen', '>minWidth') {
         transform: scale(0.9) translateY(-30px);
       }
-      @include media("screen", ">bp1Width") {
+      @include media('screen', '>bp1Width') {
         transform: scale(0.75) translateY(-80px);
       }
-      @include media("screen", ">maxWidth") {
+      @include media('screen', '>maxWidth') {
         transform: scale(0.85) translateY(-25px);
       }
 
@@ -150,15 +153,15 @@
         transition-delay: initial;
         transition-property: transform;
         transition-timing-function: ease-in-out;
-        transition-duration: .3s;
+        transition-duration: 0.3s;
         transform: scale(1) translateY(-10px);
-        @include media("screen", ">minWidth") {
+        @include media('screen', '>minWidth') {
           transform: scale(1) translateY(-90px);
         }
-        @include media("screen", ">bp1Width") {
+        @include media('screen', '>bp1Width') {
           transform: scale(1) translateY(-100px);
         }
-        @include media("screen", ">maxWidth") {
+        @include media('screen', '>maxWidth') {
           transform: scale(1) translateY(-75px);
         }
       }
@@ -183,8 +186,8 @@
     z-index: 0;
     opacity: 1;
     filter: grayscale(100%);
-    @include media("screen", ">minWidth") {
-      opacity: .4;
+    @include media('screen', '>minWidth') {
+      opacity: 0.4;
     }
   }
 

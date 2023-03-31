@@ -1,8 +1,9 @@
-version: 20.2.0
+version: 20.3.1
+version_details: "ScrollToFineArtPrints"
 title: Rokma
 locale: en
 description: "Communication Design and Production."
-shout_description: "Flexible Communication Design for small companies. Imagine > Plan > Produce > Launch. Also just consulting!"
+shout_description: "Flexible Communication Design Service for small companies. Imagine > Plan > Produce > Launch. Also just consulting!"
 logo: 01.jpg #used in openGraph
 tagline: "empowers small enterprises"
 tagline_short: "empowers"
@@ -10,8 +11,6 @@ tagline_plus: "building reputation"
 
 baseurl: ""
 url: https://rokma.com
-
-version_details: "ScrollToFineArtPrints"
 
 # Outputting
 permalink: /:categories/:title/

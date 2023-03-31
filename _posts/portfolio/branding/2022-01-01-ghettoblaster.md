@@ -16,4 +16,4 @@ images: #this can have captions (see valeria branding)
 
 Skateboard graphics. Concept and design for Ghettoblaster brand.
 
-Check the [Ghettoblaster store](https://ghettoblasterwear/?source=rokma.com)
+Check the [Ghettoblaster store](https://ghettoblasterwear.com/?source=rokma.com)
