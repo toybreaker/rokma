@@ -1,4 +1,4 @@
-version: 20.3.2
+version: 20.3.3
 version_details: "ScrollToFineArtPrints"
 title: Rokma
 locale: en
@@ -42,6 +42,7 @@ producer: https://junglestar.org
 
 google:
   analytics: UA-1305149-1
+  analyticsG4: G-BMWDP7VL43
   verify: google32e66f1a5601ec40
 
 plugins:
